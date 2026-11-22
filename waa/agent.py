@@ -45,16 +45,50 @@ class Agent:
     env: AgentEnvironment
     debug: bool
 
-    def __init__(self, working_dir: Path, debug: bool = False):
+    def __init__(
+        self,
+        working_dir: Path,
+        debug: bool = False,
+        *,
+        role: Optional[str] = None,
+        system_prompt: Optional[str] = None,
+        instruction: Optional[str] = None,
+        allowed_tools: Optional[List[str]] = None,
+        max_turns: Optional[int] = None,
+        log_name: Optional[str] = None,
+        llm: Optional[LanguageModel] = None,
+    ):
+        """
+        Plain HW3 usage: Agent(working_dir).run()
+
+        Team usage (see waa/team.py): the keyword arguments turn this agent into a
+        single role. Each override replaces what would otherwise be read from
+        .waa/config.json / .waa/instruction.md:
+          role           label used in logs ("planner", "coder", "reviewer")
+          system_prompt  replaces the default WAA system prompt
+          instruction    replaces .waa/instruction.md
+          allowed_tools  replaces config "allowed_tools"
+          max_turns      replaces config "max_turns"
+          log_name       write to .waa/logs/<log_name>.log instead of .waa/agent.log
+                         (and allow overwriting it)
+          llm            reuse an existing LanguageModel instead of creating one
+        """
         self.working_dir = working_dir
         self.config = None
         self.debug = debug
-        self.llm = None
+        self.llm = llm
         self.tool_registry = None
         self.max_turns = 0
         self.history = []
         self.logger = None
         self.env = None
+
+        self.role = role
+        self._system_prompt_override = system_prompt
+        self._instruction_override = instruction
+        self._allowed_tools_override = allowed_tools
+        self._max_turns_override = max_turns
+        self._log_name = log_name
 
     # ------------------------------------------------------------------ setup
 
@@ -68,6 +102,8 @@ class Agent:
 
         self.env = AgentEnvironment(self.working_dir, self.config)
         self.max_turns = self.env.get_config_value("max_turns", 50)
+        if self._max_turns_override is not None:
+            self.max_turns = self._max_turns_override
 
     def initialize_llm(self):
         llm_type = self.config.get("llm_type", "mock")
@@ -82,12 +118,17 @@ class Agent:
             raise ValueError(f"Unknown llm_type: {llm_type}. Use 'bedrock' or 'mock'.")
 
     def initialize_logger(self):
-        log_path = self.working_dir / ".waa" / "agent.log"
-        if log_path.exists():
-            raise RuntimeError(f"Log file already exists: {log_path}. Remove it to start a new run.")
+        if self._log_name:
+            log_path = self.working_dir / ".waa" / "logs" / f"{self._log_name}.log"
+        else:
+            log_path = self.working_dir / ".waa" / "agent.log"
+            if log_path.exists():
+                raise RuntimeError(f"Log file already exists: {log_path}. Remove it to start a new run.")
 
         self.logger = Logger(log_path, self.debug)
         self.logger.log("Agent initialization started")
+        if self.role:
+            self.logger.log(f"Role: {self.role}")
         self.logger.log(f"Working directory: {self.working_dir}")
         self.logger.log(f"Debug mode: {self.debug}")
         self.logger.log(f"Max turns: {self.max_turns}")
@@ -95,6 +136,8 @@ class Agent:
     def initialize_tool_registry(self):
         self.tool_registry = ToolRegistry()
         allowed_tools = self.env.get_config_value("allowed_tools", None)
+        if self._allowed_tools_override is not None:
+            allowed_tools = self._allowed_tools_override
         for cls in all_tool_classes():
             tool: Tool = cls()
             if allowed_tools is not None and tool.name not in allowed_tools:
@@ -106,9 +149,18 @@ class Agent:
 
     # ---------------------------------------------------------------- prompts
 
-    def load_system_prompt(self):
+    def tool_docs(self) -> str:
         tools = self.tool_registry.list_tools()
-        tool_docs = "\n\n".join(f"- {t.description()}" for t in tools) if tools else "(no tools available)"
+        return "\n\n".join(f"- {t.description()}" for t in tools) if tools else "(no tools available)"
+
+    def load_system_prompt(self):
+        if self._system_prompt_override is not None:
+            prompt = self._system_prompt_override.replace("{TOOL_DOCS}", self.tool_docs())
+            self.history.append(SystemPrompt(prompt))
+            self.logger.log_system_prompt(prompt)
+            return
+
+        tool_docs = self.tool_docs()
 
         prompt = f"""You are WAA (Web-App Agent), an autonomous software engineer. You build complete, working web applications inside a single working directory using the tools below. You work alone and nobody will answer questions, so make reasonable decisions yourself and keep going until the job is done.
 
@@ -152,16 +204,20 @@ Before each tool call, write one or two short sentences: what you learned from t
         self.logger.log_system_prompt(prompt)
 
     def load_instruction(self):
-        instruction_path = self.working_dir / ".waa" / "instruction.md"
-        if not instruction_path.exists():
-            raise FileNotFoundError(f"Instruction file not found: {instruction_path}")
-        instruction = instruction_path.read_text(encoding="utf-8")
+        if self._instruction_override is not None:
+            instruction = self._instruction_override
+        else:
+            instruction_path = self.working_dir / ".waa" / "instruction.md"
+            if not instruction_path.exists():
+                raise FileNotFoundError(f"Instruction file not found: {instruction_path}")
+            instruction = instruction_path.read_text(encoding="utf-8")
         self.history.append(UserInstruction(instruction))
         self.logger.log_user_instruction(instruction)
 
     def initialize(self):
         self.initialize_environment()
-        self.llm = self.initialize_llm()
+        if self.llm is None:
+            self.llm = self.initialize_llm()
         self.initialize_logger()
         self.initialize_tool_registry()
 
