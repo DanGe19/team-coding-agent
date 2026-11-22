@@ -49,6 +49,7 @@ class TeamOrchestrator:
 
         self.plan: List[Dict[str, Any]] = []
         self.summary: Dict[str, Any] = {"tasks": []}
+        self._last_reviewer_usage: Dict[str, Any] = {}
 
     # ----------------------------------------------------------------- setup
 
@@ -125,6 +126,7 @@ class TeamOrchestrator:
             log_name="planner",
         )
         agent.run()
+        self.summary["planner_usage"] = agent.usage_report()
 
         plan = None
         for entry in reversed(agent.history):
@@ -175,6 +177,7 @@ class TeamOrchestrator:
             log_name=f"reviewer_t{task['id']}_r{round_no}",
         )
         agent.run()
+        self._last_reviewer_usage = agent.usage_report()
 
         verdict = None
         for entry in reversed(agent.history):
@@ -207,10 +210,13 @@ class TeamOrchestrator:
             feedback = None
             for round_no in range(1, max_rounds + 1):
                 coder = self.run_coder(task, feedback, round_no)
+                coder_usage = coder.usage_report()  # snapshot before the reviewer adds calls
                 verdict = self.run_reviewer(task, round_no)
                 task_record["rounds"].append({
                     "round": round_no,
                     "coder_turns": sum(isinstance(e, LLMResponse) for e in coder.history),
+                    "coder_usage": coder_usage,
+                    "reviewer_usage": self._last_reviewer_usage,
                     "verdict": verdict["verdict"],
                     "issues": verdict["issues"],
                 })
@@ -226,12 +232,29 @@ class TeamOrchestrator:
             self._write_summary()
 
         self.summary["elapsed_sec"] = round(time.time() - start, 1)
+        self.summary["usage_by_role"] = self._usage_by_role()
+        self.summary["usage_total"] = self.llm.usage.snapshot() if hasattr(self.llm, "usage") else {}
         self._write_summary()
         self.logger.log_termination(
             sum(len(t["rounds"]) for t in self.summary["tasks"]),
             "Team run finished",
         )
         return self.summary
+
+    def _usage_by_role(self) -> Dict[str, Dict[str, Any]]:
+        keys = ("calls", "input_tokens", "output_tokens", "total_tokens", "cost_usd")
+        out = {r: {k: 0 for k in keys} for r in ("planner", "coder", "reviewer")}
+
+        def add(role, u):
+            for k in keys:
+                out[role][k] = round(out[role][k] + (u or {}).get(k, 0), 6)
+
+        add("planner", self.summary.get("planner_usage"))
+        for t in self.summary["tasks"]:
+            for r in t["rounds"]:
+                add("coder", r.get("coder_usage"))
+                add("reviewer", r.get("reviewer_usage"))
+        return out
 
     def _write_summary(self):
         path = self.working_dir / ".waa" / "team_summary.json"

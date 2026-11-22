@@ -110,7 +110,8 @@ class Agent:
         if llm_type == "bedrock":
             model_name = self.config.get("model", "us.anthropic.claude-sonnet-4-6")
             api_key = self.config.get("api_key", os.getenv("AWS_BEARER_TOKEN_BEDROCK"))
-            return BedrockLanguageModel(model_name=model_name, api_key=api_key)
+            return BedrockLanguageModel(model_name=model_name, api_key=api_key,
+                                        pricing=self.config.get("pricing"))
         elif llm_type == "mock":
             responses = self.config.get("mock_responses")
             return MockLanguageModel(responses=responses)
@@ -248,7 +249,18 @@ Before each tool call, write one or two short sentences: what you learned from t
         response = LLMResponse(text)
         self.history.append(response)
         self.logger.log_llm_response(turn, text)
+        last = getattr(self.llm, "usage", None) and self.llm.usage.last
+        if last:
+            self.logger.log(
+                f"    usage: in={last['input_tokens']} out={last['output_tokens']} "
+                f"latency={last['latency_ms']}ms cost~${last['cost_usd']}", "DEBUG")
         return response
+
+    def usage_report(self) -> Dict[str, Any]:
+        """Tokens, latency and estimated cost consumed by THIS agent run."""
+        if not hasattr(self.llm, "usage"):
+            return {}
+        return self.llm.usage.diff(self._usage_start)
 
     @staticmethod
     def parse_tool_call(text: str) -> Dict[str, Any]:
@@ -300,6 +312,7 @@ Before each tool call, write one or two short sentences: what you learned from t
 
     def run(self):
         self.initialize()
+        self._usage_start = self.llm.usage.snapshot() if hasattr(self.llm, "usage") else {}
         turn = 0
         terminated = False
         try:
@@ -332,6 +345,32 @@ Before each tool call, write one or two short sentences: what you learned from t
                 self.logger.log_termination(turn, f"Max turns ({self.max_turns}) reached")
         finally:
             self._cleanup()
+            self._write_usage(turn, terminated)
+
+    def _write_usage(self, turns: int, terminated: bool):
+        """Append this run's usage to .waa/usage.json (one entry per agent run)."""
+        try:
+            report = self.usage_report()
+            if not report:
+                return
+            report.update({"role": self.role or "agent", "log": self._log_name or "agent",
+                           "turns": turns, "terminated": terminated})
+            self.logger.log(
+                f"USAGE: calls={report['calls']} tokens={report['total_tokens']} "
+                f"(in {report['input_tokens']} / out {report['output_tokens']}) "
+                f"cost~${report['cost_usd']}")
+            path = self.working_dir / ".waa" / "usage.json"
+            entries = []
+            if path.exists():
+                try:
+                    entries = json.loads(path.read_text(encoding="utf-8"))
+                except Exception:
+                    entries = []
+            entries.append(report)
+            path.write_text(json.dumps(entries, indent=2), encoding="utf-8")
+        except Exception as e:
+            if self.logger:
+                self.logger.log_warning(f"Could not write usage: {e}")
 
     def _cleanup(self):
         """Best effort: make sure no dev server is left running."""

@@ -120,6 +120,16 @@ class TestTeamMock(unittest.TestCase):
         saved = json.loads((self.dir / ".waa" / "team_summary.json").read_text())
         self.assertEqual(len(saved["plan"]), 2)
 
+        # Usage accounting: 1 planner call, 3 coder runs x 2, 3 reviewer runs x 2.
+        by_role = saved["usage_by_role"]
+        self.assertEqual(by_role["planner"]["calls"], 1)
+        self.assertEqual(by_role["coder"]["calls"], 6)
+        self.assertEqual(by_role["reviewer"]["calls"], 6)
+        self.assertEqual(saved["usage_total"]["calls"], 13)
+        usage_entries = json.loads((self.dir / ".waa" / "usage.json").read_text())
+        self.assertEqual(len(usage_entries), 7)  # one per role run
+        self.assertGreater(usage_entries[0]["input_tokens"], 0)
+
     def test_reviewer_cannot_write(self):
         """Even if the reviewer tries fs.write, the tool is not registered for it."""
         script = [PLAN,
