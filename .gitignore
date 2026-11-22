@@ -6,3 +6,4 @@ submission.zip
 node_modules/
 .venv/
 *.pyc
+experiments/runs/
