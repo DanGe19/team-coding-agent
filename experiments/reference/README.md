@@ -18,3 +18,6 @@ cp ../../hidden_tests/kanban/api.test.js tests/hidden/
 npx jest tests            # expect 13 passed
 # UI: node index.js &  then  npx playwright test ../../../targets/kanban/tests/ui.test.js ...
 ```
+
+Validate park_waits the same way (`cd experiments/reference/park_waits`, copy the two
+api.test.js files, `npx jest tests` → expect 15 passed).

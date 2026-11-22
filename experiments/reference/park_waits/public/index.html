@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Park Wait Times</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header>
+  <div class="brand">Park Wait Times</div>
+  <div class="stats"><span>Time <strong id="sim-time">09:00</strong></span><span>Guests <strong id="guest-count">0</strong></span></div>
+  <div class="controls">
+    <button id="btn-start">Start</button><button id="btn-tick">Tick</button><button id="btn-add-guests">+50 guests</button>
+    <input id="seed-input" type="number" value="1" min="0"><button id="btn-reset">Reset</button><button id="btn-view">Map</button>
+  </div>
+</header>
+<main>
+  <section id="board"></section>
+  <section id="map" hidden>
+    <div class="map-area" id="map-area"></div>
+    <div class="legend"><span class="wait-low">&lt; 15 min</span><span class="wait-mid">15–44 min</span><span class="wait-high">≥ 45 min</span><span class="wait-closed">Closed</span></div>
+  </section>
+</main>
+<script src="app.js"></script>
+</body></html>

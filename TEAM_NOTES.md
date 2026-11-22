@@ -49,6 +49,7 @@ Outputs: `.waa/logs/<role>_t<task>_r<round>.log`, `.waa/team_summary.json`, `.wa
 | chat_room | HW3 | tests/ | — (todo) |
 | tetris | HW3 | tests/m1_core (+m2, m3 in milestones/) | — (todo) |
 | kanban | new | 5 api + 3 ui | 8 api + 7 ui in experiments/hidden_tests/kanban |
+| park_waits | new | 5 api + 3 ui | 10 api + 7 ui in experiments/hidden_tests/park_waits |
 
 Reference solutions for new tasks live in `experiments/reference/` (never shown to the agent).
 
