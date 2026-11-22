@@ -9,6 +9,15 @@ There should also be a button to refresh the page manually.
 Please be sure to make the website cool looking, clean, and modern.
 You should remember to create separate `.js` and `.css` files to manage styles and behaviors.
 
+Design preferences for this chat room:
+- Dark theme: near-black background, soft gray message cards, one accent color (teal) for buttons and usernames.
+- Messages look like chat bubbles. Show the username in bold, the text below it, and the time in small gray text aligned right.
+- Newest messages at the bottom; the message list should auto-scroll to the bottom after loading or posting.
+- The input form stays fixed at the bottom of the page. Pressing Enter in the message box sends the message.
+- Remember the username in `localStorage` so the user does not retype it after a refresh.
+- Show a small "last updated HH:MM:SS" label next to the manual refresh button.
+- Keep everything responsive so it looks fine on a phone-sized window.
+
 On the server side, there should be a Restful API to get messages (`GET /api/messages`) and one to publish a message (`POST /api/message`).
 These messages should be stored in memory without utilizing files or databases, so everytime the server is restart, all the messages are wiped out and can be populated anew.
 When a new message is posted, there should be a unique ID that is allocated to that message.
