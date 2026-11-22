@@ -9,6 +9,7 @@ from .tool import ToolRegistry, Tool
 from .history import HistoryEntry, SystemPrompt, UserInstruction, LLMResponse, ToolCallResult
 from .logger import Logger
 from .env import AgentEnvironment
+from .events import EventLog
 
 from .tools.fs import (
     FileCreateTool, FileReadTool, FileEditTool, FileDeleteTool,
@@ -89,6 +90,9 @@ class Agent:
         self._allowed_tools_override = allowed_tools
         self._max_turns_override = max_turns
         self._log_name = log_name
+        self.task_id: Optional[int] = None
+        self.round: Optional[int] = None
+        self.events: Optional[EventLog] = None
 
     # ------------------------------------------------------------------ setup
 
@@ -130,6 +134,7 @@ class Agent:
         self.logger.log("Agent initialization started")
         if self.role:
             self.logger.log(f"Role: {self.role}")
+        self.events = EventLog(self.working_dir)
         self.logger.log(f"Working directory: {self.working_dir}")
         self.logger.log(f"Debug mode: {self.debug}")
         self.logger.log(f"Max turns: {self.max_turns}")
@@ -149,6 +154,11 @@ class Agent:
         self.logger.log(f"Registered tools: {', '.join(names) if names else '(none)'}")
 
     # ---------------------------------------------------------------- prompts
+
+    def emit(self, type: str, **data):
+        if self.events is not None:
+            self.events.emit(type, role=self.role or "agent", task_id=self.task_id,
+                             round=self.round, data=data)
 
     def tool_docs(self) -> str:
         tools = self.tool_registry.list_tools()
@@ -239,6 +249,7 @@ Before each tool call, write one or two short sentences: what you learned from t
     def query_llm(self, turn: int) -> LLMResponse:
         messages = self.build_messages()
         self.logger.log_llm_query(turn, len(messages))
+        self.emit("llm_query", turn=turn, message_count=len(messages))
         try:
             text = self.llm.generate(messages)
         except Exception as e:
@@ -254,6 +265,9 @@ Before each tool call, write one or two short sentences: what you learned from t
             self.logger.log(
                 f"    usage: in={last['input_tokens']} out={last['output_tokens']} "
                 f"latency={last['latency_ms']}ms cost~${last['cost_usd']}", "DEBUG")
+        self.emit("llm_response", turn=turn, text=text,
+                  is_tool_call=response.is_tool_call(), is_termination=response.is_termination(),
+                  usage=last or {})
         return response
 
     def usage_report(self) -> Dict[str, Any]:
@@ -287,6 +301,7 @@ Before each tool call, write one or two short sentences: what you learned from t
         tool_name = tool_call.get("tool", "")
         arguments = tool_call.get("arguments", {}) or {}
         self.logger.log_tool_call(tool_name, arguments)
+        self.emit("tool_call", tool=tool_name, arguments=arguments)
 
         error: Optional[str] = None
         result: Dict[str, Any]
@@ -308,11 +323,33 @@ Before each tool call, write one or two short sentences: what you learned from t
         entry = ToolCallResult(tool_name, arguments, result, error)
         self.history.append(entry)
         self.logger.log_tool_result(tool_name, result, error)
+        self.emit("tool_result", tool=tool_name, ok=bool(result.get("ok")), error=error,
+                  result=self._compact_result(tool_name, result))
+        if tool_name in ("supertest.run", "playwright.run"):
+            data = (result.get("data") or {}) if isinstance(result, dict) else {}
+            self.emit("test_result", tool=tool_name, test_file=data.get("test_file"),
+                      passed=bool(data.get("passed")), summary=data.get("summary") or {})
         return entry
+
+    @staticmethod
+    def _compact_result(tool_name: str, result: Dict[str, Any]) -> Dict[str, Any]:
+        """Keep events readable: drop bulky stdout/content, keep the useful fields."""
+        data = result.get("data") if isinstance(result, dict) else None
+        if not isinstance(data, dict):
+            return {"data": data}
+        keep = {}
+        for k, v in data.items():
+            if k in ("content", "stdout", "stderr", "logs", "install_stdout", "browsers_stdout"):
+                keep[k + "_len"] = len(str(v))
+            else:
+                keep[k] = v
+        return keep
 
     def run(self):
         self.initialize()
         self._usage_start = self.llm.usage.snapshot() if hasattr(self.llm, "usage") else {}
+        self.emit("run_start", max_turns=self.max_turns,
+                  tools=[t.name for t in self.tool_registry.list_tools()])
         turn = 0
         terminated = False
         try:
@@ -329,6 +366,7 @@ Before each tool call, write one or two short sentences: what you learned from t
                         call = self.parse_tool_call(response.response)
                     except ValueError as e:
                         self.logger.log_warning(f"Malformed tool call: {e}")
+                        self.emit("parse_error", error=str(e))
                         self.history.append(ToolCallResult(
                             "<parse_error>", {}, {"ok": False, "data": None, "error": str(e)}, str(e)))
                         continue
@@ -355,6 +393,7 @@ Before each tool call, write one or two short sentences: what you learned from t
                 return
             report.update({"role": self.role or "agent", "log": self._log_name or "agent",
                            "turns": turns, "terminated": terminated})
+            self.emit("run_end", turns=turns, terminated=terminated, usage=report)
             self.logger.log(
                 f"USAGE: calls={report['calls']} tokens={report['total_tokens']} "
                 f"(in {report['input_tokens']} / out {report['output_tokens']}) "

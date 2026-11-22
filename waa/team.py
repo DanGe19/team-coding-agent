@@ -29,6 +29,7 @@ from .agent import Agent
 from .history import LLMResponse
 from .llm import LanguageModel
 from .logger import Logger
+from .events import EventLog
 from . import roles
 
 PLAN_RE = re.compile(r"<plan>\s*(.*?)\s*</plan>", re.DOTALL)
@@ -70,6 +71,7 @@ class TeamOrchestrator:
             raise RuntimeError(f"Log file already exists: {log_path}. Remove it to start a new run.")
         self.logger = Logger(log_path, self.debug)
         self.logger.log("Team mode: planner -> coder -> reviewer")
+        self.events = EventLog(self.working_dir)
 
         if self.llm is None:
             # Borrow Agent's factory so bedrock/mock selection stays in one place.
@@ -80,9 +82,13 @@ class TeamOrchestrator:
     def _cfg(self, key: str, default: Any) -> Any:
         return self.team_cfg.get(key, default)
 
+    def _emit(self, type: str, task_id=None, round=None, **data):
+        self.events.emit(type, role="orchestrator", task_id=task_id, round=round, data=data)
+
     def _make_agent(self, role: str, system_prompt: str, instruction: str,
-                    tools: Optional[List[str]], max_turns: int, log_name: str) -> Agent:
-        return Agent(
+                    tools: Optional[List[str]], max_turns: int, log_name: str,
+                    task_id: Optional[int] = None, round_no: Optional[int] = None) -> Agent:
+        agent = Agent(
             self.working_dir,
             debug=self.debug,
             role=role,
@@ -93,6 +99,9 @@ class TeamOrchestrator:
             log_name=log_name,
             llm=self.llm,
         )
+        agent.task_id = task_id
+        agent.round = round_no
+        return agent
 
     @staticmethod
     def _last_llm_text(agent: Agent) -> str:
@@ -151,6 +160,7 @@ class TeamOrchestrator:
             task.setdefault("acceptance", [])
 
         self.logger.log(f"Plan has {len(plan)} task(s): " + "; ".join(f"#{t['id']} {t['title']}" for t in plan))
+        self.events.emit("plan_created", role="planner", data={"tasks": plan})
         return plan
 
     def run_coder(self, task: Dict[str, Any], feedback: Optional[Dict[str, Any]], round_no: int) -> Agent:
@@ -162,6 +172,7 @@ class TeamOrchestrator:
             tools=roles.CODER_TOOLS,
             max_turns=self._cfg("coder_max_turns", 40),
             log_name=f"coder_t{task['id']}_r{round_no}",
+            task_id=task["id"], round_no=round_no,
         )
         agent.run()
         return agent
@@ -175,6 +186,7 @@ class TeamOrchestrator:
             tools=roles.REVIEWER_TOOLS,
             max_turns=self._cfg("reviewer_max_turns", 12),
             log_name=f"reviewer_t{task['id']}_r{round_no}",
+            task_id=task["id"], round_no=round_no,
         )
         agent.run()
         self._last_reviewer_usage = agent.usage_report()
@@ -193,6 +205,8 @@ class TeamOrchestrator:
         verdict.setdefault("issues", [])
         verdict.setdefault("summary", "")
         self.logger.log(f"Reviewer verdict: {verdict['verdict']} - {verdict['summary']}")
+        self.events.emit("review_verdict", role="reviewer", task_id=task["id"], round=round_no,
+                         data=verdict)
         return verdict
 
     # ------------------------------------------------------------------- main
@@ -201,12 +215,15 @@ class TeamOrchestrator:
         self._load_config()
         start = time.time()
         max_rounds = max(1, int(self._cfg("max_review_rounds", 3)))
+        self._emit("team_start", config=self.team_cfg)
 
         self.plan = self.run_planner()
         self.summary["plan"] = self.plan
 
         for task in self.plan:
             task_record = {"id": task["id"], "title": task["title"], "rounds": [], "final": None}
+            self._emit("task_start", task_id=task["id"], title=task["title"],
+                       acceptance=task.get("acceptance", []))
             feedback = None
             for round_no in range(1, max_rounds + 1):
                 coder = self.run_coder(task, feedback, round_no)
@@ -229,12 +246,16 @@ class TeamOrchestrator:
                 self.logger.log_warning(
                     f"Task #{task['id']} still rejected after {max_rounds} rounds; moving on")
             self.summary["tasks"].append(task_record)
+            self._emit("task_end", task_id=task["id"], final=task_record["final"],
+                       rounds=len(task_record["rounds"]))
             self._write_summary()
 
         self.summary["elapsed_sec"] = round(time.time() - start, 1)
         self.summary["usage_by_role"] = self._usage_by_role()
         self.summary["usage_total"] = self.llm.usage.snapshot() if hasattr(self.llm, "usage") else {}
         self._write_summary()
+        self._emit("team_end", elapsed_sec=self.summary["elapsed_sec"],
+                   usage_by_role=self.summary["usage_by_role"], usage_total=self.summary["usage_total"])
         self.logger.log_termination(
             sum(len(t["rounds"]) for t in self.summary["tasks"]),
             "Team run finished",

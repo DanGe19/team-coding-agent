@@ -23,8 +23,24 @@ Node.js 18+ and npm are also required.
 | tests/test_todo_mock_agent.py | 18 | pass |
 | tests/test_server_mock_agent.py | 8 | pass (runs npm install) |
 | tests/test_testing_tools.py | 10 | pass (installs Playwright) |
+| tests/test_team_mock.py | 4 | pass (team mode, mock LLM) |
+| tests/test_events.py | 3 | pass (event stream) |
 
 Run one with `python tests/<file>.py`.
+
+## Integration contract
+
+All features talk through the event stream `.waa/events.jsonl`.
+Read **docs/EVENTS.md** before writing code for the dashboard, memory or vision.
+`python -m waa.events <target>` prints a readable timeline of a run.
+
+## Team mode (planner / coder / reviewer)
+
+```bash
+waa --working-dir targets/chat_room --team --debug
+# or set "team": {"enabled": true} in .waa/config.json
+```
+Outputs: `.waa/logs/<role>_t<task>_r<round>.log`, `.waa/team_summary.json`, `.waa/usage.json`.
 
 ## Running the agent
 
