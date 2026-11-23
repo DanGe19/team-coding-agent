@@ -9,12 +9,13 @@ final project: planner/coder/reviewer team, vision loop, long-term memory, dashb
 ## Setup
 
 ```bash
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-pip install -e .
+bash scripts/setup.sh              # venv, python deps, playwright chromium
+source .venv/bin/activate
+export AWS_BEARER_TOKEN_BEDROCK=...
 ```
 
-Node.js 18+ and npm are also required.
+Node.js 18+ and npm are required. `bash scripts/validate_reference.sh <task>` runs every
+visible and hidden test of a new task against its reference solution (API + UI).
 
 ## Tests (HW3 Parts 1 & 2)
 
