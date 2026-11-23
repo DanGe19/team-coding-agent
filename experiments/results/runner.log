@@ -1,0 +1,14 @@
+[10:19:30] 6 runs planned, 0 already done
+[10:19:30] === kanban__baseline__r1 ===
+[10:21:14]   -> visible 8/0 hidden 15/0 tokens=520532 cost~$1.64322 rejects=0 94.2s
+[10:21:14] === kanban__baseline__r2 ===
+[10:22:54]   -> visible 8/0 hidden 15/0 tokens=473615 cost~$1.480509 rejects=0 89.0s
+[10:22:54] === kanban__baseline__r3 ===
+[10:24:28]   -> visible 8/0 hidden 15/0 tokens=455496 cost~$1.438056 rejects=0 85.3s
+[10:24:28] === kanban__team__r1 ===
+[10:27:21]   -> visible 8/0 hidden 15/0 tokens=523971 cost~$1.663317 rejects=0 164.8s
+[10:27:21] === kanban__team__r2 ===
+[10:35:44]   -> visible 8/0 hidden 15/0 tokens=1199546 cost~$3.986034 rejects=0 493.5s
+[10:35:44] === kanban__team__r3 ===
+[10:39:47]   -> visible 8/0 hidden 15/0 tokens=728693 cost~$2.353563 rejects=1 232.6s
+[10:39:47] all done

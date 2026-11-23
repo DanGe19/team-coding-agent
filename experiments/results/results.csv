@@ -1,0 +1,7 @@
+run_name,target,setting,repeat,started,status,wall_sec,agent_exit_code,visible_passed,visible_failed,hidden_passed,hidden_failed,llm_calls,input_tokens,output_tokens,total_tokens,cost_usd,tool_calls,tool_errors,plan_tasks,review_rejects,review_rounds,notes
+kanban__baseline__r1,kanban,baseline,1,2026-11-23T10:19:30,done,94.2,0,8,0,15,0,32,513730,6802,520532,1.64322,30,0,0,0,0,
+kanban__baseline__r2,kanban,baseline,2,2026-11-23T10:21:14,done,89.0,0,8,0,15,0,32,468643,4972,473615,1.480509,31,0,0,0,0,
+kanban__baseline__r3,kanban,baseline,3,2026-11-23T10:22:54,done,85.3,0,8,0,15,0,30,449532,5964,455496,1.438056,28,0,0,0,0,
+kanban__team__r1,kanban,team,1,2026-11-23T10:24:28,done,164.8,0,8,0,15,0,75,516354,7617,523971,1.663317,66,0,4,0,4,
+kanban__team__r2,kanban,team,2,2026-11-23T10:27:21,done,493.5,0,8,0,15,0,101,1167263,32283,1199546,3.986034,77,2,4,0,4,
+kanban__team__r3,kanban,team,3,2026-11-23T10:35:44,done,232.6,0,8,0,15,0,98,714736,13957,728693,2.353563,86,2,4,1,5,
