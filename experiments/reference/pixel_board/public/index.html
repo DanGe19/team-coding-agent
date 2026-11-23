@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pixel Board</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>Pixel Board</h1><span id="coords">–</span></header>
+<main>
+  <section class="left">
+    <div id="grid"></div>
+  </section>
+  <aside class="right">
+    <div class="panel"><h3>Tools</h3>
+      <div class="tools"><button id="tool-paint" class="tool active">Paint</button><button id="tool-fill" class="tool">Fill</button><button id="tool-row" class="tool">Row</button><button id="tool-col" class="tool">Col</button></div>
+      <div id="palette"></div>
+      <div class="history"><button id="btn-undo">Undo</button><button id="btn-redo">Redo</button><button id="btn-clear">Clear</button><span id="history-depth">0 / 50</span></div>
+    </div>
+    <div class="panel"><h3>Saves</h3>
+      <div class="row"><input id="save-name" placeholder="Name"><button id="btn-save">Save</button></div>
+      <div id="save-error" class="error"></div>
+      <div id="saves"></div>
+    </div>
+    <div class="panel"><h3>Export / Import</h3>
+      <button id="btn-export">Export</button><textarea id="export-output" rows="4" readonly></textarea>
+      <textarea id="import-input" rows="4" placeholder='{"cells":[...]}'></textarea><button id="btn-import">Import</button>
+      <div id="import-error" class="error"></div>
+    </div>
+  </aside>
+</main>
+<script src="app.js"></script>
+</body></html>
