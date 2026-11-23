@@ -109,6 +109,7 @@ test('export shows JSON and import round-trips; coords on hover; cell colors mat
   await page.locator('#palette .swatch[data-color="2"]').click();
   await cell(page, 7, 7).click();
   await page.locator('#btn-export').click();
+  await expect(page.locator('#export-output')).toHaveValue(/"cells"/);
   const json = JSON.parse(await page.locator('#export-output').inputValue());
   expect(json.cells[7 * 16 + 7]).toBe(2);
   expect(json.width).toBe(16);
