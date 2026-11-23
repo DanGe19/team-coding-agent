@@ -1,6 +1,6 @@
 # Kanban Board - Build Instructions
 
-Build a single-user Kanban board (like a very small Trello) with Node.js, Express and plain browser JavaScript (no frontend framework, no build step). Serve `public/` statically so `GET /` returns `public/index.html`. Put the server in `index.js`, listening on port 3000, and set `"start": "node index.js"` in `package.json`. Keep HTML, CSS and JS in separate files under `public/`.
+Build a single-user Kanban board (like a very small Trello) with Node.js, Express and plain browser JavaScript (no frontend framework, no build step). Serve `public/` statically so `GET /` returns `public/index.html`. Put the server in `index.js`, listening on port 3000. Keep HTML, CSS and JS in separate files under `public/`.
 
 ## What the board does
 
@@ -49,5 +49,7 @@ Returns **204**. 404 for unknown id.
 Deletes all cards (for tests). Returns **204**.
 
 ## Tests
+
+A `jest.config.js` is provided (it makes Jest skip the Playwright files); do not modify it and do not add a `"jest"` key to `package.json`.
 
 Visible tests are in `tests/api.test.js` (Jest + Supertest; it `require`s `../index`, so `index.js` must export the Express app and only call `listen` when run directly) and `tests/ui.test.js` (Playwright, needs the server on port 3000). Run them as you build and do not modify them. There are additional hidden tests that check the same specification more thoroughly, so follow the spec exactly, not just the visible tests.

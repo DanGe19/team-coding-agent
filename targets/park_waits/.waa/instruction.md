@@ -1,6 +1,6 @@
 # Park Wait Times - Build Instructions
 
-Build a theme-park wait-time simulator with Node.js, Express and plain browser JavaScript (no frontend framework, no build step). Serve `public/` statically so `GET /` returns `public/index.html`. Server in `index.js` on port 3000, `"start": "node index.js"` in `package.json`; `index.js` must export the Express app and only call `listen` when run directly. Keep HTML, CSS and JS in separate files under `public/`.
+Build a theme-park wait-time simulator with Node.js, Express and plain browser JavaScript (no frontend framework, no build step). Serve `public/` statically so `GET /` returns `public/index.html`. Server in `index.js` on port 3000; `index.js` must export the Express app and only call `listen` when run directly. Keep HTML, CSS and JS in separate files under `public/`.
 
 The park is modelled after a real one: five themed lands, eleven rides. Guests arrive, pick a ride, queue, ride, and pick another ride. The app shows the current estimated wait time of every ride, like the park's official app.
 
@@ -73,5 +73,7 @@ Header: `#sim-time` shows the simulated time as `HH:MM` starting from `09:00` (t
 The page fetches `/api/state` on load and after every button press, and while running it polls every `tickMs`. Must look clean and modern and work at 800px width.
 
 ## Tests
+
+A `jest.config.js` is provided (it makes Jest skip the Playwright files); do not modify it and do not add a `"jest"` key to `package.json`.
 
 Visible tests: `tests/api.test.js` (Jest + Supertest) and `tests/ui.test.js` (Playwright, server on port 3000, opens `/?test=1`). Do not modify them. Hidden tests check the same specification more thoroughly — including determinism with a seed, the tick order, and ride closing — so follow the spec exactly.

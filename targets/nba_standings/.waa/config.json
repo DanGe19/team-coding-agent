@@ -11,6 +11,7 @@
         ".waa/server.log",
         "data/sample_season.json",
         "tests/api.test.js",
-        "tests/ui.test.js"
+        "tests/ui.test.js",
+        "jest.config.js"
     ]
 }

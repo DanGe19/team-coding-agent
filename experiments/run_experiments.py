@@ -126,11 +126,11 @@ def ensure_test_deps(run_dir: Path, need_ui: bool, need_api: bool, log) -> None:
                        capture_output=True, text=True, timeout=600)
 
 
-def run_playwright(run_dir: Path, test_files: List[str], timeout: int, log) -> Dict[str, int]:
+def run_playwright(run_dir: Path, test_files: List[str], timeout: int, log, tag: str = "") -> Dict[str, int]:
     out = {"passed": 0, "failed": 0}
     if not test_files:
         return out
-    report = run_dir / ".waa" / "pw_report.json"
+    report = run_dir / ".waa" / f"pw_report{tag}.json"
     env = dict(os.environ, PLAYWRIGHT_JSON_OUTPUT_NAME=str(report))
     cmd = ["npx", "playwright", "test", *test_files, "--reporter=json"]
     try:
@@ -145,11 +145,11 @@ def run_playwright(run_dir: Path, test_files: List[str], timeout: int, log) -> D
     return out
 
 
-def run_jest(run_dir: Path, test_files: List[str], timeout: int, log) -> Dict[str, int]:
+def run_jest(run_dir: Path, test_files: List[str], timeout: int, log, tag: str = "") -> Dict[str, int]:
     out = {"passed": 0, "failed": 0}
     if not test_files:
         return out
-    report = run_dir / ".waa" / "jest_report.json"
+    report = run_dir / ".waa" / f"jest_report{tag}.json"
     cmd = ["npx", "jest", *test_files, "--json", f"--outputFile={report}", "--forceExit"]
     try:
         subprocess.run(cmd, cwd=run_dir, capture_output=True, text=True, timeout=timeout)
@@ -218,12 +218,12 @@ def evaluate(run_dir: Path, hidden_src: Optional[Path], timeout: int, log) -> Di
 
     server = start_server(run_dir, log) if (vis_ui or hid_ui) else None
     try:
-        v_ui = run_playwright(run_dir, vis_ui, timeout, log)
-        h_ui = run_playwright(run_dir, hid_ui, timeout, log)
+        v_ui = run_playwright(run_dir, vis_ui, timeout, log, "_visible")
+        h_ui = run_playwright(run_dir, hid_ui, timeout, log, "_hidden")
     finally:
         stop_server(server)
-    v_api = run_jest(run_dir, vis_api, timeout, log)
-    h_api = run_jest(run_dir, hid_api, timeout, log)
+    v_api = run_jest(run_dir, vis_api, timeout, log, "_visible")
+    h_api = run_jest(run_dir, hid_api, timeout, log, "_hidden")
 
     res["visible_passed"] = v_ui["passed"] + v_api["passed"]
     res["visible_failed"] = v_ui["failed"] + v_api["failed"]

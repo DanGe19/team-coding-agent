@@ -1,6 +1,6 @@
 # League Standings Tracker - Build Instructions
 
-Build a basketball league standings tracker with Node.js, Express and plain browser JavaScript (no frontend framework, no build step). Serve `public/` statically so `GET /` returns `public/index.html`. Server in `index.js` on port 3000, `"start": "node index.js"` in `package.json`; `index.js` must export the Express app and only call `listen` when run directly. Separate HTML, CSS and JS files under `public/`.
+Build a basketball league standings tracker with Node.js, Express and plain browser JavaScript (no frontend framework, no build step). Serve `public/` statically so `GET /` returns `public/index.html`. Server in `index.js` on port 3000; `index.js` must export the Express app and only call `listen` when run directly. Separate HTML, CSS and JS files under `public/`.
 
 The league has 30 fixed teams in two conferences (East, West) and six divisions. Users record game results and player stat lines; the app computes standings, streaks, averages and an injury report. All data lives in memory; `data/sample_season.json` (provided, read-only) contains a sample season that can be imported.
 
@@ -59,5 +59,7 @@ Clicking a team row opens `#team-panel` showing `.team-name`, `.team-record` (`"
 The page fetches from the API on load and after every change. Design: clean, modern, sports-site feel; readable at 800px width.
 
 ## Tests
+
+A `jest.config.js` is provided (it makes Jest skip the Playwright files); do not modify it and do not add a `"jest"` key to `package.json`.
 
 Visible tests: `tests/api.test.js` (Jest + Supertest) and `tests/ui.test.js` (Playwright, server on port 3000). Do not modify them or `data/sample_season.json`. Hidden tests check the same specification more thoroughly — standings math on the sample season, tie-breaks, streaks, last-10, GB, injuries and deletions — so follow the spec exactly.

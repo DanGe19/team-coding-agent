@@ -10,6 +10,7 @@
         ".waa/agent.log",
         ".waa/server.log",
         "tests/api.test.js",
-        "tests/ui.test.js"
+        "tests/ui.test.js",
+        "jest.config.js"
     ]
 }

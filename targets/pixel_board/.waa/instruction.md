@@ -1,6 +1,6 @@
 # Pixel Board - Build Instructions
 
-Build a pixel-art editor with undo/redo, using Node.js, Express and plain browser JavaScript (no frontend framework, no build step, no `<canvas>` — the grid is made of DOM elements). Serve `public/` statically so `GET /` returns `public/index.html`. Server in `index.js` on port 3000, `"start": "node index.js"` in `package.json`; `index.js` must export the Express app and only call `listen` when run directly. Separate HTML, CSS and JS under `public/`.
+Build a pixel-art editor with undo/redo, using Node.js, Express and plain browser JavaScript (no frontend framework, no build step, no `<canvas>` — the grid is made of DOM elements). Serve `public/` statically so `GET /` returns `public/index.html`. Server in `index.js` on port 3000; `index.js` must export the Express app and only call `listen` when run directly. Separate HTML, CSS and JS under `public/`.
 
 The board state and its history live **on the server** (in memory). The browser is a thin client: every action is an API call, and the page re-renders from the server's response.
 
@@ -55,5 +55,7 @@ Board responses always have this shape (call it **BoardState**):
 - Design: dark UI around a bright grid, clear active states, usable at 800 px width.
 
 ## Tests
+
+A `jest.config.js` is provided (it makes Jest skip the Playwright files); do not modify it and do not add a `"jest"` key to `package.json`.
 
 Visible tests: `tests/api.test.js` (Jest + Supertest) and `tests/ui.test.js` (Playwright, server on port 3000). Do not modify them. Hidden tests cover the rest of the spec — flood-fill semantics, the no-op rule, redo invalidation, the 50-step cap, saves/load/import in history, cell geometry — so follow the spec exactly.
