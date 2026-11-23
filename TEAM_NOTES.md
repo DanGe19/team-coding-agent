@@ -2,7 +2,8 @@
 
 Team: Kaicheng Cao, Weichao Huang, Jung Yoon, Jingyang Chen
 
-This repo starts from Assignment 3 (WAA, the Web-App Agent) and will grow into the
+This repo starts from Jingyang's Assignment 3 solution (WAA, the Web-App Agent;
+report and logs in docs/hw3/, apps it built in experiments/reference/hw3_built/) and grows into the
 final project: planner/coder/reviewer team, vision loop, long-term memory, dashboard.
 
 ## Setup
@@ -47,7 +48,8 @@ Outputs: `.waa/logs/<role>_t<task>_r<round>.log`, `.waa/team_summary.json`, `.wa
 | target | source | visible tests | hidden tests |
 |---|---|---|---|
 | chat_room | HW3 | tests/ | — (todo) |
-| tetris | HW3 | tests/m1_core (+m2, m3 in milestones/) | — (todo) |
+| tetris | HW3 | tests/m1_core, m2_rules, m3_leaderboard | — (todo) |
+| snake | HW3 (Jingyang's custom task, "Portal Snake") | tests/ | — (todo) |
 | kanban | new | 5 api + 3 ui | 8 api + 7 ui in experiments/hidden_tests/kanban |
 | park_waits | new | 5 api + 3 ui | 10 api + 7 ui in experiments/hidden_tests/park_waits |
 | nba_standings | new | 5 api + 3 ui | 12 api + 7 ui in experiments/hidden_tests/nba_standings |

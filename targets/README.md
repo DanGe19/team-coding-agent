@@ -6,6 +6,9 @@ Each folder is one task the agent must build from scratch. A task folder contain
 - `.waa/config.json` — model, turn limit, protected files, feature flags
 - `tests/` — **visible** tests (the agent can read and run them)
 
+The apps WAA actually built for the HW3 tasks (chat_room, tetris M3, snake) are kept in
+`experiments/reference/hw3_built/` — they are the base for the planted-bug benchmark.
+
 **Hidden** tests for the new tasks live in `experiments/hidden_tests/<task>/` and are run by
 `experiments/run_experiments.py` after the agent finishes. A known-good **reference solution**
 for each new task is in `experiments/reference/<task>/` (never shown to the agent); every visible
@@ -15,6 +18,7 @@ and hidden API test passes against it.
 |---|---|---|---|---|
 | chat_room | HW3 | basic Express + Handlebars app, REST + UI | api + ui | — |
 | tetris | HW3 (3 milestones) | game logic behind a fixed `window.__tetris` interface | ui per milestone | — |
+| snake | HW3 custom task | "Portal Snake": wrap-around arena, seeded PRNG, leaderboard API | api + ui | — |
 | kanban | new | CRUD with ordering invariants (renumbering, clamping) | 5 api + 3 ui | 8 api + 7 ui |
 | park_waits | new | tick-based simulation, seeded randomness, map layout | 5 api + 3 ui | 10 api + 7 ui |
 | nba_standings | new | derived statistics, tie-break rules, deletions roll back | 5 api + 3 ui | 12 api + 7 ui |

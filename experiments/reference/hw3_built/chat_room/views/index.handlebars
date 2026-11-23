@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WAA Chat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="app-wrapper">
+    <!-- Sticky Header -->
+    <header class="app-header">
+      <div class="header-inner">
+        <div class="header-left">
+          <h1 class="app-title">WAA Chat</h1>
+          <span class="message-count" id="messageCount">{{messages.length}} messages</span>
+        </div>
+        <button class="refresh-btn" id="refreshBtn" title="Refresh messages">
+          &#x21BB; Refresh
+        </button>
+      </div>
+    </header>
+
+    <!-- Messages Area -->
+    <main class="messages-area" id="messagesArea">
+      {{#if messages.length}}
+        {{#each messages}}
+        <div class="message-card {{#if (eq username ../currentUser)}}card-mine{{else}}card-other{{/if}}" data-id="{{id}}">
+          <div class="message-header">
+            <span class="message-username">{{username}}</span>
+            <span class="message-time">{{formatTime timestamp}}</span>
+          </div>
+          <span class="message-text">{{text}}</span>
+        </div>
+        {{/each}}
+      {{else}}
+        <div class="empty-state" id="emptyState">
+          <p>No messages yet. Be the first to say something! 🎉</p>
+        </div>
+      {{/if}}
+    </main>
+
+    <!-- Post Form -->
+    <footer class="post-form-footer">
+      <form class="post-form" id="postForm">
+        <div class="form-row">
+          <input
+            type="text"
+            id="username"
+            name="username"
+            class="input-username"
+            placeholder="Your name"
+            autocomplete="off"
+            required
+          />
+        </div>
+        <div class="form-row form-row-message">
+          <textarea
+            id="message"
+            name="message"
+            class="input-message"
+            placeholder="Type a message…"
+            rows="2"
+            required
+          ></textarea>
+          <button type="submit" class="send-btn" id="sendBtn">Send</button>
+        </div>
+        <div class="form-error" id="formError"></div>
+      </form>
+    </footer>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>

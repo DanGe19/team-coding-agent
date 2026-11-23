@@ -1,0 +1,13 @@
+{
+    "llm_type": "bedrock",
+    "model": "us.anthropic.claude-sonnet-4-6",
+    "max_turns": 50,
+    "protected_files": [
+        ".waa/config.json",
+        ".waa/instruction.md",
+        ".waa/agent.log",
+        ".waa/server.log",
+        "tests/ui.test.js",
+        "tests/api.test.js"
+    ]
+}

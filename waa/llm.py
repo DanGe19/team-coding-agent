@@ -81,7 +81,7 @@ class BedrockLanguageModel(LanguageModel):
         super().__init__()
         self.model_name = model_name
         self.temperature = 0.0
-        self.max_tokens = 8000
+        self.max_tokens = 6000
         self.usage = Usage(model_name, pricing)
 
         self.api_key = api_key or os.getenv("AWS_BEARER_TOKEN_BEDROCK")
@@ -135,6 +135,7 @@ class BedrockLanguageModel(LanguageModel):
             }
             if system:
                 request["system"] = system
+            request["inferenceConfig"]["stopSequences"] = ["</tool_call>"]
             t0 = time.time()
             response = self.client.converse(**request)
             latency_ms = (time.time() - t0) * 1000
@@ -144,10 +145,14 @@ class BedrockLanguageModel(LanguageModel):
                 int(u.get("outputTokens", 0)),
                 float(response.get("metrics", {}).get("latencyMs", latency_ms)),
             )
-            return "".join(
+            text = "".join(
                 block["text"] for block in response["output"]["message"]["content"]
                 if "text" in block
             )
+            # Generation stops at the closing tag (stop sequence), so put it back.
+            if response.get("stopReason") == "stop_sequence" and "<tool_call>" in text:
+                text += "</tool_call>"
+            return text
         except Exception as e:
             raise RuntimeError(f"Bedrock API error: {str(e)}")
 

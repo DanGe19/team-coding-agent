@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Side Tetris</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Side Tetris</h1>
+  <div class="game-layout">
+    <div id="board">
+      <canvas id="board-canvas"></canvas>
+      <div id="paused">
+        <div class="overlay-card paused-card">
+          <h2>Paused</h2>
+          <button id="resume-btn">Resume</button>
+        </div>
+      </div>
+      <div id="game-over">
+        <div class="overlay-card game-over-card">
+          <h2>Game Over</h2>
+          <p>Score: <span id="final-score">0</span></p>
+          <form id="score-form">
+            <input name="name" maxlength="20" placeholder="Your name" autocomplete="off">
+            <button type="submit">Save score</button>
+          </form>
+          <div id="save-status"></div>
+          <button id="restart-overlay-btn">Restart</button>
+        </div>
+      </div>
+    </div>
+    <div class="side-panel">
+      <div class="panel-section">
+        <h3>Next</h3>
+        <div id="next">
+          <canvas id="next-canvas" width="168" height="168"></canvas>
+        </div>
+      </div>
+      <div class="panel-section stats-section">
+        <div class="stat-row">
+          <span class="stat-label">Score</span>
+          <span id="score">0</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">Lines</span>
+          <span id="lines">0</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">Level</span>
+          <span id="level">1</span>
+        </div>
+      </div>
+      <div class="panel-section buttons-section">
+        <button id="start-btn">Start</button>
+        <button id="pause-btn">Pause</button>
+        <button id="restart-btn">Restart</button>
+      </div>
+      <div class="panel-section leaderboard-section">
+        <h3>Leaderboard</h3>
+        <p id="no-scores" style="display:none">No scores yet</p>
+        <ol id="leaderboard"></ol>
+      </div>
+      <div class="panel-section controls-section">
+        <strong>Controls</strong>
+        <div class="controls-list">
+          <span>&#8593;&#8595;</span><span>Move up/down</span>
+          <span>&#8594;</span><span>Soft drop (left side)</span>
+          <span>&#8592;</span><span>Soft drop (right side)</span>
+          <span>Z / X</span><span>Rotate CCW / CW</span>
+          <span>Space</span><span>Hard drop</span>
+          <span>P</span><span>Pause / Resume</span>
+          <span>R</span><span>Restart</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="game.js"></script>
+  <script src="render.js"></script>
+</body>
+</html>

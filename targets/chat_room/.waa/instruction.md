@@ -9,14 +9,28 @@ There should also be a button to refresh the page manually.
 Please be sure to make the website cool looking, clean, and modern.
 You should remember to create separate `.js` and `.css` files to manage styles and behaviors.
 
-Design preferences for this chat room:
-- Dark theme: near-black background, soft gray message cards, one accent color (teal) for buttons and usernames.
-- Messages look like chat bubbles. Show the username in bold, the text below it, and the time in small gray text aligned right.
-- Newest messages at the bottom; the message list should auto-scroll to the bottom after loading or posting.
-- The input form stays fixed at the bottom of the page. Pressing Enter in the message box sends the message.
-- Remember the username in `localStorage` so the user does not retype it after a refresh.
-- Show a small "last updated HH:MM:SS" label next to the manual refresh button.
-- Keep everything responsive so it looks fine on a phone-sized window.
+
+### Look and Feel
+
+- Macaron pastel theme: a soft cream background (#FFF8F0), with pastel accents - mint green (#B5EAD7) for the send button, baby pink (#FFD6E0) for the current user's message cards, lavender (#E2D5F8) for other users' message cards, and pale yellow (#FFF1B5) for the header. Dark warm gray text (#5A4A4A) for readability. Rounded corners everywhere and a soft, slightly playful look; use a clean rounded sans-serif font such as Nunito or Quicksand.
+- Layout: a centered column at most 720px wide. A sticky header with the title "WAA Chat", a new message counter (e.g. "12 messages"), and the manual refresh button on the right. Messages scroll in the middle; the post form is pinned at the bottom.
+- Each message is a rounded card showing the username in bold, the text, and the time formatted as a human-readable local time (e.g. "14:05"). Keep the username and the text in two separate `<span>` elements.
+- Remember the last used username in localStorage so the user does not have to retype it.
+- Clear the message input after a successful post and keep focus on it; pressing Enter submits the form.
+- Show a small inline error message (never a browser alert dialog) if the server rejects a post.
+- File layout: `index.js` (server), `views/index.handlebars` (template, if using handlebars views) or `public/index.html`, `public/style.css`, `public/script.js`.
+
+
+### Implementation Notes (important for the tests)
+
+- `index.js` must `module.exports = app` and only call `app.listen(3000)` when run
+  directly (`if (require.main === module)`), otherwise the API tests will fail with
+  EADDRINUSE while the dev server is running.
+- The UI tests do not clear messages between runs. Before running the Playwright tests,
+  call `DELETE /api/messages` (or restart the server) so each username appears only once.
+- Workflow: npm.init -> write server -> npm.start -> supertest.init + supertest.run ->
+  write frontend -> playwright.init + playwright.run -> fix until both pass -> npm.stop.
+
 
 On the server side, there should be a Restful API to get messages (`GET /api/messages`) and one to publish a message (`POST /api/message`).
 These messages should be stored in memory without utilizing files or databases, so everytime the server is restart, all the messages are wiped out and can be populated anew.

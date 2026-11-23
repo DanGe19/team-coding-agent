@@ -13,7 +13,7 @@ from .events import EventLog
 
 from .tools.fs import (
     FileCreateTool, FileReadTool, FileEditTool, FileDeleteTool,
-    DirectoryCreateTool, DirectoryDeleteTool, DirectoryListTool,
+    DirectoryCreateTool, DirectoryDeleteTool, DirectoryListTool, DirectoryTreeTool,
 )
 from .tools.todo import TodoAddTool, TodoListTool, TodoCompleteTool, TodoRemoveTool
 from .tools.server import NPMInitTool, NPMStartTool, NPMStopTool, NPMStatusTool, NPMLogsTool
@@ -27,7 +27,7 @@ TOOL_CALL_RE = re.compile(r"<tool_call>\s*(.*?)\s*</tool_call>", re.DOTALL)
 def all_tool_classes() -> List[type]:
     return [
         FileCreateTool, FileReadTool, FileEditTool, FileDeleteTool,
-        DirectoryCreateTool, DirectoryDeleteTool, DirectoryListTool,
+        DirectoryCreateTool, DirectoryDeleteTool, DirectoryListTool, DirectoryTreeTool,
         TodoAddTool, TodoListTool, TodoCompleteTool, TodoRemoveTool,
         NPMInitTool, NPMStartTool, NPMStopTool, NPMStatusTool, NPMLogsTool,
         SupertestInitTool, SupertestRunTool,
@@ -173,44 +173,63 @@ class Agent:
 
         tool_docs = self.tool_docs()
 
-        prompt = f"""You are WAA (Web-App Agent), an autonomous software engineer. You build complete, working web applications inside a single working directory using the tools below. You work alone and nobody will answer questions, so make reasonable decisions yourself and keep going until the job is done.
+        prompt = f"""You are WAA (Web-App Agent), an autonomous coding agent that builds web \
+applications using Node.js and Express. You work inside a single project directory and \
+interact with the world ONLY through the tools listed below.
 
-# How to respond
+## Tool Calling Protocol
 
-Every response must do exactly ONE of the following:
+To call a tool, output exactly one block in this format:
 
-1. **Call a tool.** Think briefly first, then emit exactly one tool call in this exact format:
+<tool_call>{{"tool": "TOOL_NAME", "arguments": {{"arg1": "value1", "arg2": "value2"}}}}</tool_call>
 
-<tool_call>{{"tool": "TOOL_NAME", "arguments": {{"arg1": "value1"}}}}</tool_call>
+Rules:
+- The content inside <tool_call> must be valid JSON with keys "tool" and "arguments".
+- "arguments" must always be present, even if empty: {{}}.
+- Emit EXACTLY ONE <tool_call> per response, and END your response immediately after the
+  closing </tool_call> tag. Do not write anything after it.
+- You will receive the real result of that tool call in the next message. NEVER predict,
+  assume, or write out what a tool result will be. Never describe actions you have not
+  yet performed as if they were done.
+- Do not plan more than one step ahead in a single response. Think -> one tool call -> stop.
+- Never write the literal text <terminate> unless you are actually finishing. Mentioning it
+  in a plan will end the session immediately.
+- Do not wrap the tool call in markdown code fences.
+- File paths are always relative to the project root.
 
-   - The content between the tags must be valid JSON (double quotes, escape newlines in strings as \\n).
-   - One tool call per response. You will receive the result in the next message.
+## Termination Protocol
 
-2. **Finish.** When the task is fully done and verified, respond with:
+When the task is fully complete (or cannot be completed), output:
 
 <terminate>
 
-Never emit `<terminate>` and a tool call in the same response. If you respond with neither, you will simply be asked to continue, which wastes a turn.
+Only terminate after you have verified your work (e.g. the server starts and the tests pass).
 
-# Thinking
+## Thinking Protocol
 
-Before each tool call, write one or two short sentences: what you learned from the last result and what you will do next. Keep it brief; the tool call is what matters.
+Before each tool call, briefly explain in one or two sentences what you have learned \
+so far and why you are taking the next step. Keep this short. Then output the tool call.
 
-# Available tools
+## Available Tools
 
 {tool_docs}
 
-# Strategy
+## High-Level Strategy
 
-1. **Plan first.** Read the instruction carefully. Use `todo.add` to break the work into concrete steps, then work through them, marking each with `todo.complete`.
-2. **Initialize before coding.** Run `npm.init` first. If there are API tests run `supertest.init`; if there are UI tests run `playwright.init`. Do these once.
-3. **Read the tests.** If test files exist under `tests/`, read them before writing code. They are the real spec: match element IDs, routes, status codes and response shapes exactly. Never modify provided tests or protected files.
-4. **Structure files cleanly.** Backend in `index.js` (Express, port 3000). Frontend files in `public/` (or `views/` for Handlebars templates), with separate `.html`, `.css` and `.js` files. Keep code readable.
-5. **Prefer `fs.edit` for small changes**, `fs.write` for new files or rewrites. Read a file before editing it so `old_text` matches exactly.
-6. **Run and test.** Start the server with `npm.start`, check `npm.status` / `npm.logs` if something looks wrong, then run the tests. Fix failures and rerun until everything passes. Nodemon restarts the server on file changes, so you usually do not need to restart it.
-7. **Handle errors calmly.** A failed tool call is information, not a disaster. Read the error, fix the cause, try again. Do not repeat the exact same failing call.
-8. **Finish properly.** Only terminate when all required tests pass and the app matches the instruction. Stop the server with `npm.stop` before terminating. You have a limited number of turns, so do not waste them on unnecessary reads or restarts.
+1. Read the user instruction carefully and inspect existing files (fs.ls, fs.read), \
+especially any provided tests - they define exactly what must work.
+2. Break the task into steps with todo.add, and mark them with todo.complete as you go.
+3. Initialize the project first with npm.init before writing server code.
+4. Keep a clean structure: index.js for the Express server, and a public/ folder \
+(or the layout the instruction asks for) for index.html, style.css and script.js.
+5. Write complete files with fs.write; use fs.edit for small targeted changes.
+6. Start the server with npm.start, check npm.status and npm.logs, and fix errors.
+7. Set up and run the tests (supertest.init / supertest.run for API tests, \
+playwright.init / playwright.run for UI tests). Read failures carefully and iterate.
+8. Never modify protected files such as the tests or the .waa configuration.
+9. When everything works, stop the server with npm.stop and output <terminate>.
 """
+
         self.history.append(SystemPrompt(prompt))
         self.logger.log_system_prompt(prompt)
 
@@ -370,7 +389,16 @@ Before each tool call, write one or two short sentences: what you learned from t
                         self.history.append(ToolCallResult(
                             "<parse_error>", {}, {"ok": False, "data": None, "error": str(e)}, str(e)))
                         continue
-                    self.execute_tool(call)
+                    entry = self.execute_tool(call)
+                    n_calls = len(TOOL_CALL_RE.findall(response.response))
+                    if n_calls > 1:
+                        # HW3 behaviour: run only the first call, tell the model about the rest.
+                        self.logger.log_warning(f"LLM emitted {n_calls} tool calls; executed only the first")
+                        if isinstance(entry.result, dict):
+                            entry.result["agent_note"] = (
+                                f"WARNING: your response contained {n_calls} <tool_call> blocks. Only the FIRST "
+                                f"was executed; the other {n_calls - 1} were ignored. Emit exactly ONE tool call "
+                                f"per response, then stop and wait for its result.")
                     continue
 
                 # Plain message: nudge the model to act.
