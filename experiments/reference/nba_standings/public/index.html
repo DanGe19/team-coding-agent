@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>League Standings</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header>
+  <div class="brand">League Standings</div>
+  <nav><button id="tab-standings" class="tab active">Standings</button><button id="tab-players" class="tab">Players</button><button id="tab-injuries" class="tab">Injuries</button></nav>
+  <div class="actions"><button id="btn-import">Import sample season</button><button id="btn-reset" class="danger">Reset</button></div>
+</header>
+<main>
+<section id="view-standings">
+  <div class="tables">
+    <table id="standings-east" class="standings"><caption>East</caption><thead></thead><tbody></tbody></table>
+    <table id="standings-west" class="standings"><caption>West</caption><thead></thead><tbody></tbody></table>
+  </div>
+  <form id="game-form" class="card">
+    <h3>Add game result</h3>
+    <select id="home-team"></select><input id="home-score" type="number" min="0" placeholder="Home">
+    <span>vs</span>
+    <select id="away-team"></select><input id="away-score" type="number" min="0" placeholder="Away">
+    <input id="game-date" type="date"><button id="btn-add-game" type="submit">Add</button>
+    <div id="game-error" class="error"></div>
+  </form>
+  <aside id="team-panel" class="card" hidden>
+    <h3><span class="team-name"></span> <span class="team-record"></span></h3>
+    <h4>Roster</h4><table class="roster"><thead><tr><th>#</th><th>Name</th><th>Pos</th><th>PPG</th><th>RPG</th><th>APG</th><th>Injury</th></tr></thead><tbody></tbody></table>
+    <h4>Games</h4><ul class="games"></ul>
+  </aside>
+</section>
+<section id="view-players" hidden>
+  <div class="filters"><select id="filter-team"><option value="">All teams</option></select>
+    <select id="filter-position"><option value="">All positions</option><option>PG</option><option>SG</option><option>SF</option><option>PF</option><option>C</option></select>
+    <select id="filter-status"><option value="">All statuses</option><option>healthy</option><option>day-to-day</option><option>out</option></select></div>
+  <table id="players-table"><thead><tr><th>Name</th><th>Team</th><th>Pos</th><th>GP</th><th>PPG</th><th>RPG</th><th>APG</th><th>Status</th><th></th></tr></thead><tbody></tbody></table>
+  <form id="player-form" class="card"><h3>Add player</h3>
+    <input id="p-name" placeholder="Name"><select id="p-team"></select>
+    <select id="p-position"><option>PG</option><option>SG</option><option>SF</option><option>PF</option><option>C</option></select>
+    <input id="p-number" type="number" min="0" max="99" placeholder="#"><button id="btn-add-player" type="submit">Add</button>
+    <div id="player-error" class="error"></div></form>
+</section>
+<section id="view-injuries" hidden>
+  <table id="injuries-table"><thead><tr><th>Name</th><th>Team</th><th>Pos</th><th>Status</th><th>Note</th><th>Return</th></tr></thead><tbody></tbody></table>
+  <p id="injuries-empty" hidden>No injuries reported</p>
+</section>
+</main>
+<script src="app.js"></script>
+</body></html>

@@ -1,0 +1,19 @@
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,sans-serif;background:#f6f7f9;color:#14171a}
+header{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;padding:10px 16px;background:#0b1f3a;color:#fff}
+.brand{font-weight:800;letter-spacing:.02em}nav .tab{background:transparent;color:#cbd5e1;border:none;padding:8px 12px;cursor:pointer;border-bottom:2px solid transparent}
+nav .tab.active{color:#fff;border-bottom-color:#f59e0b}.actions button{margin-left:6px}
+button{border:1px solid #cbd5e1;background:#fff;border-radius:6px;padding:6px 10px;cursor:pointer}button.danger{border-color:#ef4444;color:#b91c1c}
+main{max-width:1200px;margin:0 auto;padding:16px}.tables{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:900px){.tables{grid-template-columns:1fr}}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+caption{text-align:left;font-weight:700;padding:8px 10px;font-size:16px}th,td{padding:6px 8px;text-align:right;font-size:13px;border-bottom:1px solid #eef0f3}
+th:nth-child(2),td:nth-child(2),td.name,th:first-child{text-align:left}th{background:#f1f5f9;cursor:pointer;user-select:none;font-weight:600}
+.standings td.team,td.name{text-align:left;font-weight:600}.team-row{cursor:pointer}.team-row:hover{filter:brightness(.97)}
+.zone-playoff{background:#ecfdf5}.zone-playin{background:#fffbeb}.zone-out{background:#fff}
+.sep-6 td{border-bottom:2px solid #10b981}.sep-10 td{border-bottom:2px dashed #f59e0b}
+.card{background:#fff;border-radius:8px;padding:12px;margin-top:16px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+#game-form,.filters,#player-form{display:flex;flex-wrap:wrap;gap:8px;align-items:center}#game-form h3,#player-form h3{width:100%;margin:0 0 4px;font-size:15px}
+input,select{padding:6px;border:1px solid #cbd5e1;border-radius:6px}input[type=number]{width:80px}.error{color:#b91c1c;width:100%;min-height:1em;font-size:13px}
+.badge-out,.badge-dtd{display:inline-block;padding:1px 6px;border-radius:999px;font-size:11px;font-weight:600}.badge-out{background:#fee2e2;color:#991b1b}.badge-dtd{background:#fef3c7;color:#92400e}
+#team-panel h4{margin:12px 0 6px}#team-panel .games{list-style:none;padding:0;margin:0;font-size:13px}#team-panel .game-row{padding:3px 0;border-bottom:1px solid #eef0f3}
+.injury-editor{display:flex;gap:4px;flex-wrap:wrap}.injury-editor input,.injury-editor select{padding:3px;font-size:12px}

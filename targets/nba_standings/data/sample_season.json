@@ -1,0 +1,8144 @@
+{
+ "teams": [
+  {
+   "id": "BOS",
+   "name": "Boston Celtics",
+   "conference": "East",
+   "division": "Atlantic"
+  },
+  {
+   "id": "BKN",
+   "name": "Brooklyn Nets",
+   "conference": "East",
+   "division": "Atlantic"
+  },
+  {
+   "id": "NYK",
+   "name": "New York Knicks",
+   "conference": "East",
+   "division": "Atlantic"
+  },
+  {
+   "id": "PHI",
+   "name": "Philadelphia 76ers",
+   "conference": "East",
+   "division": "Atlantic"
+  },
+  {
+   "id": "TOR",
+   "name": "Toronto Raptors",
+   "conference": "East",
+   "division": "Atlantic"
+  },
+  {
+   "id": "CHI",
+   "name": "Chicago Bulls",
+   "conference": "East",
+   "division": "Central"
+  },
+  {
+   "id": "CLE",
+   "name": "Cleveland Cavaliers",
+   "conference": "East",
+   "division": "Central"
+  },
+  {
+   "id": "DET",
+   "name": "Detroit Pistons",
+   "conference": "East",
+   "division": "Central"
+  },
+  {
+   "id": "IND",
+   "name": "Indiana Pacers",
+   "conference": "East",
+   "division": "Central"
+  },
+  {
+   "id": "MIL",
+   "name": "Milwaukee Bucks",
+   "conference": "East",
+   "division": "Central"
+  },
+  {
+   "id": "ATL",
+   "name": "Atlanta Hawks",
+   "conference": "East",
+   "division": "Southeast"
+  },
+  {
+   "id": "CHA",
+   "name": "Charlotte Hornets",
+   "conference": "East",
+   "division": "Southeast"
+  },
+  {
+   "id": "MIA",
+   "name": "Miami Heat",
+   "conference": "East",
+   "division": "Southeast"
+  },
+  {
+   "id": "ORL",
+   "name": "Orlando Magic",
+   "conference": "East",
+   "division": "Southeast"
+  },
+  {
+   "id": "WAS",
+   "name": "Washington Wizards",
+   "conference": "East",
+   "division": "Southeast"
+  },
+  {
+   "id": "DEN",
+   "name": "Denver Nuggets",
+   "conference": "West",
+   "division": "Northwest"
+  },
+  {
+   "id": "MIN",
+   "name": "Minnesota Timberwolves",
+   "conference": "West",
+   "division": "Northwest"
+  },
+  {
+   "id": "OKC",
+   "name": "Oklahoma City Thunder",
+   "conference": "West",
+   "division": "Northwest"
+  },
+  {
+   "id": "POR",
+   "name": "Portland Trail Blazers",
+   "conference": "West",
+   "division": "Northwest"
+  },
+  {
+   "id": "UTA",
+   "name": "Utah Jazz",
+   "conference": "West",
+   "division": "Northwest"
+  },
+  {
+   "id": "GSW",
+   "name": "Golden State Warriors",
+   "conference": "West",
+   "division": "Pacific"
+  },
+  {
+   "id": "LAC",
+   "name": "LA Clippers",
+   "conference": "West",
+   "division": "Pacific"
+  },
+  {
+   "id": "LAL",
+   "name": "Los Angeles Lakers",
+   "conference": "West",
+   "division": "Pacific"
+  },
+  {
+   "id": "PHX",
+   "name": "Phoenix Suns",
+   "conference": "West",
+   "division": "Pacific"
+  },
+  {
+   "id": "SAC",
+   "name": "Sacramento Kings",
+   "conference": "West",
+   "division": "Pacific"
+  },
+  {
+   "id": "DAL",
+   "name": "Dallas Mavericks",
+   "conference": "West",
+   "division": "Southwest"
+  },
+  {
+   "id": "HOU",
+   "name": "Houston Rockets",
+   "conference": "West",
+   "division": "Southwest"
+  },
+  {
+   "id": "MEM",
+   "name": "Memphis Grizzlies",
+   "conference": "West",
+   "division": "Southwest"
+  },
+  {
+   "id": "NOP",
+   "name": "New Orleans Pelicans",
+   "conference": "West",
+   "division": "Southwest"
+  },
+  {
+   "id": "SAS",
+   "name": "San Antonio Spurs",
+   "conference": "West",
+   "division": "Southwest"
+  }
+ ],
+ "players": [
+  {
+   "id": 1,
+   "name": "Andre Hayes",
+   "teamId": "BOS",
+   "position": "PG",
+   "number": 35,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 2,
+   "name": "Grant Cole",
+   "teamId": "BOS",
+   "position": "SF",
+   "number": 18,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 3,
+   "name": "Nico Morgan",
+   "teamId": "BOS",
+   "position": "C",
+   "number": 41,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 4,
+   "name": "Cam Cole",
+   "teamId": "BKN",
+   "position": "PG",
+   "number": 1,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 5,
+   "name": "Isaiah Gray",
+   "teamId": "BKN",
+   "position": "SF",
+   "number": 29,
+   "injury": {
+    "status": "out",
+    "note": "Sprained ankle",
+    "expectedReturn": "2026-12-15"
+   }
+  },
+  {
+   "id": 6,
+   "name": "Luka Hayes",
+   "teamId": "BKN",
+   "position": "C",
+   "number": 25,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 7,
+   "name": "Cam Webb",
+   "teamId": "NYK",
+   "position": "PG",
+   "number": 31,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 8,
+   "name": "Tyrese Rivera",
+   "teamId": "NYK",
+   "position": "SF",
+   "number": 32,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 9,
+   "name": "Josh Lane",
+   "teamId": "NYK",
+   "position": "C",
+   "number": 25,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 10,
+   "name": "Evan Ward",
+   "teamId": "PHI",
+   "position": "PG",
+   "number": 26,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 11,
+   "name": "Cam Lane",
+   "teamId": "PHI",
+   "position": "SF",
+   "number": 32,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 12,
+   "name": "Evan Carter",
+   "teamId": "PHI",
+   "position": "C",
+   "number": 36,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 13,
+   "name": "Trey Morgan",
+   "teamId": "TOR",
+   "position": "PG",
+   "number": 3,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 14,
+   "name": "Evan Bennett",
+   "teamId": "TOR",
+   "position": "SF",
+   "number": 45,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 15,
+   "name": "Josh Rivera",
+   "teamId": "TOR",
+   "position": "C",
+   "number": 30,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 16,
+   "name": "Jordan Lane",
+   "teamId": "CHI",
+   "position": "PG",
+   "number": 14,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 17,
+   "name": "Tyrese Hart",
+   "teamId": "CHI",
+   "position": "SF",
+   "number": 43,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 18,
+   "name": "Jaylen Webb",
+   "teamId": "CHI",
+   "position": "C",
+   "number": 16,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 19,
+   "name": "Grant Perry",
+   "teamId": "CLE",
+   "position": "PG",
+   "number": 42,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 20,
+   "name": "Kyle Webb",
+   "teamId": "CLE",
+   "position": "SF",
+   "number": 41,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 21,
+   "name": "Evan Lane",
+   "teamId": "CLE",
+   "position": "C",
+   "number": 25,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 22,
+   "name": "Luka Price",
+   "teamId": "DET",
+   "position": "PG",
+   "number": 18,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 23,
+   "name": "Darius Carter",
+   "teamId": "DET",
+   "position": "SF",
+   "number": 2,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 24,
+   "name": "Jordan Dean",
+   "teamId": "DET",
+   "position": "C",
+   "number": 29,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 25,
+   "name": "Evan Lane",
+   "teamId": "IND",
+   "position": "PG",
+   "number": 23,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 26,
+   "name": "Cade Ward",
+   "teamId": "IND",
+   "position": "SF",
+   "number": 44,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 27,
+   "name": "Jaylen Hart",
+   "teamId": "IND",
+   "position": "C",
+   "number": 32,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 28,
+   "name": "Jaylen Rivera",
+   "teamId": "MIL",
+   "position": "PG",
+   "number": 35,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 29,
+   "name": "Marcus Cole",
+   "teamId": "MIL",
+   "position": "SF",
+   "number": 20,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 30,
+   "name": "Nico Bennett",
+   "teamId": "MIL",
+   "position": "C",
+   "number": 28,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 31,
+   "name": "Evan Ward",
+   "teamId": "ATL",
+   "position": "PG",
+   "number": 28,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 32,
+   "name": "Malik Rivera",
+   "teamId": "ATL",
+   "position": "SF",
+   "number": 30,
+   "injury": {
+    "status": "day-to-day",
+    "note": "Knee soreness",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 33,
+   "name": "Devin Ward",
+   "teamId": "ATL",
+   "position": "C",
+   "number": 31,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 34,
+   "name": "Isaiah Bennett",
+   "teamId": "CHA",
+   "position": "PG",
+   "number": 12,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 35,
+   "name": "Luka Morgan",
+   "teamId": "CHA",
+   "position": "SF",
+   "number": 28,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 36,
+   "name": "Jalen Hayes",
+   "teamId": "CHA",
+   "position": "C",
+   "number": 0,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 37,
+   "name": "Nico Bishop",
+   "teamId": "MIA",
+   "position": "PG",
+   "number": 34,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 38,
+   "name": "Devin Dean",
+   "teamId": "MIA",
+   "position": "SF",
+   "number": 12,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 39,
+   "name": "Trey Bennett",
+   "teamId": "MIA",
+   "position": "C",
+   "number": 39,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 40,
+   "name": "Marcus Webb",
+   "teamId": "ORL",
+   "position": "PG",
+   "number": 17,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 41,
+   "name": "Isaiah Morgan",
+   "teamId": "ORL",
+   "position": "SF",
+   "number": 0,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 42,
+   "name": "Andre Bishop",
+   "teamId": "ORL",
+   "position": "C",
+   "number": 36,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 43,
+   "name": "Jaylen Morgan",
+   "teamId": "WAS",
+   "position": "PG",
+   "number": 34,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 44,
+   "name": "Trey Lane",
+   "teamId": "WAS",
+   "position": "SF",
+   "number": 37,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 45,
+   "name": "Jordan Dean",
+   "teamId": "WAS",
+   "position": "C",
+   "number": 44,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 46,
+   "name": "Evan Cole",
+   "teamId": "DEN",
+   "position": "PG",
+   "number": 5,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 47,
+   "name": "Luka Foster",
+   "teamId": "DEN",
+   "position": "SF",
+   "number": 8,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 48,
+   "name": "Cam Cole",
+   "teamId": "DEN",
+   "position": "C",
+   "number": 32,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 49,
+   "name": "Luka Perry",
+   "teamId": "MIN",
+   "position": "PG",
+   "number": 9,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 50,
+   "name": "Evan Price",
+   "teamId": "MIN",
+   "position": "SF",
+   "number": 24,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 51,
+   "name": "Jalen Bennett",
+   "teamId": "MIN",
+   "position": "C",
+   "number": 24,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 52,
+   "name": "Devin Reed",
+   "teamId": "OKC",
+   "position": "PG",
+   "number": 22,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 53,
+   "name": "Isaiah Carter",
+   "teamId": "OKC",
+   "position": "SF",
+   "number": 1,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 54,
+   "name": "Evan Lane",
+   "teamId": "OKC",
+   "position": "C",
+   "number": 20,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 55,
+   "name": "Kyle Hart",
+   "teamId": "POR",
+   "position": "PG",
+   "number": 20,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 56,
+   "name": "Tyrese Lane",
+   "teamId": "POR",
+   "position": "SF",
+   "number": 29,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 57,
+   "name": "Cam Dean",
+   "teamId": "POR",
+   "position": "C",
+   "number": 10,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 58,
+   "name": "Jordan Bishop",
+   "teamId": "UTA",
+   "position": "PG",
+   "number": 33,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 59,
+   "name": "Cade Rivera",
+   "teamId": "UTA",
+   "position": "SF",
+   "number": 39,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 60,
+   "name": "Andre Hart",
+   "teamId": "UTA",
+   "position": "C",
+   "number": 38,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 61,
+   "name": "Trey Hayes",
+   "teamId": "GSW",
+   "position": "PG",
+   "number": 35,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 62,
+   "name": "Zion Reed",
+   "teamId": "GSW",
+   "position": "SF",
+   "number": 12,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 63,
+   "name": "Malik Reed",
+   "teamId": "GSW",
+   "position": "C",
+   "number": 41,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 64,
+   "name": "Grant Reed",
+   "teamId": "LAC",
+   "position": "PG",
+   "number": 28,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 65,
+   "name": "Cade Lane",
+   "teamId": "LAC",
+   "position": "SF",
+   "number": 45,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 66,
+   "name": "Jalen Morgan",
+   "teamId": "LAC",
+   "position": "C",
+   "number": 41,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 67,
+   "name": "Evan Price",
+   "teamId": "LAL",
+   "position": "PG",
+   "number": 33,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 68,
+   "name": "Jordan Foster",
+   "teamId": "LAL",
+   "position": "SF",
+   "number": 42,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 69,
+   "name": "Malik Perry",
+   "teamId": "LAL",
+   "position": "C",
+   "number": 17,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 70,
+   "name": "Luka Webb",
+   "teamId": "PHX",
+   "position": "PG",
+   "number": 26,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 71,
+   "name": "Devin Perry",
+   "teamId": "PHX",
+   "position": "SF",
+   "number": 19,
+   "injury": {
+    "status": "out",
+    "note": "Hamstring strain",
+    "expectedReturn": "2027-01-05"
+   }
+  },
+  {
+   "id": 72,
+   "name": "Malik Gray",
+   "teamId": "PHX",
+   "position": "C",
+   "number": 11,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 73,
+   "name": "Darius Hart",
+   "teamId": "SAC",
+   "position": "PG",
+   "number": 31,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 74,
+   "name": "Luka Cole",
+   "teamId": "SAC",
+   "position": "SF",
+   "number": 29,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 75,
+   "name": "Malik Brooks",
+   "teamId": "SAC",
+   "position": "C",
+   "number": 33,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 76,
+   "name": "Jaylen Hart",
+   "teamId": "DAL",
+   "position": "PG",
+   "number": 7,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 77,
+   "name": "Evan Stone",
+   "teamId": "DAL",
+   "position": "SF",
+   "number": 17,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 78,
+   "name": "Tyrese Price",
+   "teamId": "DAL",
+   "position": "C",
+   "number": 14,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 79,
+   "name": "Jalen Hayes",
+   "teamId": "HOU",
+   "position": "PG",
+   "number": 29,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 80,
+   "name": "Andre Rivera",
+   "teamId": "HOU",
+   "position": "SF",
+   "number": 34,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 81,
+   "name": "Malik Carter",
+   "teamId": "HOU",
+   "position": "C",
+   "number": 22,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 82,
+   "name": "Malik Gray",
+   "teamId": "MEM",
+   "position": "PG",
+   "number": 35,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 83,
+   "name": "Cam Webb",
+   "teamId": "MEM",
+   "position": "SF",
+   "number": 13,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 84,
+   "name": "Tyrese Dean",
+   "teamId": "MEM",
+   "position": "C",
+   "number": 45,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 85,
+   "name": "Darius Webb",
+   "teamId": "NOP",
+   "position": "PG",
+   "number": 36,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 86,
+   "name": "Cade Bishop",
+   "teamId": "NOP",
+   "position": "SF",
+   "number": 18,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 87,
+   "name": "Cam Ward",
+   "teamId": "NOP",
+   "position": "C",
+   "number": 42,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 88,
+   "name": "Grant Morgan",
+   "teamId": "SAS",
+   "position": "PG",
+   "number": 6,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 89,
+   "name": "Darius Bennett",
+   "teamId": "SAS",
+   "position": "SF",
+   "number": 27,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  },
+  {
+   "id": 90,
+   "name": "Malik Bennett",
+   "teamId": "SAS",
+   "position": "C",
+   "number": 43,
+   "injury": {
+    "status": "healthy",
+    "note": "",
+    "expectedReturn": null
+   }
+  }
+ ],
+ "games": [
+  {
+   "id": 1,
+   "date": "2026-11-01",
+   "homeTeam": "LAL",
+   "awayTeam": "DEN",
+   "homeScore": 119,
+   "awayScore": 126
+  },
+  {
+   "id": 2,
+   "date": "2026-11-01",
+   "homeTeam": "MIA",
+   "awayTeam": "WAS",
+   "homeScore": 128,
+   "awayScore": 134
+  },
+  {
+   "id": 3,
+   "date": "2026-11-01",
+   "homeTeam": "NOP",
+   "awayTeam": "MEM",
+   "homeScore": 121,
+   "awayScore": 128
+  },
+  {
+   "id": 4,
+   "date": "2026-11-01",
+   "homeTeam": "POR",
+   "awayTeam": "DET",
+   "homeScore": 126,
+   "awayScore": 107
+  },
+  {
+   "id": 5,
+   "date": "2026-11-01",
+   "homeTeam": "CLE",
+   "awayTeam": "LAC",
+   "homeScore": 122,
+   "awayScore": 109
+  },
+  {
+   "id": 6,
+   "date": "2026-11-02",
+   "homeTeam": "OKC",
+   "awayTeam": "HOU",
+   "homeScore": 124,
+   "awayScore": 127
+  },
+  {
+   "id": 7,
+   "date": "2026-11-02",
+   "homeTeam": "IND",
+   "awayTeam": "GSW",
+   "homeScore": 121,
+   "awayScore": 118
+  },
+  {
+   "id": 8,
+   "date": "2026-11-02",
+   "homeTeam": "NYK",
+   "awayTeam": "TOR",
+   "homeScore": 121,
+   "awayScore": 128
+  },
+  {
+   "id": 9,
+   "date": "2026-11-02",
+   "homeTeam": "CHA",
+   "awayTeam": "MIN",
+   "homeScore": 125,
+   "awayScore": 129
+  },
+  {
+   "id": 10,
+   "date": "2026-11-02",
+   "homeTeam": "BKN",
+   "awayTeam": "CHI",
+   "homeScore": 121,
+   "awayScore": 113
+  },
+  {
+   "id": 11,
+   "date": "2026-11-03",
+   "homeTeam": "SAC",
+   "awayTeam": "ORL",
+   "homeScore": 129,
+   "awayScore": 124
+  },
+  {
+   "id": 12,
+   "date": "2026-11-03",
+   "homeTeam": "SAS",
+   "awayTeam": "UTA",
+   "homeScore": 120,
+   "awayScore": 109
+  },
+  {
+   "id": 13,
+   "date": "2026-11-03",
+   "homeTeam": "BOS",
+   "awayTeam": "PHX",
+   "homeScore": 128,
+   "awayScore": 96
+  },
+  {
+   "id": 14,
+   "date": "2026-11-03",
+   "homeTeam": "MIL",
+   "awayTeam": "PHI",
+   "homeScore": 126,
+   "awayScore": 135
+  },
+  {
+   "id": 15,
+   "date": "2026-11-03",
+   "homeTeam": "ATL",
+   "awayTeam": "DAL",
+   "homeScore": 125,
+   "awayScore": 128
+  },
+  {
+   "id": 16,
+   "date": "2026-11-04",
+   "homeTeam": "MIN",
+   "awayTeam": "DEN",
+   "homeScore": 106,
+   "awayScore": 119
+  },
+  {
+   "id": 17,
+   "date": "2026-11-04",
+   "homeTeam": "GSW",
+   "awayTeam": "SAS",
+   "homeScore": 127,
+   "awayScore": 115
+  },
+  {
+   "id": 18,
+   "date": "2026-11-04",
+   "homeTeam": "DET",
+   "awayTeam": "DAL",
+   "homeScore": 113,
+   "awayScore": 122
+  },
+  {
+   "id": 19,
+   "date": "2026-11-04",
+   "homeTeam": "CHI",
+   "awayTeam": "UTA",
+   "homeScore": 116,
+   "awayScore": 96
+  },
+  {
+   "id": 20,
+   "date": "2026-11-04",
+   "homeTeam": "WAS",
+   "awayTeam": "LAC",
+   "homeScore": 117,
+   "awayScore": 100
+  },
+  {
+   "id": 21,
+   "date": "2026-11-05",
+   "homeTeam": "BKN",
+   "awayTeam": "SAC",
+   "homeScore": 102,
+   "awayScore": 121
+  },
+  {
+   "id": 22,
+   "date": "2026-11-05",
+   "homeTeam": "IND",
+   "awayTeam": "HOU",
+   "homeScore": 109,
+   "awayScore": 104
+  },
+  {
+   "id": 23,
+   "date": "2026-11-05",
+   "homeTeam": "ATL",
+   "awayTeam": "POR",
+   "homeScore": 107,
+   "awayScore": 113
+  },
+  {
+   "id": 24,
+   "date": "2026-11-05",
+   "homeTeam": "OKC",
+   "awayTeam": "MIA",
+   "homeScore": 117,
+   "awayScore": 106
+  },
+  {
+   "id": 25,
+   "date": "2026-11-05",
+   "homeTeam": "ORL",
+   "awayTeam": "MEM",
+   "homeScore": 128,
+   "awayScore": 119
+  },
+  {
+   "id": 26,
+   "date": "2026-11-06",
+   "homeTeam": "NOP",
+   "awayTeam": "MIL",
+   "homeScore": 120,
+   "awayScore": 127
+  },
+  {
+   "id": 27,
+   "date": "2026-11-06",
+   "homeTeam": "PHX",
+   "awayTeam": "LAL",
+   "homeScore": 122,
+   "awayScore": 106
+  },
+  {
+   "id": 28,
+   "date": "2026-11-06",
+   "homeTeam": "TOR",
+   "awayTeam": "CLE",
+   "homeScore": 110,
+   "awayScore": 118
+  },
+  {
+   "id": 29,
+   "date": "2026-11-06",
+   "homeTeam": "PHI",
+   "awayTeam": "NYK",
+   "homeScore": 127,
+   "awayScore": 136
+  },
+  {
+   "id": 30,
+   "date": "2026-11-06",
+   "homeTeam": "CHA",
+   "awayTeam": "BOS",
+   "homeScore": 113,
+   "awayScore": 107
+  },
+  {
+   "id": 31,
+   "date": "2026-11-07",
+   "homeTeam": "SAS",
+   "awayTeam": "HOU",
+   "homeScore": 106,
+   "awayScore": 115
+  },
+  {
+   "id": 32,
+   "date": "2026-11-07",
+   "homeTeam": "WAS",
+   "awayTeam": "MEM",
+   "homeScore": 122,
+   "awayScore": 124
+  },
+  {
+   "id": 33,
+   "date": "2026-11-07",
+   "homeTeam": "MIL",
+   "awayTeam": "CLE",
+   "homeScore": 122,
+   "awayScore": 131
+  },
+  {
+   "id": 34,
+   "date": "2026-11-07",
+   "homeTeam": "CHA",
+   "awayTeam": "NYK",
+   "homeScore": 111,
+   "awayScore": 104
+  },
+  {
+   "id": 35,
+   "date": "2026-11-07",
+   "homeTeam": "UTA",
+   "awayTeam": "DET",
+   "homeScore": 128,
+   "awayScore": 119
+  },
+  {
+   "id": 36,
+   "date": "2026-11-08",
+   "homeTeam": "MIA",
+   "awayTeam": "TOR",
+   "homeScore": 116,
+   "awayScore": 122
+  },
+  {
+   "id": 37,
+   "date": "2026-11-08",
+   "homeTeam": "PHX",
+   "awayTeam": "PHI",
+   "homeScore": 121,
+   "awayScore": 127
+  },
+  {
+   "id": 38,
+   "date": "2026-11-08",
+   "homeTeam": "POR",
+   "awayTeam": "BOS",
+   "homeScore": 126,
+   "awayScore": 123
+  },
+  {
+   "id": 39,
+   "date": "2026-11-08",
+   "homeTeam": "ORL",
+   "awayTeam": "CHI",
+   "homeScore": 127,
+   "awayScore": 136
+  },
+  {
+   "id": 40,
+   "date": "2026-11-08",
+   "homeTeam": "MIN",
+   "awayTeam": "OKC",
+   "homeScore": 120,
+   "awayScore": 124
+  },
+  {
+   "id": 41,
+   "date": "2026-11-09",
+   "homeTeam": "GSW",
+   "awayTeam": "LAL",
+   "homeScore": 122,
+   "awayScore": 97
+  },
+  {
+   "id": 42,
+   "date": "2026-11-09",
+   "homeTeam": "DAL",
+   "awayTeam": "ATL",
+   "homeScore": 121,
+   "awayScore": 128
+  },
+  {
+   "id": 43,
+   "date": "2026-11-09",
+   "homeTeam": "IND",
+   "awayTeam": "DEN",
+   "homeScore": 115,
+   "awayScore": 116
+  },
+  {
+   "id": 44,
+   "date": "2026-11-09",
+   "homeTeam": "BKN",
+   "awayTeam": "NOP",
+   "homeScore": 116,
+   "awayScore": 107
+  },
+  {
+   "id": 45,
+   "date": "2026-11-09",
+   "homeTeam": "SAC",
+   "awayTeam": "LAC",
+   "homeScore": 102,
+   "awayScore": 110
+  },
+  {
+   "id": 46,
+   "date": "2026-11-10",
+   "homeTeam": "DET",
+   "awayTeam": "MEM",
+   "homeScore": 109,
+   "awayScore": 116
+  },
+  {
+   "id": 47,
+   "date": "2026-11-10",
+   "homeTeam": "WAS",
+   "awayTeam": "OKC",
+   "homeScore": 117,
+   "awayScore": 125
+  },
+  {
+   "id": 48,
+   "date": "2026-11-10",
+   "homeTeam": "POR",
+   "awayTeam": "DAL",
+   "homeScore": 128,
+   "awayScore": 102
+  },
+  {
+   "id": 49,
+   "date": "2026-11-10",
+   "homeTeam": "NOP",
+   "awayTeam": "MIL",
+   "homeScore": 103,
+   "awayScore": 120
+  },
+  {
+   "id": 50,
+   "date": "2026-11-10",
+   "homeTeam": "SAC",
+   "awayTeam": "CLE",
+   "homeScore": 122,
+   "awayScore": 117
+  },
+  {
+   "id": 51,
+   "date": "2026-11-11",
+   "homeTeam": "MIN",
+   "awayTeam": "PHX",
+   "homeScore": 121,
+   "awayScore": 129
+  },
+  {
+   "id": 52,
+   "date": "2026-11-11",
+   "homeTeam": "BKN",
+   "awayTeam": "DEN",
+   "homeScore": 131,
+   "awayScore": 122
+  },
+  {
+   "id": 53,
+   "date": "2026-11-11",
+   "homeTeam": "NYK",
+   "awayTeam": "ATL",
+   "homeScore": 103,
+   "awayScore": 122
+  },
+  {
+   "id": 54,
+   "date": "2026-11-11",
+   "homeTeam": "LAC",
+   "awayTeam": "MIA",
+   "homeScore": 101,
+   "awayScore": 98
+  },
+  {
+   "id": 55,
+   "date": "2026-11-11",
+   "homeTeam": "HOU",
+   "awayTeam": "SAS",
+   "homeScore": 120,
+   "awayScore": 112
+  },
+  {
+   "id": 56,
+   "date": "2026-11-12",
+   "homeTeam": "TOR",
+   "awayTeam": "CHA",
+   "homeScore": 127,
+   "awayScore": 134
+  },
+  {
+   "id": 57,
+   "date": "2026-11-12",
+   "homeTeam": "GSW",
+   "awayTeam": "BOS",
+   "homeScore": 118,
+   "awayScore": 115
+  },
+  {
+   "id": 58,
+   "date": "2026-11-12",
+   "homeTeam": "IND",
+   "awayTeam": "PHI",
+   "homeScore": 124,
+   "awayScore": 99
+  },
+  {
+   "id": 59,
+   "date": "2026-11-12",
+   "homeTeam": "ORL",
+   "awayTeam": "UTA",
+   "homeScore": 118,
+   "awayScore": 126
+  },
+  {
+   "id": 60,
+   "date": "2026-11-12",
+   "homeTeam": "LAL",
+   "awayTeam": "CHI",
+   "homeScore": 115,
+   "awayScore": 102
+  },
+  {
+   "id": 61,
+   "date": "2026-11-13",
+   "homeTeam": "NYK",
+   "awayTeam": "GSW",
+   "homeScore": 111,
+   "awayScore": 102
+  },
+  {
+   "id": 62,
+   "date": "2026-11-13",
+   "homeTeam": "OKC",
+   "awayTeam": "CLE",
+   "homeScore": 114,
+   "awayScore": 113
+  },
+  {
+   "id": 63,
+   "date": "2026-11-13",
+   "homeTeam": "LAL",
+   "awayTeam": "DAL",
+   "homeScore": 111,
+   "awayScore": 124
+  },
+  {
+   "id": 64,
+   "date": "2026-11-13",
+   "homeTeam": "SAS",
+   "awayTeam": "POR",
+   "homeScore": 122,
+   "awayScore": 131
+  },
+  {
+   "id": 65,
+   "date": "2026-11-13",
+   "homeTeam": "SAC",
+   "awayTeam": "LAC",
+   "homeScore": 128,
+   "awayScore": 124
+  },
+  {
+   "id": 66,
+   "date": "2026-11-14",
+   "homeTeam": "MIN",
+   "awayTeam": "PHI",
+   "homeScore": 119,
+   "awayScore": 122
+  },
+  {
+   "id": 67,
+   "date": "2026-11-14",
+   "homeTeam": "PHX",
+   "awayTeam": "DET",
+   "homeScore": 117,
+   "awayScore": 102
+  },
+  {
+   "id": 68,
+   "date": "2026-11-14",
+   "homeTeam": "TOR",
+   "awayTeam": "ATL",
+   "homeScore": 110,
+   "awayScore": 115
+  },
+  {
+   "id": 69,
+   "date": "2026-11-14",
+   "homeTeam": "UTA",
+   "awayTeam": "ORL",
+   "homeScore": 120,
+   "awayScore": 128
+  },
+  {
+   "id": 70,
+   "date": "2026-11-14",
+   "homeTeam": "MIA",
+   "awayTeam": "CHA",
+   "homeScore": 111,
+   "awayScore": 98
+  },
+  {
+   "id": 71,
+   "date": "2026-11-15",
+   "homeTeam": "BOS",
+   "awayTeam": "MIL",
+   "homeScore": 110,
+   "awayScore": 119
+  },
+  {
+   "id": 72,
+   "date": "2026-11-15",
+   "homeTeam": "NOP",
+   "awayTeam": "MEM",
+   "homeScore": 116,
+   "awayScore": 114
+  },
+  {
+   "id": 73,
+   "date": "2026-11-15",
+   "homeTeam": "BKN",
+   "awayTeam": "WAS",
+   "homeScore": 123,
+   "awayScore": 120
+  },
+  {
+   "id": 74,
+   "date": "2026-11-15",
+   "homeTeam": "DEN",
+   "awayTeam": "CHI",
+   "homeScore": 125,
+   "awayScore": 117
+  },
+  {
+   "id": 75,
+   "date": "2026-11-15",
+   "homeTeam": "HOU",
+   "awayTeam": "IND",
+   "homeScore": 104,
+   "awayScore": 96
+  },
+  {
+   "id": 76,
+   "date": "2026-11-16",
+   "homeTeam": "CLE",
+   "awayTeam": "ATL",
+   "homeScore": 109,
+   "awayScore": 118
+  },
+  {
+   "id": 77,
+   "date": "2026-11-16",
+   "homeTeam": "SAC",
+   "awayTeam": "LAC",
+   "homeScore": 112,
+   "awayScore": 118
+  },
+  {
+   "id": 78,
+   "date": "2026-11-16",
+   "homeTeam": "OKC",
+   "awayTeam": "POR",
+   "homeScore": 110,
+   "awayScore": 103
+  },
+  {
+   "id": 79,
+   "date": "2026-11-16",
+   "homeTeam": "GSW",
+   "awayTeam": "DAL",
+   "homeScore": 125,
+   "awayScore": 116
+  },
+  {
+   "id": 80,
+   "date": "2026-11-16",
+   "homeTeam": "NYK",
+   "awayTeam": "CHA",
+   "homeScore": 119,
+   "awayScore": 113
+  },
+  {
+   "id": 81,
+   "date": "2026-11-17",
+   "homeTeam": "MEM",
+   "awayTeam": "DEN",
+   "homeScore": 126,
+   "awayScore": 135
+  },
+  {
+   "id": 82,
+   "date": "2026-11-17",
+   "homeTeam": "UTA",
+   "awayTeam": "TOR",
+   "homeScore": 127,
+   "awayScore": 120
+  },
+  {
+   "id": 83,
+   "date": "2026-11-17",
+   "homeTeam": "BOS",
+   "awayTeam": "PHX",
+   "homeScore": 100,
+   "awayScore": 109
+  },
+  {
+   "id": 84,
+   "date": "2026-11-17",
+   "homeTeam": "PHI",
+   "awayTeam": "HOU",
+   "homeScore": 121,
+   "awayScore": 115
+  },
+  {
+   "id": 85,
+   "date": "2026-11-17",
+   "homeTeam": "ORL",
+   "awayTeam": "BKN",
+   "homeScore": 125,
+   "awayScore": 134
+  },
+  {
+   "id": 86,
+   "date": "2026-11-18",
+   "homeTeam": "CHI",
+   "awayTeam": "MIN",
+   "homeScore": 121,
+   "awayScore": 129
+  },
+  {
+   "id": 87,
+   "date": "2026-11-18",
+   "homeTeam": "WAS",
+   "awayTeam": "LAL",
+   "homeScore": 103,
+   "awayScore": 116
+  },
+  {
+   "id": 88,
+   "date": "2026-11-18",
+   "homeTeam": "IND",
+   "awayTeam": "MIL",
+   "homeScore": 126,
+   "awayScore": 102
+  },
+  {
+   "id": 89,
+   "date": "2026-11-18",
+   "homeTeam": "MIA",
+   "awayTeam": "NOP",
+   "homeScore": 117,
+   "awayScore": 123
+  },
+  {
+   "id": 90,
+   "date": "2026-11-18",
+   "homeTeam": "SAS",
+   "awayTeam": "DET",
+   "homeScore": 119,
+   "awayScore": 121
+  },
+  {
+   "id": 91,
+   "date": "2026-11-19",
+   "homeTeam": "MIA",
+   "awayTeam": "ATL",
+   "homeScore": 122,
+   "awayScore": 128
+  },
+  {
+   "id": 92,
+   "date": "2026-11-19",
+   "homeTeam": "CLE",
+   "awayTeam": "MIL",
+   "homeScore": 102,
+   "awayScore": 109
+  },
+  {
+   "id": 93,
+   "date": "2026-11-19",
+   "homeTeam": "CHI",
+   "awayTeam": "DEN",
+   "homeScore": 102,
+   "awayScore": 114
+  },
+  {
+   "id": 94,
+   "date": "2026-11-19",
+   "homeTeam": "BKN",
+   "awayTeam": "IND",
+   "homeScore": 108,
+   "awayScore": 115
+  },
+  {
+   "id": 95,
+   "date": "2026-11-19",
+   "homeTeam": "GSW",
+   "awayTeam": "PHX",
+   "homeScore": 127,
+   "awayScore": 132
+  },
+  {
+   "id": 96,
+   "date": "2026-11-20",
+   "homeTeam": "PHI",
+   "awayTeam": "SAS",
+   "homeScore": 120,
+   "awayScore": 99
+  },
+  {
+   "id": 97,
+   "date": "2026-11-20",
+   "homeTeam": "TOR",
+   "awayTeam": "POR",
+   "homeScore": 112,
+   "awayScore": 116
+  },
+  {
+   "id": 98,
+   "date": "2026-11-20",
+   "homeTeam": "NYK",
+   "awayTeam": "SAC",
+   "homeScore": 114,
+   "awayScore": 115
+  },
+  {
+   "id": 99,
+   "date": "2026-11-20",
+   "homeTeam": "BOS",
+   "awayTeam": "LAL",
+   "homeScore": 114,
+   "awayScore": 107
+  },
+  {
+   "id": 100,
+   "date": "2026-11-20",
+   "homeTeam": "MEM",
+   "awayTeam": "CHA",
+   "homeScore": 114,
+   "awayScore": 120
+  },
+  {
+   "id": 101,
+   "date": "2026-11-21",
+   "homeTeam": "HOU",
+   "awayTeam": "OKC",
+   "homeScore": 127,
+   "awayScore": 136
+  },
+  {
+   "id": 102,
+   "date": "2026-11-21",
+   "homeTeam": "NOP",
+   "awayTeam": "ORL",
+   "homeScore": 121,
+   "awayScore": 115
+  },
+  {
+   "id": 103,
+   "date": "2026-11-21",
+   "homeTeam": "WAS",
+   "awayTeam": "DAL",
+   "homeScore": 120,
+   "awayScore": 121
+  },
+  {
+   "id": 104,
+   "date": "2026-11-21",
+   "homeTeam": "DET",
+   "awayTeam": "LAC",
+   "homeScore": 130,
+   "awayScore": 123
+  },
+  {
+   "id": 105,
+   "date": "2026-11-21",
+   "homeTeam": "MIN",
+   "awayTeam": "UTA",
+   "homeScore": 122,
+   "awayScore": 98
+  },
+  {
+   "id": 106,
+   "date": "2026-11-22",
+   "homeTeam": "SAC",
+   "awayTeam": "NOP",
+   "homeScore": 109,
+   "awayScore": 120
+  },
+  {
+   "id": 107,
+   "date": "2026-11-22",
+   "homeTeam": "GSW",
+   "awayTeam": "HOU",
+   "homeScore": 125,
+   "awayScore": 132
+  },
+  {
+   "id": 108,
+   "date": "2026-11-22",
+   "homeTeam": "LAC",
+   "awayTeam": "DEN",
+   "homeScore": 123,
+   "awayScore": 110
+  },
+  {
+   "id": 109,
+   "date": "2026-11-22",
+   "homeTeam": "CHA",
+   "awayTeam": "CLE",
+   "homeScore": 104,
+   "awayScore": 102
+  },
+  {
+   "id": 110,
+   "date": "2026-11-22",
+   "homeTeam": "MIN",
+   "awayTeam": "LAL",
+   "homeScore": 124,
+   "awayScore": 121
+  },
+  {
+   "id": 111,
+   "date": "2026-11-23",
+   "homeTeam": "DAL",
+   "awayTeam": "BKN",
+   "homeScore": 115,
+   "awayScore": 107
+  },
+  {
+   "id": 112,
+   "date": "2026-11-23",
+   "homeTeam": "TOR",
+   "awayTeam": "OKC",
+   "homeScore": 124,
+   "awayScore": 101
+  },
+  {
+   "id": 113,
+   "date": "2026-11-23",
+   "homeTeam": "CHI",
+   "awayTeam": "ATL",
+   "homeScore": 115,
+   "awayScore": 118
+  },
+  {
+   "id": 114,
+   "date": "2026-11-23",
+   "homeTeam": "DET",
+   "awayTeam": "ORL",
+   "homeScore": 109,
+   "awayScore": 121
+  },
+  {
+   "id": 115,
+   "date": "2026-11-23",
+   "homeTeam": "IND",
+   "awayTeam": "POR",
+   "homeScore": 117,
+   "awayScore": 126
+  },
+  {
+   "id": 116,
+   "date": "2026-11-24",
+   "homeTeam": "SAS",
+   "awayTeam": "MEM",
+   "homeScore": 128,
+   "awayScore": 122
+  },
+  {
+   "id": 117,
+   "date": "2026-11-24",
+   "homeTeam": "MIL",
+   "awayTeam": "UTA",
+   "homeScore": 115,
+   "awayScore": 112
+  },
+  {
+   "id": 118,
+   "date": "2026-11-24",
+   "homeTeam": "PHI",
+   "awayTeam": "PHX",
+   "homeScore": 121,
+   "awayScore": 130
+  },
+  {
+   "id": 119,
+   "date": "2026-11-24",
+   "homeTeam": "MIA",
+   "awayTeam": "NYK",
+   "homeScore": 107,
+   "awayScore": 113
+  },
+  {
+   "id": 120,
+   "date": "2026-11-24",
+   "homeTeam": "BOS",
+   "awayTeam": "WAS",
+   "homeScore": 118,
+   "awayScore": 126
+  },
+  {
+   "id": 121,
+   "date": "2026-11-25",
+   "homeTeam": "TOR",
+   "awayTeam": "WAS",
+   "homeScore": 120,
+   "awayScore": 116
+  },
+  {
+   "id": 122,
+   "date": "2026-11-25",
+   "homeTeam": "BOS",
+   "awayTeam": "NYK",
+   "homeScore": 111,
+   "awayScore": 110
+  },
+  {
+   "id": 123,
+   "date": "2026-11-25",
+   "homeTeam": "MEM",
+   "awayTeam": "DAL",
+   "homeScore": 123,
+   "awayScore": 112
+  },
+  {
+   "id": 124,
+   "date": "2026-11-25",
+   "homeTeam": "MIL",
+   "awayTeam": "PHI",
+   "homeScore": 105,
+   "awayScore": 108
+  },
+  {
+   "id": 125,
+   "date": "2026-11-25",
+   "homeTeam": "CHI",
+   "awayTeam": "DET",
+   "homeScore": 120,
+   "awayScore": 124
+  },
+  {
+   "id": 126,
+   "date": "2026-11-26",
+   "homeTeam": "IND",
+   "awayTeam": "SAS",
+   "homeScore": 119,
+   "awayScore": 127
+  },
+  {
+   "id": 127,
+   "date": "2026-11-26",
+   "homeTeam": "HOU",
+   "awayTeam": "POR",
+   "homeScore": 101,
+   "awayScore": 104
+  },
+  {
+   "id": 128,
+   "date": "2026-11-26",
+   "homeTeam": "CHA",
+   "awayTeam": "NOP",
+   "homeScore": 123,
+   "awayScore": 124
+  },
+  {
+   "id": 129,
+   "date": "2026-11-26",
+   "homeTeam": "ATL",
+   "awayTeam": "DEN",
+   "homeScore": 122,
+   "awayScore": 123
+  },
+  {
+   "id": 130,
+   "date": "2026-11-26",
+   "homeTeam": "MIN",
+   "awayTeam": "BKN",
+   "homeScore": 128,
+   "awayScore": 120
+  },
+  {
+   "id": 131,
+   "date": "2026-11-27",
+   "homeTeam": "PHX",
+   "awayTeam": "GSW",
+   "homeScore": 109,
+   "awayScore": 108
+  },
+  {
+   "id": 132,
+   "date": "2026-11-27",
+   "homeTeam": "ORL",
+   "awayTeam": "CLE",
+   "homeScore": 121,
+   "awayScore": 115
+  },
+  {
+   "id": 133,
+   "date": "2026-11-27",
+   "homeTeam": "SAC",
+   "awayTeam": "LAC",
+   "homeScore": 119,
+   "awayScore": 118
+  },
+  {
+   "id": 134,
+   "date": "2026-11-27",
+   "homeTeam": "LAL",
+   "awayTeam": "MIA",
+   "homeScore": 100,
+   "awayScore": 101
+  },
+  {
+   "id": 135,
+   "date": "2026-11-27",
+   "homeTeam": "OKC",
+   "awayTeam": "UTA",
+   "homeScore": 122,
+   "awayScore": 128
+  },
+  {
+   "id": 136,
+   "date": "2026-11-28",
+   "homeTeam": "MIN",
+   "awayTeam": "ATL",
+   "homeScore": 105,
+   "awayScore": 96
+  },
+  {
+   "id": 137,
+   "date": "2026-11-28",
+   "homeTeam": "MIL",
+   "awayTeam": "OKC",
+   "homeScore": 107,
+   "awayScore": 97
+  },
+  {
+   "id": 138,
+   "date": "2026-11-28",
+   "homeTeam": "MIA",
+   "awayTeam": "NYK",
+   "homeScore": 109,
+   "awayScore": 96
+  },
+  {
+   "id": 139,
+   "date": "2026-11-28",
+   "homeTeam": "UTA",
+   "awayTeam": "IND",
+   "homeScore": 100,
+   "awayScore": 105
+  },
+  {
+   "id": 140,
+   "date": "2026-11-28",
+   "homeTeam": "SAS",
+   "awayTeam": "CHA",
+   "homeScore": 128,
+   "awayScore": 120
+  }
+ ],
+ "stats": [
+  {
+   "gameId": 1,
+   "playerId": 67,
+   "points": 34,
+   "rebounds": 2,
+   "assists": 6
+  },
+  {
+   "gameId": 1,
+   "playerId": 68,
+   "points": 19,
+   "rebounds": 2,
+   "assists": 5
+  },
+  {
+   "gameId": 1,
+   "playerId": 69,
+   "points": 33,
+   "rebounds": 6,
+   "assists": 2
+  },
+  {
+   "gameId": 1,
+   "playerId": 46,
+   "points": 30,
+   "rebounds": 10,
+   "assists": 3
+  },
+  {
+   "gameId": 1,
+   "playerId": 47,
+   "points": 33,
+   "rebounds": 1,
+   "assists": 1
+  },
+  {
+   "gameId": 1,
+   "playerId": 48,
+   "points": 32,
+   "rebounds": 3,
+   "assists": 6
+  },
+  {
+   "gameId": 2,
+   "playerId": 37,
+   "points": 18,
+   "rebounds": 1,
+   "assists": 8
+  },
+  {
+   "gameId": 2,
+   "playerId": 38,
+   "points": 26,
+   "rebounds": 2,
+   "assists": 2
+  },
+  {
+   "gameId": 2,
+   "playerId": 39,
+   "points": 28,
+   "rebounds": 10,
+   "assists": 7
+  },
+  {
+   "gameId": 2,
+   "playerId": 43,
+   "points": 19,
+   "rebounds": 1,
+   "assists": 5
+  },
+  {
+   "gameId": 2,
+   "playerId": 44,
+   "points": 29,
+   "rebounds": 8,
+   "assists": 9
+  },
+  {
+   "gameId": 2,
+   "playerId": 45,
+   "points": 27,
+   "rebounds": 3,
+   "assists": 9
+  },
+  {
+   "gameId": 3,
+   "playerId": 85,
+   "points": 26,
+   "rebounds": 10,
+   "assists": 2
+  },
+  {
+   "gameId": 3,
+   "playerId": 86,
+   "points": 10,
+   "rebounds": 10,
+   "assists": 8
+  },
+  {
+   "gameId": 3,
+   "playerId": 87,
+   "points": 6,
+   "rebounds": 12,
+   "assists": 3
+  },
+  {
+   "gameId": 3,
+   "playerId": 82,
+   "points": 10,
+   "rebounds": 8,
+   "assists": 0
+  },
+  {
+   "gameId": 3,
+   "playerId": 83,
+   "points": 30,
+   "rebounds": 3,
+   "assists": 7
+  },
+  {
+   "gameId": 3,
+   "playerId": 84,
+   "points": 25,
+   "rebounds": 2,
+   "assists": 8
+  },
+  {
+   "gameId": 4,
+   "playerId": 55,
+   "points": 17,
+   "rebounds": 2,
+   "assists": 5
+  },
+  {
+   "gameId": 4,
+   "playerId": 56,
+   "points": 21,
+   "rebounds": 2,
+   "assists": 2
+  },
+  {
+   "gameId": 4,
+   "playerId": 57,
+   "points": 30,
+   "rebounds": 10,
+   "assists": 9
+  },
+  {
+   "gameId": 4,
+   "playerId": 22,
+   "points": 23,
+   "rebounds": 2,
+   "assists": 4
+  },
+  {
+   "gameId": 4,
+   "playerId": 23,
+   "points": 19,
+   "rebounds": 1,
+   "assists": 10
+  },
+  {
+   "gameId": 4,
+   "playerId": 24,
+   "points": 16,
+   "rebounds": 8,
+   "assists": 5
+  },
+  {
+   "gameId": 5,
+   "playerId": 19,
+   "points": 14,
+   "rebounds": 5,
+   "assists": 8
+  },
+  {
+   "gameId": 5,
+   "playerId": 20,
+   "points": 32,
+   "rebounds": 6,
+   "assists": 0
+  },
+  {
+   "gameId": 5,
+   "playerId": 21,
+   "points": 17,
+   "rebounds": 7,
+   "assists": 3
+  },
+  {
+   "gameId": 5,
+   "playerId": 64,
+   "points": 30,
+   "rebounds": 6,
+   "assists": 1
+  },
+  {
+   "gameId": 5,
+   "playerId": 65,
+   "points": 16,
+   "rebounds": 8,
+   "assists": 6
+  },
+  {
+   "gameId": 5,
+   "playerId": 66,
+   "points": 29,
+   "rebounds": 9,
+   "assists": 2
+  },
+  {
+   "gameId": 6,
+   "playerId": 52,
+   "points": 32,
+   "rebounds": 6,
+   "assists": 9
+  },
+  {
+   "gameId": 6,
+   "playerId": 53,
+   "points": 18,
+   "rebounds": 4,
+   "assists": 4
+  },
+  {
+   "gameId": 6,
+   "playerId": 54,
+   "points": 21,
+   "rebounds": 12,
+   "assists": 1
+  },
+  {
+   "gameId": 6,
+   "playerId": 79,
+   "points": 8,
+   "rebounds": 5,
+   "assists": 1
+  },
+  {
+   "gameId": 6,
+   "playerId": 80,
+   "points": 18,
+   "rebounds": 11,
+   "assists": 10
+  },
+  {
+   "gameId": 6,
+   "playerId": 81,
+   "points": 26,
+   "rebounds": 3,
+   "assists": 6
+  },
+  {
+   "gameId": 7,
+   "playerId": 25,
+   "points": 12,
+   "rebounds": 4,
+   "assists": 11
+  },
+  {
+   "gameId": 7,
+   "playerId": 26,
+   "points": 17,
+   "rebounds": 7,
+   "assists": 2
+  },
+  {
+   "gameId": 7,
+   "playerId": 27,
+   "points": 20,
+   "rebounds": 13,
+   "assists": 2
+  },
+  {
+   "gameId": 7,
+   "playerId": 61,
+   "points": 22,
+   "rebounds": 1,
+   "assists": 10
+  },
+  {
+   "gameId": 7,
+   "playerId": 62,
+   "points": 31,
+   "rebounds": 10,
+   "assists": 2
+  },
+  {
+   "gameId": 7,
+   "playerId": 63,
+   "points": 4,
+   "rebounds": 9,
+   "assists": 11
+  },
+  {
+   "gameId": 8,
+   "playerId": 7,
+   "points": 32,
+   "rebounds": 12,
+   "assists": 2
+  },
+  {
+   "gameId": 8,
+   "playerId": 8,
+   "points": 26,
+   "rebounds": 12,
+   "assists": 4
+  },
+  {
+   "gameId": 8,
+   "playerId": 9,
+   "points": 8,
+   "rebounds": 11,
+   "assists": 2
+  },
+  {
+   "gameId": 8,
+   "playerId": 13,
+   "points": 4,
+   "rebounds": 12,
+   "assists": 4
+  },
+  {
+   "gameId": 8,
+   "playerId": 14,
+   "points": 8,
+   "rebounds": 7,
+   "assists": 2
+  },
+  {
+   "gameId": 8,
+   "playerId": 15,
+   "points": 20,
+   "rebounds": 4,
+   "assists": 7
+  },
+  {
+   "gameId": 9,
+   "playerId": 34,
+   "points": 26,
+   "rebounds": 1,
+   "assists": 10
+  },
+  {
+   "gameId": 9,
+   "playerId": 35,
+   "points": 29,
+   "rebounds": 10,
+   "assists": 10
+  },
+  {
+   "gameId": 9,
+   "playerId": 36,
+   "points": 26,
+   "rebounds": 6,
+   "assists": 0
+  },
+  {
+   "gameId": 9,
+   "playerId": 49,
+   "points": 16,
+   "rebounds": 1,
+   "assists": 10
+  },
+  {
+   "gameId": 9,
+   "playerId": 50,
+   "points": 7,
+   "rebounds": 9,
+   "assists": 8
+  },
+  {
+   "gameId": 9,
+   "playerId": 51,
+   "points": 22,
+   "rebounds": 11,
+   "assists": 8
+  },
+  {
+   "gameId": 10,
+   "playerId": 4,
+   "points": 18,
+   "rebounds": 1,
+   "assists": 4
+  },
+  {
+   "gameId": 10,
+   "playerId": 6,
+   "points": 7,
+   "rebounds": 6,
+   "assists": 1
+  },
+  {
+   "gameId": 10,
+   "playerId": 16,
+   "points": 18,
+   "rebounds": 9,
+   "assists": 0
+  },
+  {
+   "gameId": 10,
+   "playerId": 17,
+   "points": 30,
+   "rebounds": 2,
+   "assists": 3
+  },
+  {
+   "gameId": 10,
+   "playerId": 18,
+   "points": 11,
+   "rebounds": 12,
+   "assists": 10
+  },
+  {
+   "gameId": 11,
+   "playerId": 73,
+   "points": 8,
+   "rebounds": 6,
+   "assists": 2
+  },
+  {
+   "gameId": 11,
+   "playerId": 74,
+   "points": 16,
+   "rebounds": 10,
+   "assists": 5
+  },
+  {
+   "gameId": 11,
+   "playerId": 75,
+   "points": 32,
+   "rebounds": 12,
+   "assists": 6
+  },
+  {
+   "gameId": 11,
+   "playerId": 40,
+   "points": 27,
+   "rebounds": 4,
+   "assists": 10
+  },
+  {
+   "gameId": 11,
+   "playerId": 41,
+   "points": 19,
+   "rebounds": 9,
+   "assists": 2
+  },
+  {
+   "gameId": 11,
+   "playerId": 42,
+   "points": 33,
+   "rebounds": 8,
+   "assists": 6
+  },
+  {
+   "gameId": 12,
+   "playerId": 88,
+   "points": 26,
+   "rebounds": 1,
+   "assists": 10
+  },
+  {
+   "gameId": 12,
+   "playerId": 89,
+   "points": 20,
+   "rebounds": 3,
+   "assists": 1
+  },
+  {
+   "gameId": 12,
+   "playerId": 90,
+   "points": 26,
+   "rebounds": 10,
+   "assists": 6
+  },
+  {
+   "gameId": 12,
+   "playerId": 58,
+   "points": 24,
+   "rebounds": 2,
+   "assists": 2
+  },
+  {
+   "gameId": 12,
+   "playerId": 59,
+   "points": 7,
+   "rebounds": 4,
+   "assists": 8
+  },
+  {
+   "gameId": 12,
+   "playerId": 60,
+   "points": 34,
+   "rebounds": 6,
+   "assists": 6
+  },
+  {
+   "gameId": 13,
+   "playerId": 1,
+   "points": 5,
+   "rebounds": 8,
+   "assists": 0
+  },
+  {
+   "gameId": 13,
+   "playerId": 2,
+   "points": 4,
+   "rebounds": 3,
+   "assists": 2
+  },
+  {
+   "gameId": 13,
+   "playerId": 3,
+   "points": 10,
+   "rebounds": 9,
+   "assists": 6
+  },
+  {
+   "gameId": 13,
+   "playerId": 70,
+   "points": 28,
+   "rebounds": 12,
+   "assists": 9
+  },
+  {
+   "gameId": 13,
+   "playerId": 72,
+   "points": 16,
+   "rebounds": 10,
+   "assists": 5
+  },
+  {
+   "gameId": 14,
+   "playerId": 28,
+   "points": 10,
+   "rebounds": 5,
+   "assists": 3
+  },
+  {
+   "gameId": 14,
+   "playerId": 29,
+   "points": 8,
+   "rebounds": 8,
+   "assists": 4
+  },
+  {
+   "gameId": 14,
+   "playerId": 30,
+   "points": 28,
+   "rebounds": 7,
+   "assists": 5
+  },
+  {
+   "gameId": 14,
+   "playerId": 10,
+   "points": 31,
+   "rebounds": 6,
+   "assists": 0
+  },
+  {
+   "gameId": 14,
+   "playerId": 11,
+   "points": 6,
+   "rebounds": 4,
+   "assists": 11
+  },
+  {
+   "gameId": 14,
+   "playerId": 12,
+   "points": 15,
+   "rebounds": 2,
+   "assists": 0
+  },
+  {
+   "gameId": 15,
+   "playerId": 31,
+   "points": 27,
+   "rebounds": 12,
+   "assists": 0
+  },
+  {
+   "gameId": 15,
+   "playerId": 32,
+   "points": 17,
+   "rebounds": 4,
+   "assists": 11
+  },
+  {
+   "gameId": 15,
+   "playerId": 33,
+   "points": 19,
+   "rebounds": 2,
+   "assists": 11
+  },
+  {
+   "gameId": 15,
+   "playerId": 76,
+   "points": 26,
+   "rebounds": 13,
+   "assists": 7
+  },
+  {
+   "gameId": 15,
+   "playerId": 77,
+   "points": 6,
+   "rebounds": 11,
+   "assists": 1
+  },
+  {
+   "gameId": 15,
+   "playerId": 78,
+   "points": 9,
+   "rebounds": 13,
+   "assists": 4
+  },
+  {
+   "gameId": 16,
+   "playerId": 49,
+   "points": 11,
+   "rebounds": 4,
+   "assists": 10
+  },
+  {
+   "gameId": 16,
+   "playerId": 50,
+   "points": 15,
+   "rebounds": 2,
+   "assists": 6
+  },
+  {
+   "gameId": 16,
+   "playerId": 51,
+   "points": 14,
+   "rebounds": 9,
+   "assists": 5
+  },
+  {
+   "gameId": 16,
+   "playerId": 46,
+   "points": 5,
+   "rebounds": 10,
+   "assists": 8
+  },
+  {
+   "gameId": 16,
+   "playerId": 47,
+   "points": 24,
+   "rebounds": 7,
+   "assists": 8
+  },
+  {
+   "gameId": 16,
+   "playerId": 48,
+   "points": 4,
+   "rebounds": 13,
+   "assists": 1
+  },
+  {
+   "gameId": 17,
+   "playerId": 61,
+   "points": 14,
+   "rebounds": 5,
+   "assists": 3
+  },
+  {
+   "gameId": 17,
+   "playerId": 62,
+   "points": 7,
+   "rebounds": 7,
+   "assists": 1
+  },
+  {
+   "gameId": 17,
+   "playerId": 63,
+   "points": 5,
+   "rebounds": 4,
+   "assists": 10
+  },
+  {
+   "gameId": 17,
+   "playerId": 88,
+   "points": 33,
+   "rebounds": 1,
+   "assists": 2
+  },
+  {
+   "gameId": 17,
+   "playerId": 89,
+   "points": 9,
+   "rebounds": 6,
+   "assists": 0
+  },
+  {
+   "gameId": 17,
+   "playerId": 90,
+   "points": 9,
+   "rebounds": 2,
+   "assists": 5
+  },
+  {
+   "gameId": 18,
+   "playerId": 22,
+   "points": 30,
+   "rebounds": 3,
+   "assists": 0
+  },
+  {
+   "gameId": 18,
+   "playerId": 23,
+   "points": 15,
+   "rebounds": 12,
+   "assists": 1
+  },
+  {
+   "gameId": 18,
+   "playerId": 24,
+   "points": 6,
+   "rebounds": 5,
+   "assists": 8
+  },
+  {
+   "gameId": 18,
+   "playerId": 76,
+   "points": 32,
+   "rebounds": 3,
+   "assists": 9
+  },
+  {
+   "gameId": 18,
+   "playerId": 77,
+   "points": 24,
+   "rebounds": 5,
+   "assists": 1
+  },
+  {
+   "gameId": 18,
+   "playerId": 78,
+   "points": 29,
+   "rebounds": 9,
+   "assists": 3
+  },
+  {
+   "gameId": 19,
+   "playerId": 16,
+   "points": 13,
+   "rebounds": 2,
+   "assists": 9
+  },
+  {
+   "gameId": 19,
+   "playerId": 17,
+   "points": 4,
+   "rebounds": 9,
+   "assists": 2
+  },
+  {
+   "gameId": 19,
+   "playerId": 18,
+   "points": 29,
+   "rebounds": 4,
+   "assists": 8
+  },
+  {
+   "gameId": 19,
+   "playerId": 58,
+   "points": 16,
+   "rebounds": 12,
+   "assists": 10
+  },
+  {
+   "gameId": 19,
+   "playerId": 59,
+   "points": 6,
+   "rebounds": 4,
+   "assists": 5
+  },
+  {
+   "gameId": 19,
+   "playerId": 60,
+   "points": 29,
+   "rebounds": 3,
+   "assists": 11
+  },
+  {
+   "gameId": 20,
+   "playerId": 43,
+   "points": 7,
+   "rebounds": 12,
+   "assists": 2
+  },
+  {
+   "gameId": 20,
+   "playerId": 44,
+   "points": 9,
+   "rebounds": 3,
+   "assists": 3
+  },
+  {
+   "gameId": 20,
+   "playerId": 45,
+   "points": 26,
+   "rebounds": 13,
+   "assists": 8
+  },
+  {
+   "gameId": 20,
+   "playerId": 64,
+   "points": 32,
+   "rebounds": 11,
+   "assists": 11
+  },
+  {
+   "gameId": 20,
+   "playerId": 65,
+   "points": 16,
+   "rebounds": 4,
+   "assists": 7
+  },
+  {
+   "gameId": 20,
+   "playerId": 66,
+   "points": 29,
+   "rebounds": 13,
+   "assists": 8
+  },
+  {
+   "gameId": 21,
+   "playerId": 4,
+   "points": 18,
+   "rebounds": 8,
+   "assists": 6
+  },
+  {
+   "gameId": 21,
+   "playerId": 6,
+   "points": 5,
+   "rebounds": 5,
+   "assists": 11
+  },
+  {
+   "gameId": 21,
+   "playerId": 73,
+   "points": 4,
+   "rebounds": 6,
+   "assists": 4
+  },
+  {
+   "gameId": 21,
+   "playerId": 74,
+   "points": 33,
+   "rebounds": 3,
+   "assists": 4
+  },
+  {
+   "gameId": 21,
+   "playerId": 75,
+   "points": 30,
+   "rebounds": 7,
+   "assists": 8
+  },
+  {
+   "gameId": 22,
+   "playerId": 25,
+   "points": 26,
+   "rebounds": 6,
+   "assists": 4
+  },
+  {
+   "gameId": 22,
+   "playerId": 26,
+   "points": 25,
+   "rebounds": 3,
+   "assists": 4
+  },
+  {
+   "gameId": 22,
+   "playerId": 27,
+   "points": 8,
+   "rebounds": 13,
+   "assists": 7
+  },
+  {
+   "gameId": 22,
+   "playerId": 79,
+   "points": 17,
+   "rebounds": 5,
+   "assists": 1
+  },
+  {
+   "gameId": 22,
+   "playerId": 80,
+   "points": 24,
+   "rebounds": 12,
+   "assists": 2
+  },
+  {
+   "gameId": 22,
+   "playerId": 81,
+   "points": 23,
+   "rebounds": 13,
+   "assists": 10
+  },
+  {
+   "gameId": 23,
+   "playerId": 31,
+   "points": 32,
+   "rebounds": 8,
+   "assists": 4
+  },
+  {
+   "gameId": 23,
+   "playerId": 32,
+   "points": 12,
+   "rebounds": 12,
+   "assists": 10
+  },
+  {
+   "gameId": 23,
+   "playerId": 33,
+   "points": 18,
+   "rebounds": 7,
+   "assists": 6
+  },
+  {
+   "gameId": 23,
+   "playerId": 55,
+   "points": 5,
+   "rebounds": 5,
+   "assists": 11
+  },
+  {
+   "gameId": 23,
+   "playerId": 56,
+   "points": 18,
+   "rebounds": 2,
+   "assists": 3
+  },
+  {
+   "gameId": 23,
+   "playerId": 57,
+   "points": 23,
+   "rebounds": 4,
+   "assists": 6
+  },
+  {
+   "gameId": 24,
+   "playerId": 52,
+   "points": 27,
+   "rebounds": 1,
+   "assists": 10
+  },
+  {
+   "gameId": 24,
+   "playerId": 53,
+   "points": 15,
+   "rebounds": 6,
+   "assists": 0
+  },
+  {
+   "gameId": 24,
+   "playerId": 54,
+   "points": 13,
+   "rebounds": 10,
+   "assists": 6
+  },
+  {
+   "gameId": 24,
+   "playerId": 37,
+   "points": 15,
+   "rebounds": 8,
+   "assists": 0
+  },
+  {
+   "gameId": 24,
+   "playerId": 38,
+   "points": 22,
+   "rebounds": 7,
+   "assists": 0
+  },
+  {
+   "gameId": 24,
+   "playerId": 39,
+   "points": 14,
+   "rebounds": 7,
+   "assists": 4
+  },
+  {
+   "gameId": 25,
+   "playerId": 40,
+   "points": 26,
+   "rebounds": 4,
+   "assists": 3
+  },
+  {
+   "gameId": 25,
+   "playerId": 41,
+   "points": 10,
+   "rebounds": 9,
+   "assists": 7
+  },
+  {
+   "gameId": 25,
+   "playerId": 42,
+   "points": 33,
+   "rebounds": 13,
+   "assists": 10
+  },
+  {
+   "gameId": 25,
+   "playerId": 82,
+   "points": 23,
+   "rebounds": 3,
+   "assists": 6
+  },
+  {
+   "gameId": 25,
+   "playerId": 83,
+   "points": 21,
+   "rebounds": 8,
+   "assists": 7
+  },
+  {
+   "gameId": 25,
+   "playerId": 84,
+   "points": 7,
+   "rebounds": 1,
+   "assists": 9
+  },
+  {
+   "gameId": 26,
+   "playerId": 85,
+   "points": 28,
+   "rebounds": 10,
+   "assists": 6
+  },
+  {
+   "gameId": 26,
+   "playerId": 86,
+   "points": 13,
+   "rebounds": 5,
+   "assists": 4
+  },
+  {
+   "gameId": 26,
+   "playerId": 87,
+   "points": 16,
+   "rebounds": 10,
+   "assists": 4
+  },
+  {
+   "gameId": 26,
+   "playerId": 28,
+   "points": 29,
+   "rebounds": 1,
+   "assists": 3
+  },
+  {
+   "gameId": 26,
+   "playerId": 29,
+   "points": 18,
+   "rebounds": 3,
+   "assists": 0
+  },
+  {
+   "gameId": 26,
+   "playerId": 30,
+   "points": 14,
+   "rebounds": 7,
+   "assists": 8
+  },
+  {
+   "gameId": 27,
+   "playerId": 70,
+   "points": 11,
+   "rebounds": 3,
+   "assists": 6
+  },
+  {
+   "gameId": 27,
+   "playerId": 72,
+   "points": 16,
+   "rebounds": 11,
+   "assists": 0
+  },
+  {
+   "gameId": 27,
+   "playerId": 67,
+   "points": 19,
+   "rebounds": 6,
+   "assists": 6
+  },
+  {
+   "gameId": 27,
+   "playerId": 68,
+   "points": 20,
+   "rebounds": 10,
+   "assists": 6
+  },
+  {
+   "gameId": 27,
+   "playerId": 69,
+   "points": 15,
+   "rebounds": 2,
+   "assists": 6
+  },
+  {
+   "gameId": 28,
+   "playerId": 13,
+   "points": 27,
+   "rebounds": 5,
+   "assists": 8
+  },
+  {
+   "gameId": 28,
+   "playerId": 14,
+   "points": 5,
+   "rebounds": 8,
+   "assists": 8
+  },
+  {
+   "gameId": 28,
+   "playerId": 15,
+   "points": 20,
+   "rebounds": 3,
+   "assists": 0
+  },
+  {
+   "gameId": 28,
+   "playerId": 19,
+   "points": 25,
+   "rebounds": 4,
+   "assists": 9
+  },
+  {
+   "gameId": 28,
+   "playerId": 20,
+   "points": 17,
+   "rebounds": 3,
+   "assists": 2
+  },
+  {
+   "gameId": 28,
+   "playerId": 21,
+   "points": 5,
+   "rebounds": 10,
+   "assists": 10
+  },
+  {
+   "gameId": 29,
+   "playerId": 10,
+   "points": 21,
+   "rebounds": 8,
+   "assists": 6
+  },
+  {
+   "gameId": 29,
+   "playerId": 11,
+   "points": 22,
+   "rebounds": 6,
+   "assists": 3
+  },
+  {
+   "gameId": 29,
+   "playerId": 12,
+   "points": 27,
+   "rebounds": 12,
+   "assists": 9
+  },
+  {
+   "gameId": 29,
+   "playerId": 7,
+   "points": 19,
+   "rebounds": 2,
+   "assists": 1
+  },
+  {
+   "gameId": 29,
+   "playerId": 8,
+   "points": 4,
+   "rebounds": 1,
+   "assists": 9
+  },
+  {
+   "gameId": 29,
+   "playerId": 9,
+   "points": 20,
+   "rebounds": 10,
+   "assists": 7
+  },
+  {
+   "gameId": 30,
+   "playerId": 34,
+   "points": 17,
+   "rebounds": 11,
+   "assists": 0
+  },
+  {
+   "gameId": 30,
+   "playerId": 35,
+   "points": 4,
+   "rebounds": 3,
+   "assists": 8
+  },
+  {
+   "gameId": 30,
+   "playerId": 36,
+   "points": 29,
+   "rebounds": 3,
+   "assists": 2
+  },
+  {
+   "gameId": 30,
+   "playerId": 1,
+   "points": 31,
+   "rebounds": 1,
+   "assists": 7
+  },
+  {
+   "gameId": 30,
+   "playerId": 2,
+   "points": 4,
+   "rebounds": 2,
+   "assists": 10
+  },
+  {
+   "gameId": 30,
+   "playerId": 3,
+   "points": 33,
+   "rebounds": 13,
+   "assists": 6
+  },
+  {
+   "gameId": 31,
+   "playerId": 88,
+   "points": 34,
+   "rebounds": 10,
+   "assists": 2
+  },
+  {
+   "gameId": 31,
+   "playerId": 89,
+   "points": 23,
+   "rebounds": 9,
+   "assists": 4
+  },
+  {
+   "gameId": 31,
+   "playerId": 90,
+   "points": 13,
+   "rebounds": 3,
+   "assists": 7
+  },
+  {
+   "gameId": 31,
+   "playerId": 79,
+   "points": 20,
+   "rebounds": 3,
+   "assists": 0
+  },
+  {
+   "gameId": 31,
+   "playerId": 80,
+   "points": 26,
+   "rebounds": 7,
+   "assists": 11
+  },
+  {
+   "gameId": 31,
+   "playerId": 81,
+   "points": 29,
+   "rebounds": 3,
+   "assists": 4
+  },
+  {
+   "gameId": 32,
+   "playerId": 43,
+   "points": 31,
+   "rebounds": 5,
+   "assists": 3
+  },
+  {
+   "gameId": 32,
+   "playerId": 44,
+   "points": 6,
+   "rebounds": 8,
+   "assists": 7
+  },
+  {
+   "gameId": 32,
+   "playerId": 45,
+   "points": 12,
+   "rebounds": 7,
+   "assists": 6
+  },
+  {
+   "gameId": 32,
+   "playerId": 82,
+   "points": 12,
+   "rebounds": 4,
+   "assists": 2
+  },
+  {
+   "gameId": 32,
+   "playerId": 83,
+   "points": 24,
+   "rebounds": 4,
+   "assists": 1
+  },
+  {
+   "gameId": 32,
+   "playerId": 84,
+   "points": 17,
+   "rebounds": 12,
+   "assists": 7
+  },
+  {
+   "gameId": 33,
+   "playerId": 28,
+   "points": 32,
+   "rebounds": 8,
+   "assists": 7
+  },
+  {
+   "gameId": 33,
+   "playerId": 29,
+   "points": 23,
+   "rebounds": 3,
+   "assists": 1
+  },
+  {
+   "gameId": 33,
+   "playerId": 30,
+   "points": 13,
+   "rebounds": 2,
+   "assists": 11
+  },
+  {
+   "gameId": 33,
+   "playerId": 19,
+   "points": 15,
+   "rebounds": 4,
+   "assists": 4
+  },
+  {
+   "gameId": 33,
+   "playerId": 20,
+   "points": 13,
+   "rebounds": 8,
+   "assists": 10
+  },
+  {
+   "gameId": 33,
+   "playerId": 21,
+   "points": 29,
+   "rebounds": 10,
+   "assists": 10
+  },
+  {
+   "gameId": 34,
+   "playerId": 34,
+   "points": 16,
+   "rebounds": 8,
+   "assists": 2
+  },
+  {
+   "gameId": 34,
+   "playerId": 35,
+   "points": 24,
+   "rebounds": 6,
+   "assists": 2
+  },
+  {
+   "gameId": 34,
+   "playerId": 36,
+   "points": 6,
+   "rebounds": 9,
+   "assists": 9
+  },
+  {
+   "gameId": 34,
+   "playerId": 7,
+   "points": 22,
+   "rebounds": 1,
+   "assists": 3
+  },
+  {
+   "gameId": 34,
+   "playerId": 8,
+   "points": 10,
+   "rebounds": 3,
+   "assists": 1
+  },
+  {
+   "gameId": 34,
+   "playerId": 9,
+   "points": 8,
+   "rebounds": 12,
+   "assists": 6
+  },
+  {
+   "gameId": 35,
+   "playerId": 58,
+   "points": 26,
+   "rebounds": 7,
+   "assists": 8
+  },
+  {
+   "gameId": 35,
+   "playerId": 59,
+   "points": 17,
+   "rebounds": 10,
+   "assists": 2
+  },
+  {
+   "gameId": 35,
+   "playerId": 60,
+   "points": 32,
+   "rebounds": 3,
+   "assists": 7
+  },
+  {
+   "gameId": 35,
+   "playerId": 22,
+   "points": 30,
+   "rebounds": 2,
+   "assists": 3
+  },
+  {
+   "gameId": 35,
+   "playerId": 23,
+   "points": 20,
+   "rebounds": 4,
+   "assists": 1
+  },
+  {
+   "gameId": 35,
+   "playerId": 24,
+   "points": 9,
+   "rebounds": 10,
+   "assists": 4
+  },
+  {
+   "gameId": 36,
+   "playerId": 37,
+   "points": 27,
+   "rebounds": 8,
+   "assists": 1
+  },
+  {
+   "gameId": 36,
+   "playerId": 38,
+   "points": 15,
+   "rebounds": 11,
+   "assists": 0
+  },
+  {
+   "gameId": 36,
+   "playerId": 39,
+   "points": 32,
+   "rebounds": 11,
+   "assists": 2
+  },
+  {
+   "gameId": 36,
+   "playerId": 13,
+   "points": 24,
+   "rebounds": 12,
+   "assists": 9
+  },
+  {
+   "gameId": 36,
+   "playerId": 14,
+   "points": 15,
+   "rebounds": 3,
+   "assists": 9
+  },
+  {
+   "gameId": 36,
+   "playerId": 15,
+   "points": 9,
+   "rebounds": 1,
+   "assists": 7
+  },
+  {
+   "gameId": 37,
+   "playerId": 70,
+   "points": 13,
+   "rebounds": 3,
+   "assists": 5
+  },
+  {
+   "gameId": 37,
+   "playerId": 72,
+   "points": 16,
+   "rebounds": 6,
+   "assists": 7
+  },
+  {
+   "gameId": 37,
+   "playerId": 10,
+   "points": 22,
+   "rebounds": 9,
+   "assists": 3
+  },
+  {
+   "gameId": 37,
+   "playerId": 11,
+   "points": 19,
+   "rebounds": 2,
+   "assists": 7
+  },
+  {
+   "gameId": 37,
+   "playerId": 12,
+   "points": 26,
+   "rebounds": 7,
+   "assists": 3
+  },
+  {
+   "gameId": 38,
+   "playerId": 55,
+   "points": 13,
+   "rebounds": 6,
+   "assists": 2
+  },
+  {
+   "gameId": 38,
+   "playerId": 56,
+   "points": 17,
+   "rebounds": 13,
+   "assists": 0
+  },
+  {
+   "gameId": 38,
+   "playerId": 57,
+   "points": 26,
+   "rebounds": 7,
+   "assists": 11
+  },
+  {
+   "gameId": 38,
+   "playerId": 1,
+   "points": 12,
+   "rebounds": 6,
+   "assists": 0
+  },
+  {
+   "gameId": 38,
+   "playerId": 2,
+   "points": 31,
+   "rebounds": 2,
+   "assists": 1
+  },
+  {
+   "gameId": 38,
+   "playerId": 3,
+   "points": 13,
+   "rebounds": 6,
+   "assists": 9
+  },
+  {
+   "gameId": 39,
+   "playerId": 40,
+   "points": 34,
+   "rebounds": 13,
+   "assists": 4
+  },
+  {
+   "gameId": 39,
+   "playerId": 41,
+   "points": 17,
+   "rebounds": 1,
+   "assists": 9
+  },
+  {
+   "gameId": 39,
+   "playerId": 42,
+   "points": 17,
+   "rebounds": 6,
+   "assists": 10
+  },
+  {
+   "gameId": 39,
+   "playerId": 16,
+   "points": 21,
+   "rebounds": 5,
+   "assists": 5
+  },
+  {
+   "gameId": 39,
+   "playerId": 17,
+   "points": 27,
+   "rebounds": 13,
+   "assists": 0
+  },
+  {
+   "gameId": 39,
+   "playerId": 18,
+   "points": 4,
+   "rebounds": 8,
+   "assists": 10
+  },
+  {
+   "gameId": 40,
+   "playerId": 49,
+   "points": 12,
+   "rebounds": 12,
+   "assists": 8
+  },
+  {
+   "gameId": 40,
+   "playerId": 50,
+   "points": 14,
+   "rebounds": 2,
+   "assists": 4
+  },
+  {
+   "gameId": 40,
+   "playerId": 51,
+   "points": 21,
+   "rebounds": 2,
+   "assists": 0
+  },
+  {
+   "gameId": 40,
+   "playerId": 52,
+   "points": 7,
+   "rebounds": 4,
+   "assists": 3
+  },
+  {
+   "gameId": 40,
+   "playerId": 53,
+   "points": 6,
+   "rebounds": 13,
+   "assists": 5
+  },
+  {
+   "gameId": 40,
+   "playerId": 54,
+   "points": 17,
+   "rebounds": 1,
+   "assists": 4
+  },
+  {
+   "gameId": 41,
+   "playerId": 61,
+   "points": 28,
+   "rebounds": 11,
+   "assists": 0
+  },
+  {
+   "gameId": 41,
+   "playerId": 62,
+   "points": 21,
+   "rebounds": 12,
+   "assists": 3
+  },
+  {
+   "gameId": 41,
+   "playerId": 63,
+   "points": 32,
+   "rebounds": 8,
+   "assists": 8
+  },
+  {
+   "gameId": 41,
+   "playerId": 67,
+   "points": 27,
+   "rebounds": 2,
+   "assists": 9
+  },
+  {
+   "gameId": 41,
+   "playerId": 68,
+   "points": 14,
+   "rebounds": 11,
+   "assists": 11
+  },
+  {
+   "gameId": 41,
+   "playerId": 69,
+   "points": 33,
+   "rebounds": 10,
+   "assists": 6
+  },
+  {
+   "gameId": 42,
+   "playerId": 76,
+   "points": 6,
+   "rebounds": 1,
+   "assists": 1
+  },
+  {
+   "gameId": 42,
+   "playerId": 77,
+   "points": 5,
+   "rebounds": 2,
+   "assists": 9
+  },
+  {
+   "gameId": 42,
+   "playerId": 78,
+   "points": 26,
+   "rebounds": 6,
+   "assists": 11
+  },
+  {
+   "gameId": 42,
+   "playerId": 31,
+   "points": 32,
+   "rebounds": 5,
+   "assists": 4
+  },
+  {
+   "gameId": 42,
+   "playerId": 32,
+   "points": 13,
+   "rebounds": 7,
+   "assists": 1
+  },
+  {
+   "gameId": 42,
+   "playerId": 33,
+   "points": 15,
+   "rebounds": 2,
+   "assists": 5
+  },
+  {
+   "gameId": 43,
+   "playerId": 25,
+   "points": 33,
+   "rebounds": 8,
+   "assists": 5
+  },
+  {
+   "gameId": 43,
+   "playerId": 26,
+   "points": 27,
+   "rebounds": 11,
+   "assists": 3
+  },
+  {
+   "gameId": 43,
+   "playerId": 27,
+   "points": 23,
+   "rebounds": 11,
+   "assists": 10
+  },
+  {
+   "gameId": 43,
+   "playerId": 46,
+   "points": 8,
+   "rebounds": 13,
+   "assists": 1
+  },
+  {
+   "gameId": 43,
+   "playerId": 47,
+   "points": 5,
+   "rebounds": 11,
+   "assists": 2
+  },
+  {
+   "gameId": 43,
+   "playerId": 48,
+   "points": 15,
+   "rebounds": 5,
+   "assists": 9
+  },
+  {
+   "gameId": 44,
+   "playerId": 4,
+   "points": 31,
+   "rebounds": 12,
+   "assists": 0
+  },
+  {
+   "gameId": 44,
+   "playerId": 6,
+   "points": 31,
+   "rebounds": 11,
+   "assists": 9
+  },
+  {
+   "gameId": 44,
+   "playerId": 85,
+   "points": 29,
+   "rebounds": 3,
+   "assists": 10
+  },
+  {
+   "gameId": 44,
+   "playerId": 86,
+   "points": 30,
+   "rebounds": 2,
+   "assists": 8
+  },
+  {
+   "gameId": 44,
+   "playerId": 87,
+   "points": 24,
+   "rebounds": 9,
+   "assists": 9
+  },
+  {
+   "gameId": 45,
+   "playerId": 73,
+   "points": 30,
+   "rebounds": 12,
+   "assists": 0
+  },
+  {
+   "gameId": 45,
+   "playerId": 74,
+   "points": 13,
+   "rebounds": 10,
+   "assists": 9
+  },
+  {
+   "gameId": 45,
+   "playerId": 75,
+   "points": 14,
+   "rebounds": 4,
+   "assists": 1
+  },
+  {
+   "gameId": 45,
+   "playerId": 64,
+   "points": 29,
+   "rebounds": 5,
+   "assists": 2
+  },
+  {
+   "gameId": 45,
+   "playerId": 65,
+   "points": 11,
+   "rebounds": 8,
+   "assists": 10
+  },
+  {
+   "gameId": 45,
+   "playerId": 66,
+   "points": 11,
+   "rebounds": 4,
+   "assists": 10
+  },
+  {
+   "gameId": 46,
+   "playerId": 22,
+   "points": 16,
+   "rebounds": 11,
+   "assists": 9
+  },
+  {
+   "gameId": 46,
+   "playerId": 23,
+   "points": 28,
+   "rebounds": 8,
+   "assists": 9
+  },
+  {
+   "gameId": 46,
+   "playerId": 24,
+   "points": 14,
+   "rebounds": 2,
+   "assists": 6
+  },
+  {
+   "gameId": 46,
+   "playerId": 82,
+   "points": 20,
+   "rebounds": 6,
+   "assists": 4
+  },
+  {
+   "gameId": 46,
+   "playerId": 83,
+   "points": 8,
+   "rebounds": 5,
+   "assists": 7
+  },
+  {
+   "gameId": 46,
+   "playerId": 84,
+   "points": 13,
+   "rebounds": 5,
+   "assists": 11
+  },
+  {
+   "gameId": 47,
+   "playerId": 43,
+   "points": 20,
+   "rebounds": 1,
+   "assists": 5
+  },
+  {
+   "gameId": 47,
+   "playerId": 44,
+   "points": 22,
+   "rebounds": 5,
+   "assists": 9
+  },
+  {
+   "gameId": 47,
+   "playerId": 45,
+   "points": 20,
+   "rebounds": 1,
+   "assists": 11
+  },
+  {
+   "gameId": 47,
+   "playerId": 52,
+   "points": 16,
+   "rebounds": 6,
+   "assists": 5
+  },
+  {
+   "gameId": 47,
+   "playerId": 53,
+   "points": 20,
+   "rebounds": 6,
+   "assists": 6
+  },
+  {
+   "gameId": 47,
+   "playerId": 54,
+   "points": 27,
+   "rebounds": 13,
+   "assists": 2
+  },
+  {
+   "gameId": 48,
+   "playerId": 55,
+   "points": 28,
+   "rebounds": 6,
+   "assists": 2
+  },
+  {
+   "gameId": 48,
+   "playerId": 56,
+   "points": 21,
+   "rebounds": 5,
+   "assists": 5
+  },
+  {
+   "gameId": 48,
+   "playerId": 57,
+   "points": 28,
+   "rebounds": 7,
+   "assists": 1
+  },
+  {
+   "gameId": 48,
+   "playerId": 76,
+   "points": 20,
+   "rebounds": 13,
+   "assists": 6
+  },
+  {
+   "gameId": 48,
+   "playerId": 77,
+   "points": 26,
+   "rebounds": 4,
+   "assists": 4
+  },
+  {
+   "gameId": 48,
+   "playerId": 78,
+   "points": 4,
+   "rebounds": 11,
+   "assists": 5
+  },
+  {
+   "gameId": 49,
+   "playerId": 85,
+   "points": 16,
+   "rebounds": 2,
+   "assists": 3
+  },
+  {
+   "gameId": 49,
+   "playerId": 86,
+   "points": 15,
+   "rebounds": 8,
+   "assists": 5
+  },
+  {
+   "gameId": 49,
+   "playerId": 87,
+   "points": 4,
+   "rebounds": 7,
+   "assists": 9
+  },
+  {
+   "gameId": 49,
+   "playerId": 28,
+   "points": 26,
+   "rebounds": 5,
+   "assists": 2
+  },
+  {
+   "gameId": 49,
+   "playerId": 29,
+   "points": 17,
+   "rebounds": 11,
+   "assists": 6
+  },
+  {
+   "gameId": 49,
+   "playerId": 30,
+   "points": 24,
+   "rebounds": 10,
+   "assists": 8
+  },
+  {
+   "gameId": 50,
+   "playerId": 73,
+   "points": 25,
+   "rebounds": 2,
+   "assists": 10
+  },
+  {
+   "gameId": 50,
+   "playerId": 74,
+   "points": 13,
+   "rebounds": 11,
+   "assists": 3
+  },
+  {
+   "gameId": 50,
+   "playerId": 75,
+   "points": 11,
+   "rebounds": 2,
+   "assists": 7
+  },
+  {
+   "gameId": 50,
+   "playerId": 19,
+   "points": 23,
+   "rebounds": 2,
+   "assists": 4
+  },
+  {
+   "gameId": 50,
+   "playerId": 20,
+   "points": 11,
+   "rebounds": 12,
+   "assists": 0
+  },
+  {
+   "gameId": 50,
+   "playerId": 21,
+   "points": 19,
+   "rebounds": 5,
+   "assists": 7
+  },
+  {
+   "gameId": 51,
+   "playerId": 49,
+   "points": 18,
+   "rebounds": 8,
+   "assists": 6
+  },
+  {
+   "gameId": 51,
+   "playerId": 50,
+   "points": 10,
+   "rebounds": 11,
+   "assists": 8
+  },
+  {
+   "gameId": 51,
+   "playerId": 51,
+   "points": 20,
+   "rebounds": 11,
+   "assists": 6
+  },
+  {
+   "gameId": 51,
+   "playerId": 70,
+   "points": 24,
+   "rebounds": 10,
+   "assists": 1
+  },
+  {
+   "gameId": 51,
+   "playerId": 72,
+   "points": 21,
+   "rebounds": 1,
+   "assists": 4
+  },
+  {
+   "gameId": 52,
+   "playerId": 4,
+   "points": 27,
+   "rebounds": 13,
+   "assists": 11
+  },
+  {
+   "gameId": 52,
+   "playerId": 6,
+   "points": 12,
+   "rebounds": 2,
+   "assists": 8
+  },
+  {
+   "gameId": 52,
+   "playerId": 46,
+   "points": 17,
+   "rebounds": 2,
+   "assists": 3
+  },
+  {
+   "gameId": 52,
+   "playerId": 47,
+   "points": 24,
+   "rebounds": 11,
+   "assists": 4
+  },
+  {
+   "gameId": 52,
+   "playerId": 48,
+   "points": 5,
+   "rebounds": 7,
+   "assists": 9
+  },
+  {
+   "gameId": 53,
+   "playerId": 7,
+   "points": 24,
+   "rebounds": 6,
+   "assists": 6
+  },
+  {
+   "gameId": 53,
+   "playerId": 8,
+   "points": 34,
+   "rebounds": 4,
+   "assists": 1
+  },
+  {
+   "gameId": 53,
+   "playerId": 9,
+   "points": 12,
+   "rebounds": 4,
+   "assists": 9
+  },
+  {
+   "gameId": 53,
+   "playerId": 31,
+   "points": 25,
+   "rebounds": 6,
+   "assists": 4
+  },
+  {
+   "gameId": 53,
+   "playerId": 32,
+   "points": 27,
+   "rebounds": 7,
+   "assists": 1
+  },
+  {
+   "gameId": 53,
+   "playerId": 33,
+   "points": 20,
+   "rebounds": 1,
+   "assists": 11
+  },
+  {
+   "gameId": 54,
+   "playerId": 64,
+   "points": 18,
+   "rebounds": 13,
+   "assists": 5
+  },
+  {
+   "gameId": 54,
+   "playerId": 65,
+   "points": 16,
+   "rebounds": 8,
+   "assists": 8
+  },
+  {
+   "gameId": 54,
+   "playerId": 66,
+   "points": 7,
+   "rebounds": 8,
+   "assists": 2
+  },
+  {
+   "gameId": 54,
+   "playerId": 37,
+   "points": 34,
+   "rebounds": 12,
+   "assists": 4
+  },
+  {
+   "gameId": 54,
+   "playerId": 38,
+   "points": 26,
+   "rebounds": 7,
+   "assists": 6
+  },
+  {
+   "gameId": 54,
+   "playerId": 39,
+   "points": 13,
+   "rebounds": 2,
+   "assists": 2
+  },
+  {
+   "gameId": 55,
+   "playerId": 79,
+   "points": 31,
+   "rebounds": 3,
+   "assists": 0
+  },
+  {
+   "gameId": 55,
+   "playerId": 80,
+   "points": 9,
+   "rebounds": 9,
+   "assists": 4
+  },
+  {
+   "gameId": 55,
+   "playerId": 81,
+   "points": 21,
+   "rebounds": 6,
+   "assists": 2
+  },
+  {
+   "gameId": 55,
+   "playerId": 88,
+   "points": 25,
+   "rebounds": 6,
+   "assists": 8
+  },
+  {
+   "gameId": 55,
+   "playerId": 89,
+   "points": 4,
+   "rebounds": 13,
+   "assists": 2
+  },
+  {
+   "gameId": 55,
+   "playerId": 90,
+   "points": 25,
+   "rebounds": 6,
+   "assists": 10
+  },
+  {
+   "gameId": 56,
+   "playerId": 13,
+   "points": 18,
+   "rebounds": 13,
+   "assists": 9
+  },
+  {
+   "gameId": 56,
+   "playerId": 14,
+   "points": 29,
+   "rebounds": 11,
+   "assists": 7
+  },
+  {
+   "gameId": 56,
+   "playerId": 15,
+   "points": 21,
+   "rebounds": 2,
+   "assists": 7
+  },
+  {
+   "gameId": 56,
+   "playerId": 34,
+   "points": 16,
+   "rebounds": 9,
+   "assists": 8
+  },
+  {
+   "gameId": 56,
+   "playerId": 35,
+   "points": 19,
+   "rebounds": 9,
+   "assists": 4
+  },
+  {
+   "gameId": 56,
+   "playerId": 36,
+   "points": 22,
+   "rebounds": 10,
+   "assists": 9
+  },
+  {
+   "gameId": 57,
+   "playerId": 61,
+   "points": 34,
+   "rebounds": 7,
+   "assists": 10
+  },
+  {
+   "gameId": 57,
+   "playerId": 62,
+   "points": 7,
+   "rebounds": 8,
+   "assists": 9
+  },
+  {
+   "gameId": 57,
+   "playerId": 63,
+   "points": 18,
+   "rebounds": 9,
+   "assists": 10
+  },
+  {
+   "gameId": 57,
+   "playerId": 1,
+   "points": 15,
+   "rebounds": 6,
+   "assists": 7
+  },
+  {
+   "gameId": 57,
+   "playerId": 2,
+   "points": 14,
+   "rebounds": 7,
+   "assists": 6
+  },
+  {
+   "gameId": 57,
+   "playerId": 3,
+   "points": 4,
+   "rebounds": 12,
+   "assists": 5
+  },
+  {
+   "gameId": 58,
+   "playerId": 25,
+   "points": 15,
+   "rebounds": 13,
+   "assists": 4
+  },
+  {
+   "gameId": 58,
+   "playerId": 26,
+   "points": 24,
+   "rebounds": 9,
+   "assists": 3
+  },
+  {
+   "gameId": 58,
+   "playerId": 27,
+   "points": 33,
+   "rebounds": 12,
+   "assists": 10
+  },
+  {
+   "gameId": 58,
+   "playerId": 10,
+   "points": 26,
+   "rebounds": 11,
+   "assists": 11
+  },
+  {
+   "gameId": 58,
+   "playerId": 11,
+   "points": 27,
+   "rebounds": 12,
+   "assists": 10
+  },
+  {
+   "gameId": 58,
+   "playerId": 12,
+   "points": 17,
+   "rebounds": 8,
+   "assists": 0
+  },
+  {
+   "gameId": 59,
+   "playerId": 40,
+   "points": 21,
+   "rebounds": 9,
+   "assists": 11
+  },
+  {
+   "gameId": 59,
+   "playerId": 41,
+   "points": 19,
+   "rebounds": 9,
+   "assists": 5
+  },
+  {
+   "gameId": 59,
+   "playerId": 42,
+   "points": 10,
+   "rebounds": 2,
+   "assists": 6
+  },
+  {
+   "gameId": 59,
+   "playerId": 58,
+   "points": 32,
+   "rebounds": 3,
+   "assists": 4
+  },
+  {
+   "gameId": 59,
+   "playerId": 59,
+   "points": 28,
+   "rebounds": 5,
+   "assists": 8
+  },
+  {
+   "gameId": 59,
+   "playerId": 60,
+   "points": 18,
+   "rebounds": 2,
+   "assists": 7
+  },
+  {
+   "gameId": 60,
+   "playerId": 67,
+   "points": 18,
+   "rebounds": 5,
+   "assists": 8
+  },
+  {
+   "gameId": 60,
+   "playerId": 68,
+   "points": 32,
+   "rebounds": 4,
+   "assists": 6
+  },
+  {
+   "gameId": 60,
+   "playerId": 69,
+   "points": 24,
+   "rebounds": 5,
+   "assists": 0
+  },
+  {
+   "gameId": 60,
+   "playerId": 16,
+   "points": 30,
+   "rebounds": 4,
+   "assists": 2
+  },
+  {
+   "gameId": 60,
+   "playerId": 17,
+   "points": 4,
+   "rebounds": 2,
+   "assists": 9
+  },
+  {
+   "gameId": 60,
+   "playerId": 18,
+   "points": 6,
+   "rebounds": 8,
+   "assists": 2
+  },
+  {
+   "gameId": 61,
+   "playerId": 7,
+   "points": 30,
+   "rebounds": 3,
+   "assists": 9
+  },
+  {
+   "gameId": 61,
+   "playerId": 8,
+   "points": 5,
+   "rebounds": 4,
+   "assists": 5
+  },
+  {
+   "gameId": 61,
+   "playerId": 9,
+   "points": 18,
+   "rebounds": 6,
+   "assists": 0
+  },
+  {
+   "gameId": 61,
+   "playerId": 61,
+   "points": 14,
+   "rebounds": 9,
+   "assists": 0
+  },
+  {
+   "gameId": 61,
+   "playerId": 62,
+   "points": 19,
+   "rebounds": 8,
+   "assists": 7
+  },
+  {
+   "gameId": 61,
+   "playerId": 63,
+   "points": 20,
+   "rebounds": 13,
+   "assists": 5
+  },
+  {
+   "gameId": 62,
+   "playerId": 52,
+   "points": 26,
+   "rebounds": 5,
+   "assists": 5
+  },
+  {
+   "gameId": 62,
+   "playerId": 53,
+   "points": 19,
+   "rebounds": 10,
+   "assists": 1
+  },
+  {
+   "gameId": 62,
+   "playerId": 54,
+   "points": 4,
+   "rebounds": 2,
+   "assists": 6
+  },
+  {
+   "gameId": 62,
+   "playerId": 19,
+   "points": 22,
+   "rebounds": 10,
+   "assists": 2
+  },
+  {
+   "gameId": 62,
+   "playerId": 20,
+   "points": 33,
+   "rebounds": 10,
+   "assists": 3
+  },
+  {
+   "gameId": 62,
+   "playerId": 21,
+   "points": 27,
+   "rebounds": 12,
+   "assists": 8
+  },
+  {
+   "gameId": 63,
+   "playerId": 67,
+   "points": 10,
+   "rebounds": 3,
+   "assists": 7
+  },
+  {
+   "gameId": 63,
+   "playerId": 68,
+   "points": 6,
+   "rebounds": 8,
+   "assists": 4
+  },
+  {
+   "gameId": 63,
+   "playerId": 69,
+   "points": 14,
+   "rebounds": 13,
+   "assists": 1
+  },
+  {
+   "gameId": 63,
+   "playerId": 76,
+   "points": 27,
+   "rebounds": 5,
+   "assists": 3
+  },
+  {
+   "gameId": 63,
+   "playerId": 77,
+   "points": 14,
+   "rebounds": 2,
+   "assists": 1
+  },
+  {
+   "gameId": 63,
+   "playerId": 78,
+   "points": 14,
+   "rebounds": 10,
+   "assists": 3
+  },
+  {
+   "gameId": 64,
+   "playerId": 88,
+   "points": 19,
+   "rebounds": 11,
+   "assists": 8
+  },
+  {
+   "gameId": 64,
+   "playerId": 89,
+   "points": 18,
+   "rebounds": 4,
+   "assists": 6
+  },
+  {
+   "gameId": 64,
+   "playerId": 90,
+   "points": 16,
+   "rebounds": 8,
+   "assists": 11
+  },
+  {
+   "gameId": 64,
+   "playerId": 55,
+   "points": 13,
+   "rebounds": 8,
+   "assists": 1
+  },
+  {
+   "gameId": 64,
+   "playerId": 56,
+   "points": 13,
+   "rebounds": 8,
+   "assists": 3
+  },
+  {
+   "gameId": 64,
+   "playerId": 57,
+   "points": 8,
+   "rebounds": 4,
+   "assists": 1
+  },
+  {
+   "gameId": 65,
+   "playerId": 73,
+   "points": 9,
+   "rebounds": 13,
+   "assists": 4
+  },
+  {
+   "gameId": 65,
+   "playerId": 74,
+   "points": 15,
+   "rebounds": 3,
+   "assists": 8
+  },
+  {
+   "gameId": 65,
+   "playerId": 75,
+   "points": 32,
+   "rebounds": 8,
+   "assists": 7
+  },
+  {
+   "gameId": 65,
+   "playerId": 64,
+   "points": 7,
+   "rebounds": 4,
+   "assists": 2
+  },
+  {
+   "gameId": 65,
+   "playerId": 65,
+   "points": 27,
+   "rebounds": 8,
+   "assists": 4
+  },
+  {
+   "gameId": 65,
+   "playerId": 66,
+   "points": 12,
+   "rebounds": 13,
+   "assists": 0
+  },
+  {
+   "gameId": 66,
+   "playerId": 49,
+   "points": 13,
+   "rebounds": 4,
+   "assists": 0
+  },
+  {
+   "gameId": 66,
+   "playerId": 50,
+   "points": 22,
+   "rebounds": 13,
+   "assists": 6
+  },
+  {
+   "gameId": 66,
+   "playerId": 51,
+   "points": 12,
+   "rebounds": 3,
+   "assists": 8
+  },
+  {
+   "gameId": 66,
+   "playerId": 10,
+   "points": 9,
+   "rebounds": 5,
+   "assists": 3
+  },
+  {
+   "gameId": 66,
+   "playerId": 11,
+   "points": 30,
+   "rebounds": 2,
+   "assists": 4
+  },
+  {
+   "gameId": 66,
+   "playerId": 12,
+   "points": 30,
+   "rebounds": 4,
+   "assists": 3
+  },
+  {
+   "gameId": 67,
+   "playerId": 70,
+   "points": 14,
+   "rebounds": 10,
+   "assists": 1
+  },
+  {
+   "gameId": 67,
+   "playerId": 72,
+   "points": 32,
+   "rebounds": 13,
+   "assists": 8
+  },
+  {
+   "gameId": 67,
+   "playerId": 22,
+   "points": 32,
+   "rebounds": 13,
+   "assists": 3
+  },
+  {
+   "gameId": 67,
+   "playerId": 23,
+   "points": 33,
+   "rebounds": 9,
+   "assists": 1
+  },
+  {
+   "gameId": 67,
+   "playerId": 24,
+   "points": 24,
+   "rebounds": 5,
+   "assists": 11
+  },
+  {
+   "gameId": 68,
+   "playerId": 13,
+   "points": 23,
+   "rebounds": 6,
+   "assists": 7
+  },
+  {
+   "gameId": 68,
+   "playerId": 14,
+   "points": 13,
+   "rebounds": 13,
+   "assists": 4
+  },
+  {
+   "gameId": 68,
+   "playerId": 15,
+   "points": 6,
+   "rebounds": 13,
+   "assists": 5
+  },
+  {
+   "gameId": 68,
+   "playerId": 31,
+   "points": 34,
+   "rebounds": 9,
+   "assists": 6
+  },
+  {
+   "gameId": 68,
+   "playerId": 32,
+   "points": 16,
+   "rebounds": 3,
+   "assists": 10
+  },
+  {
+   "gameId": 68,
+   "playerId": 33,
+   "points": 19,
+   "rebounds": 2,
+   "assists": 2
+  },
+  {
+   "gameId": 69,
+   "playerId": 58,
+   "points": 15,
+   "rebounds": 12,
+   "assists": 2
+  },
+  {
+   "gameId": 69,
+   "playerId": 59,
+   "points": 4,
+   "rebounds": 13,
+   "assists": 11
+  },
+  {
+   "gameId": 69,
+   "playerId": 60,
+   "points": 26,
+   "rebounds": 5,
+   "assists": 10
+  },
+  {
+   "gameId": 69,
+   "playerId": 40,
+   "points": 8,
+   "rebounds": 7,
+   "assists": 5
+  },
+  {
+   "gameId": 69,
+   "playerId": 41,
+   "points": 32,
+   "rebounds": 2,
+   "assists": 1
+  },
+  {
+   "gameId": 69,
+   "playerId": 42,
+   "points": 30,
+   "rebounds": 11,
+   "assists": 10
+  },
+  {
+   "gameId": 70,
+   "playerId": 37,
+   "points": 29,
+   "rebounds": 12,
+   "assists": 6
+  },
+  {
+   "gameId": 70,
+   "playerId": 38,
+   "points": 9,
+   "rebounds": 7,
+   "assists": 9
+  },
+  {
+   "gameId": 70,
+   "playerId": 39,
+   "points": 14,
+   "rebounds": 9,
+   "assists": 3
+  },
+  {
+   "gameId": 70,
+   "playerId": 34,
+   "points": 15,
+   "rebounds": 12,
+   "assists": 9
+  },
+  {
+   "gameId": 70,
+   "playerId": 35,
+   "points": 33,
+   "rebounds": 1,
+   "assists": 2
+  },
+  {
+   "gameId": 70,
+   "playerId": 36,
+   "points": 19,
+   "rebounds": 13,
+   "assists": 1
+  },
+  {
+   "gameId": 71,
+   "playerId": 1,
+   "points": 5,
+   "rebounds": 12,
+   "assists": 5
+  },
+  {
+   "gameId": 71,
+   "playerId": 2,
+   "points": 8,
+   "rebounds": 9,
+   "assists": 6
+  },
+  {
+   "gameId": 71,
+   "playerId": 3,
+   "points": 15,
+   "rebounds": 12,
+   "assists": 9
+  },
+  {
+   "gameId": 71,
+   "playerId": 28,
+   "points": 13,
+   "rebounds": 7,
+   "assists": 0
+  },
+  {
+   "gameId": 71,
+   "playerId": 29,
+   "points": 14,
+   "rebounds": 6,
+   "assists": 1
+  },
+  {
+   "gameId": 71,
+   "playerId": 30,
+   "points": 30,
+   "rebounds": 11,
+   "assists": 8
+  },
+  {
+   "gameId": 72,
+   "playerId": 85,
+   "points": 11,
+   "rebounds": 1,
+   "assists": 0
+  },
+  {
+   "gameId": 72,
+   "playerId": 86,
+   "points": 31,
+   "rebounds": 11,
+   "assists": 0
+  },
+  {
+   "gameId": 72,
+   "playerId": 87,
+   "points": 18,
+   "rebounds": 2,
+   "assists": 4
+  },
+  {
+   "gameId": 72,
+   "playerId": 82,
+   "points": 30,
+   "rebounds": 7,
+   "assists": 5
+  },
+  {
+   "gameId": 72,
+   "playerId": 83,
+   "points": 31,
+   "rebounds": 6,
+   "assists": 5
+  },
+  {
+   "gameId": 72,
+   "playerId": 84,
+   "points": 18,
+   "rebounds": 13,
+   "assists": 2
+  },
+  {
+   "gameId": 73,
+   "playerId": 4,
+   "points": 26,
+   "rebounds": 3,
+   "assists": 3
+  },
+  {
+   "gameId": 73,
+   "playerId": 6,
+   "points": 31,
+   "rebounds": 5,
+   "assists": 8
+  },
+  {
+   "gameId": 73,
+   "playerId": 43,
+   "points": 21,
+   "rebounds": 9,
+   "assists": 3
+  },
+  {
+   "gameId": 73,
+   "playerId": 44,
+   "points": 5,
+   "rebounds": 13,
+   "assists": 2
+  },
+  {
+   "gameId": 73,
+   "playerId": 45,
+   "points": 8,
+   "rebounds": 7,
+   "assists": 11
+  },
+  {
+   "gameId": 74,
+   "playerId": 46,
+   "points": 14,
+   "rebounds": 5,
+   "assists": 9
+  },
+  {
+   "gameId": 74,
+   "playerId": 47,
+   "points": 29,
+   "rebounds": 1,
+   "assists": 8
+  },
+  {
+   "gameId": 74,
+   "playerId": 48,
+   "points": 22,
+   "rebounds": 9,
+   "assists": 2
+  },
+  {
+   "gameId": 74,
+   "playerId": 16,
+   "points": 11,
+   "rebounds": 4,
+   "assists": 8
+  },
+  {
+   "gameId": 74,
+   "playerId": 17,
+   "points": 29,
+   "rebounds": 5,
+   "assists": 3
+  },
+  {
+   "gameId": 74,
+   "playerId": 18,
+   "points": 4,
+   "rebounds": 13,
+   "assists": 5
+  },
+  {
+   "gameId": 75,
+   "playerId": 79,
+   "points": 31,
+   "rebounds": 13,
+   "assists": 9
+  },
+  {
+   "gameId": 75,
+   "playerId": 80,
+   "points": 26,
+   "rebounds": 13,
+   "assists": 0
+  },
+  {
+   "gameId": 75,
+   "playerId": 81,
+   "points": 26,
+   "rebounds": 7,
+   "assists": 1
+  },
+  {
+   "gameId": 75,
+   "playerId": 25,
+   "points": 33,
+   "rebounds": 10,
+   "assists": 2
+  },
+  {
+   "gameId": 75,
+   "playerId": 26,
+   "points": 8,
+   "rebounds": 13,
+   "assists": 7
+  },
+  {
+   "gameId": 75,
+   "playerId": 27,
+   "points": 15,
+   "rebounds": 6,
+   "assists": 3
+  },
+  {
+   "gameId": 76,
+   "playerId": 19,
+   "points": 31,
+   "rebounds": 6,
+   "assists": 4
+  },
+  {
+   "gameId": 76,
+   "playerId": 20,
+   "points": 21,
+   "rebounds": 4,
+   "assists": 4
+  },
+  {
+   "gameId": 76,
+   "playerId": 21,
+   "points": 13,
+   "rebounds": 8,
+   "assists": 4
+  },
+  {
+   "gameId": 76,
+   "playerId": 31,
+   "points": 13,
+   "rebounds": 11,
+   "assists": 5
+  },
+  {
+   "gameId": 76,
+   "playerId": 32,
+   "points": 6,
+   "rebounds": 10,
+   "assists": 9
+  },
+  {
+   "gameId": 76,
+   "playerId": 33,
+   "points": 14,
+   "rebounds": 13,
+   "assists": 11
+  },
+  {
+   "gameId": 77,
+   "playerId": 73,
+   "points": 31,
+   "rebounds": 6,
+   "assists": 9
+  },
+  {
+   "gameId": 77,
+   "playerId": 74,
+   "points": 24,
+   "rebounds": 4,
+   "assists": 11
+  },
+  {
+   "gameId": 77,
+   "playerId": 75,
+   "points": 23,
+   "rebounds": 3,
+   "assists": 9
+  },
+  {
+   "gameId": 77,
+   "playerId": 64,
+   "points": 32,
+   "rebounds": 9,
+   "assists": 1
+  },
+  {
+   "gameId": 77,
+   "playerId": 65,
+   "points": 18,
+   "rebounds": 1,
+   "assists": 11
+  },
+  {
+   "gameId": 77,
+   "playerId": 66,
+   "points": 10,
+   "rebounds": 12,
+   "assists": 6
+  },
+  {
+   "gameId": 78,
+   "playerId": 52,
+   "points": 6,
+   "rebounds": 11,
+   "assists": 3
+  },
+  {
+   "gameId": 78,
+   "playerId": 53,
+   "points": 26,
+   "rebounds": 9,
+   "assists": 7
+  },
+  {
+   "gameId": 78,
+   "playerId": 54,
+   "points": 10,
+   "rebounds": 1,
+   "assists": 10
+  },
+  {
+   "gameId": 78,
+   "playerId": 55,
+   "points": 11,
+   "rebounds": 8,
+   "assists": 5
+  },
+  {
+   "gameId": 78,
+   "playerId": 56,
+   "points": 8,
+   "rebounds": 7,
+   "assists": 8
+  },
+  {
+   "gameId": 78,
+   "playerId": 57,
+   "points": 4,
+   "rebounds": 6,
+   "assists": 7
+  },
+  {
+   "gameId": 79,
+   "playerId": 61,
+   "points": 20,
+   "rebounds": 13,
+   "assists": 6
+  },
+  {
+   "gameId": 79,
+   "playerId": 62,
+   "points": 5,
+   "rebounds": 6,
+   "assists": 11
+  },
+  {
+   "gameId": 79,
+   "playerId": 63,
+   "points": 28,
+   "rebounds": 2,
+   "assists": 10
+  },
+  {
+   "gameId": 79,
+   "playerId": 76,
+   "points": 29,
+   "rebounds": 11,
+   "assists": 8
+  },
+  {
+   "gameId": 79,
+   "playerId": 77,
+   "points": 10,
+   "rebounds": 13,
+   "assists": 11
+  },
+  {
+   "gameId": 79,
+   "playerId": 78,
+   "points": 31,
+   "rebounds": 11,
+   "assists": 7
+  },
+  {
+   "gameId": 80,
+   "playerId": 7,
+   "points": 16,
+   "rebounds": 2,
+   "assists": 2
+  },
+  {
+   "gameId": 80,
+   "playerId": 8,
+   "points": 14,
+   "rebounds": 4,
+   "assists": 9
+  },
+  {
+   "gameId": 80,
+   "playerId": 9,
+   "points": 29,
+   "rebounds": 9,
+   "assists": 11
+  },
+  {
+   "gameId": 80,
+   "playerId": 34,
+   "points": 9,
+   "rebounds": 13,
+   "assists": 5
+  },
+  {
+   "gameId": 80,
+   "playerId": 35,
+   "points": 19,
+   "rebounds": 6,
+   "assists": 11
+  },
+  {
+   "gameId": 80,
+   "playerId": 36,
+   "points": 11,
+   "rebounds": 8,
+   "assists": 0
+  },
+  {
+   "gameId": 81,
+   "playerId": 82,
+   "points": 27,
+   "rebounds": 12,
+   "assists": 7
+  },
+  {
+   "gameId": 81,
+   "playerId": 83,
+   "points": 10,
+   "rebounds": 1,
+   "assists": 8
+  },
+  {
+   "gameId": 81,
+   "playerId": 84,
+   "points": 4,
+   "rebounds": 10,
+   "assists": 0
+  },
+  {
+   "gameId": 81,
+   "playerId": 46,
+   "points": 21,
+   "rebounds": 7,
+   "assists": 2
+  },
+  {
+   "gameId": 81,
+   "playerId": 47,
+   "points": 18,
+   "rebounds": 8,
+   "assists": 3
+  },
+  {
+   "gameId": 81,
+   "playerId": 48,
+   "points": 8,
+   "rebounds": 7,
+   "assists": 4
+  },
+  {
+   "gameId": 82,
+   "playerId": 58,
+   "points": 30,
+   "rebounds": 5,
+   "assists": 5
+  },
+  {
+   "gameId": 82,
+   "playerId": 59,
+   "points": 9,
+   "rebounds": 8,
+   "assists": 4
+  },
+  {
+   "gameId": 82,
+   "playerId": 60,
+   "points": 11,
+   "rebounds": 7,
+   "assists": 10
+  },
+  {
+   "gameId": 82,
+   "playerId": 13,
+   "points": 21,
+   "rebounds": 13,
+   "assists": 0
+  },
+  {
+   "gameId": 82,
+   "playerId": 14,
+   "points": 12,
+   "rebounds": 4,
+   "assists": 1
+  },
+  {
+   "gameId": 82,
+   "playerId": 15,
+   "points": 5,
+   "rebounds": 5,
+   "assists": 11
+  },
+  {
+   "gameId": 83,
+   "playerId": 1,
+   "points": 26,
+   "rebounds": 2,
+   "assists": 7
+  },
+  {
+   "gameId": 83,
+   "playerId": 2,
+   "points": 9,
+   "rebounds": 7,
+   "assists": 1
+  },
+  {
+   "gameId": 83,
+   "playerId": 3,
+   "points": 12,
+   "rebounds": 11,
+   "assists": 10
+  },
+  {
+   "gameId": 83,
+   "playerId": 70,
+   "points": 8,
+   "rebounds": 3,
+   "assists": 5
+  },
+  {
+   "gameId": 83,
+   "playerId": 72,
+   "points": 34,
+   "rebounds": 2,
+   "assists": 5
+  },
+  {
+   "gameId": 84,
+   "playerId": 10,
+   "points": 8,
+   "rebounds": 2,
+   "assists": 6
+  },
+  {
+   "gameId": 84,
+   "playerId": 11,
+   "points": 24,
+   "rebounds": 6,
+   "assists": 7
+  },
+  {
+   "gameId": 84,
+   "playerId": 12,
+   "points": 16,
+   "rebounds": 8,
+   "assists": 11
+  },
+  {
+   "gameId": 84,
+   "playerId": 79,
+   "points": 29,
+   "rebounds": 6,
+   "assists": 10
+  },
+  {
+   "gameId": 84,
+   "playerId": 80,
+   "points": 34,
+   "rebounds": 13,
+   "assists": 2
+  },
+  {
+   "gameId": 84,
+   "playerId": 81,
+   "points": 34,
+   "rebounds": 7,
+   "assists": 0
+  },
+  {
+   "gameId": 85,
+   "playerId": 40,
+   "points": 15,
+   "rebounds": 9,
+   "assists": 10
+  },
+  {
+   "gameId": 85,
+   "playerId": 41,
+   "points": 33,
+   "rebounds": 12,
+   "assists": 1
+  },
+  {
+   "gameId": 85,
+   "playerId": 42,
+   "points": 20,
+   "rebounds": 9,
+   "assists": 11
+  },
+  {
+   "gameId": 85,
+   "playerId": 4,
+   "points": 15,
+   "rebounds": 9,
+   "assists": 9
+  },
+  {
+   "gameId": 85,
+   "playerId": 6,
+   "points": 28,
+   "rebounds": 4,
+   "assists": 8
+  },
+  {
+   "gameId": 86,
+   "playerId": 16,
+   "points": 11,
+   "rebounds": 3,
+   "assists": 9
+  },
+  {
+   "gameId": 86,
+   "playerId": 17,
+   "points": 23,
+   "rebounds": 12,
+   "assists": 0
+  },
+  {
+   "gameId": 86,
+   "playerId": 18,
+   "points": 34,
+   "rebounds": 8,
+   "assists": 7
+  },
+  {
+   "gameId": 86,
+   "playerId": 49,
+   "points": 5,
+   "rebounds": 10,
+   "assists": 1
+  },
+  {
+   "gameId": 86,
+   "playerId": 50,
+   "points": 11,
+   "rebounds": 2,
+   "assists": 7
+  },
+  {
+   "gameId": 86,
+   "playerId": 51,
+   "points": 14,
+   "rebounds": 8,
+   "assists": 0
+  },
+  {
+   "gameId": 87,
+   "playerId": 43,
+   "points": 34,
+   "rebounds": 7,
+   "assists": 0
+  },
+  {
+   "gameId": 87,
+   "playerId": 44,
+   "points": 7,
+   "rebounds": 7,
+   "assists": 9
+  },
+  {
+   "gameId": 87,
+   "playerId": 45,
+   "points": 16,
+   "rebounds": 8,
+   "assists": 6
+  },
+  {
+   "gameId": 87,
+   "playerId": 67,
+   "points": 13,
+   "rebounds": 5,
+   "assists": 7
+  },
+  {
+   "gameId": 87,
+   "playerId": 68,
+   "points": 23,
+   "rebounds": 8,
+   "assists": 8
+  },
+  {
+   "gameId": 87,
+   "playerId": 69,
+   "points": 11,
+   "rebounds": 8,
+   "assists": 6
+  },
+  {
+   "gameId": 88,
+   "playerId": 25,
+   "points": 20,
+   "rebounds": 10,
+   "assists": 10
+  },
+  {
+   "gameId": 88,
+   "playerId": 26,
+   "points": 28,
+   "rebounds": 2,
+   "assists": 7
+  },
+  {
+   "gameId": 88,
+   "playerId": 27,
+   "points": 27,
+   "rebounds": 8,
+   "assists": 11
+  },
+  {
+   "gameId": 88,
+   "playerId": 28,
+   "points": 17,
+   "rebounds": 12,
+   "assists": 0
+  },
+  {
+   "gameId": 88,
+   "playerId": 29,
+   "points": 10,
+   "rebounds": 5,
+   "assists": 2
+  },
+  {
+   "gameId": 88,
+   "playerId": 30,
+   "points": 10,
+   "rebounds": 7,
+   "assists": 5
+  },
+  {
+   "gameId": 89,
+   "playerId": 37,
+   "points": 26,
+   "rebounds": 10,
+   "assists": 6
+  },
+  {
+   "gameId": 89,
+   "playerId": 38,
+   "points": 34,
+   "rebounds": 12,
+   "assists": 6
+  },
+  {
+   "gameId": 89,
+   "playerId": 39,
+   "points": 5,
+   "rebounds": 3,
+   "assists": 6
+  },
+  {
+   "gameId": 89,
+   "playerId": 85,
+   "points": 25,
+   "rebounds": 9,
+   "assists": 3
+  },
+  {
+   "gameId": 89,
+   "playerId": 86,
+   "points": 33,
+   "rebounds": 8,
+   "assists": 5
+  },
+  {
+   "gameId": 89,
+   "playerId": 87,
+   "points": 12,
+   "rebounds": 12,
+   "assists": 7
+  },
+  {
+   "gameId": 90,
+   "playerId": 88,
+   "points": 12,
+   "rebounds": 2,
+   "assists": 5
+  },
+  {
+   "gameId": 90,
+   "playerId": 89,
+   "points": 13,
+   "rebounds": 8,
+   "assists": 7
+  },
+  {
+   "gameId": 90,
+   "playerId": 90,
+   "points": 25,
+   "rebounds": 4,
+   "assists": 3
+  },
+  {
+   "gameId": 90,
+   "playerId": 22,
+   "points": 24,
+   "rebounds": 4,
+   "assists": 7
+  },
+  {
+   "gameId": 90,
+   "playerId": 23,
+   "points": 13,
+   "rebounds": 13,
+   "assists": 10
+  },
+  {
+   "gameId": 90,
+   "playerId": 24,
+   "points": 28,
+   "rebounds": 4,
+   "assists": 6
+  },
+  {
+   "gameId": 91,
+   "playerId": 37,
+   "points": 34,
+   "rebounds": 11,
+   "assists": 6
+  },
+  {
+   "gameId": 91,
+   "playerId": 38,
+   "points": 25,
+   "rebounds": 4,
+   "assists": 0
+  },
+  {
+   "gameId": 91,
+   "playerId": 39,
+   "points": 34,
+   "rebounds": 13,
+   "assists": 4
+  },
+  {
+   "gameId": 91,
+   "playerId": 31,
+   "points": 12,
+   "rebounds": 7,
+   "assists": 1
+  },
+  {
+   "gameId": 91,
+   "playerId": 32,
+   "points": 21,
+   "rebounds": 2,
+   "assists": 1
+  },
+  {
+   "gameId": 91,
+   "playerId": 33,
+   "points": 30,
+   "rebounds": 9,
+   "assists": 3
+  },
+  {
+   "gameId": 92,
+   "playerId": 19,
+   "points": 10,
+   "rebounds": 2,
+   "assists": 7
+  },
+  {
+   "gameId": 92,
+   "playerId": 20,
+   "points": 21,
+   "rebounds": 3,
+   "assists": 0
+  },
+  {
+   "gameId": 92,
+   "playerId": 21,
+   "points": 14,
+   "rebounds": 5,
+   "assists": 0
+  },
+  {
+   "gameId": 92,
+   "playerId": 28,
+   "points": 25,
+   "rebounds": 12,
+   "assists": 10
+  },
+  {
+   "gameId": 92,
+   "playerId": 29,
+   "points": 13,
+   "rebounds": 10,
+   "assists": 1
+  },
+  {
+   "gameId": 92,
+   "playerId": 30,
+   "points": 15,
+   "rebounds": 4,
+   "assists": 2
+  },
+  {
+   "gameId": 93,
+   "playerId": 16,
+   "points": 7,
+   "rebounds": 7,
+   "assists": 10
+  },
+  {
+   "gameId": 93,
+   "playerId": 17,
+   "points": 20,
+   "rebounds": 8,
+   "assists": 0
+  },
+  {
+   "gameId": 93,
+   "playerId": 18,
+   "points": 18,
+   "rebounds": 9,
+   "assists": 11
+  },
+  {
+   "gameId": 93,
+   "playerId": 46,
+   "points": 28,
+   "rebounds": 5,
+   "assists": 4
+  },
+  {
+   "gameId": 93,
+   "playerId": 47,
+   "points": 26,
+   "rebounds": 11,
+   "assists": 3
+  },
+  {
+   "gameId": 93,
+   "playerId": 48,
+   "points": 30,
+   "rebounds": 11,
+   "assists": 11
+  },
+  {
+   "gameId": 94,
+   "playerId": 4,
+   "points": 6,
+   "rebounds": 8,
+   "assists": 3
+  },
+  {
+   "gameId": 94,
+   "playerId": 6,
+   "points": 17,
+   "rebounds": 13,
+   "assists": 7
+  },
+  {
+   "gameId": 94,
+   "playerId": 25,
+   "points": 15,
+   "rebounds": 2,
+   "assists": 2
+  },
+  {
+   "gameId": 94,
+   "playerId": 26,
+   "points": 32,
+   "rebounds": 13,
+   "assists": 7
+  },
+  {
+   "gameId": 94,
+   "playerId": 27,
+   "points": 25,
+   "rebounds": 3,
+   "assists": 5
+  },
+  {
+   "gameId": 95,
+   "playerId": 61,
+   "points": 15,
+   "rebounds": 11,
+   "assists": 5
+  },
+  {
+   "gameId": 95,
+   "playerId": 62,
+   "points": 27,
+   "rebounds": 11,
+   "assists": 6
+  },
+  {
+   "gameId": 95,
+   "playerId": 63,
+   "points": 14,
+   "rebounds": 2,
+   "assists": 7
+  },
+  {
+   "gameId": 95,
+   "playerId": 70,
+   "points": 13,
+   "rebounds": 13,
+   "assists": 7
+  },
+  {
+   "gameId": 95,
+   "playerId": 72,
+   "points": 8,
+   "rebounds": 12,
+   "assists": 6
+  },
+  {
+   "gameId": 96,
+   "playerId": 10,
+   "points": 30,
+   "rebounds": 1,
+   "assists": 0
+  },
+  {
+   "gameId": 96,
+   "playerId": 11,
+   "points": 34,
+   "rebounds": 2,
+   "assists": 2
+  },
+  {
+   "gameId": 96,
+   "playerId": 12,
+   "points": 5,
+   "rebounds": 11,
+   "assists": 2
+  },
+  {
+   "gameId": 96,
+   "playerId": 88,
+   "points": 16,
+   "rebounds": 7,
+   "assists": 2
+  },
+  {
+   "gameId": 96,
+   "playerId": 89,
+   "points": 18,
+   "rebounds": 10,
+   "assists": 7
+  },
+  {
+   "gameId": 96,
+   "playerId": 90,
+   "points": 10,
+   "rebounds": 7,
+   "assists": 7
+  },
+  {
+   "gameId": 97,
+   "playerId": 13,
+   "points": 25,
+   "rebounds": 7,
+   "assists": 6
+  },
+  {
+   "gameId": 97,
+   "playerId": 14,
+   "points": 32,
+   "rebounds": 7,
+   "assists": 9
+  },
+  {
+   "gameId": 97,
+   "playerId": 15,
+   "points": 19,
+   "rebounds": 2,
+   "assists": 6
+  },
+  {
+   "gameId": 97,
+   "playerId": 55,
+   "points": 22,
+   "rebounds": 11,
+   "assists": 7
+  },
+  {
+   "gameId": 97,
+   "playerId": 56,
+   "points": 28,
+   "rebounds": 4,
+   "assists": 1
+  },
+  {
+   "gameId": 97,
+   "playerId": 57,
+   "points": 17,
+   "rebounds": 5,
+   "assists": 8
+  },
+  {
+   "gameId": 98,
+   "playerId": 7,
+   "points": 22,
+   "rebounds": 13,
+   "assists": 1
+  },
+  {
+   "gameId": 98,
+   "playerId": 8,
+   "points": 22,
+   "rebounds": 9,
+   "assists": 10
+  },
+  {
+   "gameId": 98,
+   "playerId": 9,
+   "points": 12,
+   "rebounds": 1,
+   "assists": 9
+  },
+  {
+   "gameId": 98,
+   "playerId": 73,
+   "points": 30,
+   "rebounds": 10,
+   "assists": 3
+  },
+  {
+   "gameId": 98,
+   "playerId": 74,
+   "points": 29,
+   "rebounds": 12,
+   "assists": 7
+  },
+  {
+   "gameId": 98,
+   "playerId": 75,
+   "points": 22,
+   "rebounds": 12,
+   "assists": 7
+  },
+  {
+   "gameId": 99,
+   "playerId": 1,
+   "points": 13,
+   "rebounds": 10,
+   "assists": 6
+  },
+  {
+   "gameId": 99,
+   "playerId": 2,
+   "points": 32,
+   "rebounds": 3,
+   "assists": 2
+  },
+  {
+   "gameId": 99,
+   "playerId": 3,
+   "points": 13,
+   "rebounds": 6,
+   "assists": 11
+  },
+  {
+   "gameId": 99,
+   "playerId": 67,
+   "points": 24,
+   "rebounds": 10,
+   "assists": 0
+  },
+  {
+   "gameId": 99,
+   "playerId": 68,
+   "points": 5,
+   "rebounds": 5,
+   "assists": 7
+  },
+  {
+   "gameId": 99,
+   "playerId": 69,
+   "points": 7,
+   "rebounds": 13,
+   "assists": 8
+  },
+  {
+   "gameId": 100,
+   "playerId": 82,
+   "points": 13,
+   "rebounds": 11,
+   "assists": 11
+  },
+  {
+   "gameId": 100,
+   "playerId": 83,
+   "points": 33,
+   "rebounds": 9,
+   "assists": 0
+  },
+  {
+   "gameId": 100,
+   "playerId": 84,
+   "points": 19,
+   "rebounds": 13,
+   "assists": 8
+  },
+  {
+   "gameId": 100,
+   "playerId": 34,
+   "points": 9,
+   "rebounds": 7,
+   "assists": 9
+  },
+  {
+   "gameId": 100,
+   "playerId": 35,
+   "points": 15,
+   "rebounds": 6,
+   "assists": 0
+  },
+  {
+   "gameId": 100,
+   "playerId": 36,
+   "points": 13,
+   "rebounds": 4,
+   "assists": 9
+  },
+  {
+   "gameId": 101,
+   "playerId": 79,
+   "points": 28,
+   "rebounds": 8,
+   "assists": 4
+  },
+  {
+   "gameId": 101,
+   "playerId": 80,
+   "points": 13,
+   "rebounds": 1,
+   "assists": 2
+  },
+  {
+   "gameId": 101,
+   "playerId": 81,
+   "points": 15,
+   "rebounds": 3,
+   "assists": 1
+  },
+  {
+   "gameId": 101,
+   "playerId": 52,
+   "points": 22,
+   "rebounds": 7,
+   "assists": 0
+  },
+  {
+   "gameId": 101,
+   "playerId": 53,
+   "points": 19,
+   "rebounds": 7,
+   "assists": 3
+  },
+  {
+   "gameId": 101,
+   "playerId": 54,
+   "points": 21,
+   "rebounds": 7,
+   "assists": 5
+  },
+  {
+   "gameId": 102,
+   "playerId": 85,
+   "points": 10,
+   "rebounds": 6,
+   "assists": 1
+  },
+  {
+   "gameId": 102,
+   "playerId": 86,
+   "points": 26,
+   "rebounds": 10,
+   "assists": 0
+  },
+  {
+   "gameId": 102,
+   "playerId": 87,
+   "points": 13,
+   "rebounds": 8,
+   "assists": 0
+  },
+  {
+   "gameId": 102,
+   "playerId": 40,
+   "points": 20,
+   "rebounds": 13,
+   "assists": 7
+  },
+  {
+   "gameId": 102,
+   "playerId": 41,
+   "points": 17,
+   "rebounds": 2,
+   "assists": 11
+  },
+  {
+   "gameId": 102,
+   "playerId": 42,
+   "points": 11,
+   "rebounds": 8,
+   "assists": 5
+  },
+  {
+   "gameId": 103,
+   "playerId": 43,
+   "points": 5,
+   "rebounds": 5,
+   "assists": 9
+  },
+  {
+   "gameId": 103,
+   "playerId": 44,
+   "points": 25,
+   "rebounds": 10,
+   "assists": 7
+  },
+  {
+   "gameId": 103,
+   "playerId": 45,
+   "points": 26,
+   "rebounds": 10,
+   "assists": 1
+  },
+  {
+   "gameId": 103,
+   "playerId": 76,
+   "points": 16,
+   "rebounds": 3,
+   "assists": 10
+  },
+  {
+   "gameId": 103,
+   "playerId": 77,
+   "points": 8,
+   "rebounds": 7,
+   "assists": 11
+  },
+  {
+   "gameId": 103,
+   "playerId": 78,
+   "points": 9,
+   "rebounds": 5,
+   "assists": 9
+  },
+  {
+   "gameId": 104,
+   "playerId": 22,
+   "points": 9,
+   "rebounds": 2,
+   "assists": 10
+  },
+  {
+   "gameId": 104,
+   "playerId": 23,
+   "points": 18,
+   "rebounds": 13,
+   "assists": 10
+  },
+  {
+   "gameId": 104,
+   "playerId": 24,
+   "points": 4,
+   "rebounds": 8,
+   "assists": 8
+  },
+  {
+   "gameId": 104,
+   "playerId": 64,
+   "points": 32,
+   "rebounds": 9,
+   "assists": 11
+  },
+  {
+   "gameId": 104,
+   "playerId": 65,
+   "points": 19,
+   "rebounds": 5,
+   "assists": 5
+  },
+  {
+   "gameId": 104,
+   "playerId": 66,
+   "points": 27,
+   "rebounds": 5,
+   "assists": 9
+  },
+  {
+   "gameId": 105,
+   "playerId": 49,
+   "points": 25,
+   "rebounds": 3,
+   "assists": 8
+  },
+  {
+   "gameId": 105,
+   "playerId": 50,
+   "points": 25,
+   "rebounds": 12,
+   "assists": 10
+  },
+  {
+   "gameId": 105,
+   "playerId": 51,
+   "points": 29,
+   "rebounds": 5,
+   "assists": 11
+  },
+  {
+   "gameId": 105,
+   "playerId": 58,
+   "points": 14,
+   "rebounds": 3,
+   "assists": 2
+  },
+  {
+   "gameId": 105,
+   "playerId": 59,
+   "points": 9,
+   "rebounds": 11,
+   "assists": 5
+  },
+  {
+   "gameId": 105,
+   "playerId": 60,
+   "points": 33,
+   "rebounds": 1,
+   "assists": 10
+  },
+  {
+   "gameId": 106,
+   "playerId": 73,
+   "points": 12,
+   "rebounds": 4,
+   "assists": 5
+  },
+  {
+   "gameId": 106,
+   "playerId": 74,
+   "points": 6,
+   "rebounds": 10,
+   "assists": 7
+  },
+  {
+   "gameId": 106,
+   "playerId": 75,
+   "points": 17,
+   "rebounds": 1,
+   "assists": 4
+  },
+  {
+   "gameId": 106,
+   "playerId": 85,
+   "points": 10,
+   "rebounds": 5,
+   "assists": 3
+  },
+  {
+   "gameId": 106,
+   "playerId": 86,
+   "points": 21,
+   "rebounds": 2,
+   "assists": 7
+  },
+  {
+   "gameId": 106,
+   "playerId": 87,
+   "points": 8,
+   "rebounds": 13,
+   "assists": 1
+  },
+  {
+   "gameId": 107,
+   "playerId": 61,
+   "points": 16,
+   "rebounds": 9,
+   "assists": 3
+  },
+  {
+   "gameId": 107,
+   "playerId": 62,
+   "points": 23,
+   "rebounds": 10,
+   "assists": 5
+  },
+  {
+   "gameId": 107,
+   "playerId": 63,
+   "points": 16,
+   "rebounds": 9,
+   "assists": 1
+  },
+  {
+   "gameId": 107,
+   "playerId": 79,
+   "points": 28,
+   "rebounds": 12,
+   "assists": 6
+  },
+  {
+   "gameId": 107,
+   "playerId": 80,
+   "points": 9,
+   "rebounds": 2,
+   "assists": 0
+  },
+  {
+   "gameId": 107,
+   "playerId": 81,
+   "points": 12,
+   "rebounds": 9,
+   "assists": 1
+  },
+  {
+   "gameId": 108,
+   "playerId": 64,
+   "points": 5,
+   "rebounds": 4,
+   "assists": 5
+  },
+  {
+   "gameId": 108,
+   "playerId": 65,
+   "points": 30,
+   "rebounds": 3,
+   "assists": 4
+  },
+  {
+   "gameId": 108,
+   "playerId": 66,
+   "points": 19,
+   "rebounds": 9,
+   "assists": 7
+  },
+  {
+   "gameId": 108,
+   "playerId": 46,
+   "points": 15,
+   "rebounds": 4,
+   "assists": 0
+  },
+  {
+   "gameId": 108,
+   "playerId": 47,
+   "points": 5,
+   "rebounds": 6,
+   "assists": 0
+  },
+  {
+   "gameId": 108,
+   "playerId": 48,
+   "points": 9,
+   "rebounds": 12,
+   "assists": 9
+  },
+  {
+   "gameId": 109,
+   "playerId": 34,
+   "points": 19,
+   "rebounds": 11,
+   "assists": 11
+  },
+  {
+   "gameId": 109,
+   "playerId": 35,
+   "points": 18,
+   "rebounds": 6,
+   "assists": 7
+  },
+  {
+   "gameId": 109,
+   "playerId": 36,
+   "points": 13,
+   "rebounds": 9,
+   "assists": 8
+  },
+  {
+   "gameId": 109,
+   "playerId": 19,
+   "points": 19,
+   "rebounds": 9,
+   "assists": 1
+  },
+  {
+   "gameId": 109,
+   "playerId": 20,
+   "points": 5,
+   "rebounds": 12,
+   "assists": 1
+  },
+  {
+   "gameId": 109,
+   "playerId": 21,
+   "points": 4,
+   "rebounds": 9,
+   "assists": 1
+  },
+  {
+   "gameId": 110,
+   "playerId": 49,
+   "points": 5,
+   "rebounds": 3,
+   "assists": 3
+  },
+  {
+   "gameId": 110,
+   "playerId": 50,
+   "points": 8,
+   "rebounds": 1,
+   "assists": 9
+  },
+  {
+   "gameId": 110,
+   "playerId": 51,
+   "points": 34,
+   "rebounds": 12,
+   "assists": 3
+  },
+  {
+   "gameId": 110,
+   "playerId": 67,
+   "points": 5,
+   "rebounds": 7,
+   "assists": 5
+  },
+  {
+   "gameId": 110,
+   "playerId": 68,
+   "points": 29,
+   "rebounds": 5,
+   "assists": 7
+  },
+  {
+   "gameId": 110,
+   "playerId": 69,
+   "points": 31,
+   "rebounds": 8,
+   "assists": 1
+  },
+  {
+   "gameId": 111,
+   "playerId": 76,
+   "points": 8,
+   "rebounds": 4,
+   "assists": 7
+  },
+  {
+   "gameId": 111,
+   "playerId": 77,
+   "points": 28,
+   "rebounds": 7,
+   "assists": 2
+  },
+  {
+   "gameId": 111,
+   "playerId": 78,
+   "points": 32,
+   "rebounds": 9,
+   "assists": 11
+  },
+  {
+   "gameId": 111,
+   "playerId": 4,
+   "points": 19,
+   "rebounds": 11,
+   "assists": 2
+  },
+  {
+   "gameId": 111,
+   "playerId": 6,
+   "points": 5,
+   "rebounds": 12,
+   "assists": 4
+  },
+  {
+   "gameId": 112,
+   "playerId": 13,
+   "points": 15,
+   "rebounds": 4,
+   "assists": 3
+  },
+  {
+   "gameId": 112,
+   "playerId": 14,
+   "points": 33,
+   "rebounds": 2,
+   "assists": 6
+  },
+  {
+   "gameId": 112,
+   "playerId": 15,
+   "points": 7,
+   "rebounds": 9,
+   "assists": 8
+  },
+  {
+   "gameId": 112,
+   "playerId": 52,
+   "points": 7,
+   "rebounds": 5,
+   "assists": 4
+  },
+  {
+   "gameId": 112,
+   "playerId": 53,
+   "points": 31,
+   "rebounds": 4,
+   "assists": 3
+  },
+  {
+   "gameId": 112,
+   "playerId": 54,
+   "points": 18,
+   "rebounds": 7,
+   "assists": 0
+  },
+  {
+   "gameId": 113,
+   "playerId": 16,
+   "points": 5,
+   "rebounds": 2,
+   "assists": 2
+  },
+  {
+   "gameId": 113,
+   "playerId": 17,
+   "points": 6,
+   "rebounds": 3,
+   "assists": 10
+  },
+  {
+   "gameId": 113,
+   "playerId": 18,
+   "points": 5,
+   "rebounds": 12,
+   "assists": 6
+  },
+  {
+   "gameId": 113,
+   "playerId": 31,
+   "points": 16,
+   "rebounds": 7,
+   "assists": 1
+  },
+  {
+   "gameId": 113,
+   "playerId": 32,
+   "points": 8,
+   "rebounds": 1,
+   "assists": 10
+  },
+  {
+   "gameId": 113,
+   "playerId": 33,
+   "points": 14,
+   "rebounds": 6,
+   "assists": 9
+  },
+  {
+   "gameId": 114,
+   "playerId": 22,
+   "points": 24,
+   "rebounds": 13,
+   "assists": 3
+  },
+  {
+   "gameId": 114,
+   "playerId": 23,
+   "points": 26,
+   "rebounds": 3,
+   "assists": 8
+  },
+  {
+   "gameId": 114,
+   "playerId": 24,
+   "points": 8,
+   "rebounds": 6,
+   "assists": 0
+  },
+  {
+   "gameId": 114,
+   "playerId": 40,
+   "points": 19,
+   "rebounds": 11,
+   "assists": 11
+  },
+  {
+   "gameId": 114,
+   "playerId": 41,
+   "points": 29,
+   "rebounds": 1,
+   "assists": 1
+  },
+  {
+   "gameId": 114,
+   "playerId": 42,
+   "points": 12,
+   "rebounds": 7,
+   "assists": 5
+  },
+  {
+   "gameId": 115,
+   "playerId": 25,
+   "points": 18,
+   "rebounds": 7,
+   "assists": 1
+  },
+  {
+   "gameId": 115,
+   "playerId": 26,
+   "points": 8,
+   "rebounds": 7,
+   "assists": 5
+  },
+  {
+   "gameId": 115,
+   "playerId": 27,
+   "points": 26,
+   "rebounds": 3,
+   "assists": 4
+  },
+  {
+   "gameId": 115,
+   "playerId": 55,
+   "points": 22,
+   "rebounds": 2,
+   "assists": 3
+  },
+  {
+   "gameId": 115,
+   "playerId": 56,
+   "points": 25,
+   "rebounds": 11,
+   "assists": 8
+  },
+  {
+   "gameId": 115,
+   "playerId": 57,
+   "points": 7,
+   "rebounds": 2,
+   "assists": 4
+  },
+  {
+   "gameId": 116,
+   "playerId": 88,
+   "points": 26,
+   "rebounds": 12,
+   "assists": 6
+  },
+  {
+   "gameId": 116,
+   "playerId": 89,
+   "points": 25,
+   "rebounds": 13,
+   "assists": 2
+  },
+  {
+   "gameId": 116,
+   "playerId": 90,
+   "points": 5,
+   "rebounds": 4,
+   "assists": 2
+  },
+  {
+   "gameId": 116,
+   "playerId": 82,
+   "points": 29,
+   "rebounds": 6,
+   "assists": 10
+  },
+  {
+   "gameId": 116,
+   "playerId": 83,
+   "points": 20,
+   "rebounds": 13,
+   "assists": 8
+  },
+  {
+   "gameId": 116,
+   "playerId": 84,
+   "points": 11,
+   "rebounds": 11,
+   "assists": 2
+  },
+  {
+   "gameId": 117,
+   "playerId": 28,
+   "points": 19,
+   "rebounds": 2,
+   "assists": 6
+  },
+  {
+   "gameId": 117,
+   "playerId": 29,
+   "points": 29,
+   "rebounds": 12,
+   "assists": 3
+  },
+  {
+   "gameId": 117,
+   "playerId": 30,
+   "points": 10,
+   "rebounds": 10,
+   "assists": 2
+  },
+  {
+   "gameId": 117,
+   "playerId": 58,
+   "points": 21,
+   "rebounds": 6,
+   "assists": 1
+  },
+  {
+   "gameId": 117,
+   "playerId": 59,
+   "points": 5,
+   "rebounds": 1,
+   "assists": 2
+  },
+  {
+   "gameId": 117,
+   "playerId": 60,
+   "points": 22,
+   "rebounds": 5,
+   "assists": 11
+  },
+  {
+   "gameId": 118,
+   "playerId": 10,
+   "points": 23,
+   "rebounds": 3,
+   "assists": 4
+  },
+  {
+   "gameId": 118,
+   "playerId": 11,
+   "points": 13,
+   "rebounds": 3,
+   "assists": 1
+  },
+  {
+   "gameId": 118,
+   "playerId": 12,
+   "points": 32,
+   "rebounds": 5,
+   "assists": 3
+  },
+  {
+   "gameId": 118,
+   "playerId": 70,
+   "points": 7,
+   "rebounds": 13,
+   "assists": 3
+  },
+  {
+   "gameId": 118,
+   "playerId": 72,
+   "points": 14,
+   "rebounds": 8,
+   "assists": 11
+  },
+  {
+   "gameId": 119,
+   "playerId": 37,
+   "points": 19,
+   "rebounds": 3,
+   "assists": 1
+  },
+  {
+   "gameId": 119,
+   "playerId": 38,
+   "points": 4,
+   "rebounds": 13,
+   "assists": 8
+  },
+  {
+   "gameId": 119,
+   "playerId": 39,
+   "points": 34,
+   "rebounds": 4,
+   "assists": 11
+  },
+  {
+   "gameId": 119,
+   "playerId": 7,
+   "points": 29,
+   "rebounds": 6,
+   "assists": 7
+  },
+  {
+   "gameId": 119,
+   "playerId": 8,
+   "points": 27,
+   "rebounds": 13,
+   "assists": 9
+  },
+  {
+   "gameId": 119,
+   "playerId": 9,
+   "points": 28,
+   "rebounds": 10,
+   "assists": 9
+  },
+  {
+   "gameId": 120,
+   "playerId": 1,
+   "points": 33,
+   "rebounds": 7,
+   "assists": 1
+  },
+  {
+   "gameId": 120,
+   "playerId": 2,
+   "points": 23,
+   "rebounds": 12,
+   "assists": 5
+  },
+  {
+   "gameId": 120,
+   "playerId": 3,
+   "points": 10,
+   "rebounds": 1,
+   "assists": 9
+  },
+  {
+   "gameId": 120,
+   "playerId": 43,
+   "points": 31,
+   "rebounds": 6,
+   "assists": 5
+  },
+  {
+   "gameId": 120,
+   "playerId": 44,
+   "points": 8,
+   "rebounds": 2,
+   "assists": 10
+  },
+  {
+   "gameId": 120,
+   "playerId": 45,
+   "points": 7,
+   "rebounds": 13,
+   "assists": 1
+  },
+  {
+   "gameId": 121,
+   "playerId": 13,
+   "points": 28,
+   "rebounds": 2,
+   "assists": 6
+  },
+  {
+   "gameId": 121,
+   "playerId": 14,
+   "points": 20,
+   "rebounds": 8,
+   "assists": 11
+  },
+  {
+   "gameId": 121,
+   "playerId": 15,
+   "points": 8,
+   "rebounds": 9,
+   "assists": 10
+  },
+  {
+   "gameId": 121,
+   "playerId": 43,
+   "points": 14,
+   "rebounds": 5,
+   "assists": 0
+  },
+  {
+   "gameId": 121,
+   "playerId": 44,
+   "points": 7,
+   "rebounds": 12,
+   "assists": 5
+  },
+  {
+   "gameId": 121,
+   "playerId": 45,
+   "points": 32,
+   "rebounds": 7,
+   "assists": 7
+  },
+  {
+   "gameId": 122,
+   "playerId": 1,
+   "points": 9,
+   "rebounds": 2,
+   "assists": 6
+  },
+  {
+   "gameId": 122,
+   "playerId": 2,
+   "points": 31,
+   "rebounds": 2,
+   "assists": 1
+  },
+  {
+   "gameId": 122,
+   "playerId": 3,
+   "points": 31,
+   "rebounds": 3,
+   "assists": 10
+  },
+  {
+   "gameId": 122,
+   "playerId": 7,
+   "points": 7,
+   "rebounds": 13,
+   "assists": 11
+  },
+  {
+   "gameId": 122,
+   "playerId": 8,
+   "points": 7,
+   "rebounds": 7,
+   "assists": 8
+  },
+  {
+   "gameId": 122,
+   "playerId": 9,
+   "points": 12,
+   "rebounds": 5,
+   "assists": 5
+  },
+  {
+   "gameId": 123,
+   "playerId": 82,
+   "points": 15,
+   "rebounds": 9,
+   "assists": 10
+  },
+  {
+   "gameId": 123,
+   "playerId": 83,
+   "points": 34,
+   "rebounds": 12,
+   "assists": 4
+  },
+  {
+   "gameId": 123,
+   "playerId": 84,
+   "points": 24,
+   "rebounds": 2,
+   "assists": 9
+  },
+  {
+   "gameId": 123,
+   "playerId": 76,
+   "points": 14,
+   "rebounds": 8,
+   "assists": 0
+  },
+  {
+   "gameId": 123,
+   "playerId": 77,
+   "points": 20,
+   "rebounds": 13,
+   "assists": 3
+  },
+  {
+   "gameId": 123,
+   "playerId": 78,
+   "points": 12,
+   "rebounds": 1,
+   "assists": 9
+  },
+  {
+   "gameId": 124,
+   "playerId": 28,
+   "points": 21,
+   "rebounds": 4,
+   "assists": 11
+  },
+  {
+   "gameId": 124,
+   "playerId": 29,
+   "points": 33,
+   "rebounds": 10,
+   "assists": 4
+  },
+  {
+   "gameId": 124,
+   "playerId": 30,
+   "points": 11,
+   "rebounds": 11,
+   "assists": 9
+  },
+  {
+   "gameId": 124,
+   "playerId": 10,
+   "points": 13,
+   "rebounds": 10,
+   "assists": 1
+  },
+  {
+   "gameId": 124,
+   "playerId": 11,
+   "points": 31,
+   "rebounds": 11,
+   "assists": 1
+  },
+  {
+   "gameId": 124,
+   "playerId": 12,
+   "points": 22,
+   "rebounds": 1,
+   "assists": 7
+  },
+  {
+   "gameId": 125,
+   "playerId": 16,
+   "points": 4,
+   "rebounds": 2,
+   "assists": 4
+  },
+  {
+   "gameId": 125,
+   "playerId": 17,
+   "points": 19,
+   "rebounds": 9,
+   "assists": 4
+  },
+  {
+   "gameId": 125,
+   "playerId": 18,
+   "points": 22,
+   "rebounds": 13,
+   "assists": 9
+  },
+  {
+   "gameId": 125,
+   "playerId": 22,
+   "points": 24,
+   "rebounds": 3,
+   "assists": 0
+  },
+  {
+   "gameId": 125,
+   "playerId": 23,
+   "points": 34,
+   "rebounds": 5,
+   "assists": 0
+  },
+  {
+   "gameId": 125,
+   "playerId": 24,
+   "points": 28,
+   "rebounds": 5,
+   "assists": 11
+  },
+  {
+   "gameId": 126,
+   "playerId": 25,
+   "points": 26,
+   "rebounds": 10,
+   "assists": 1
+  },
+  {
+   "gameId": 126,
+   "playerId": 26,
+   "points": 20,
+   "rebounds": 1,
+   "assists": 5
+  },
+  {
+   "gameId": 126,
+   "playerId": 27,
+   "points": 25,
+   "rebounds": 4,
+   "assists": 5
+  },
+  {
+   "gameId": 126,
+   "playerId": 88,
+   "points": 32,
+   "rebounds": 12,
+   "assists": 0
+  },
+  {
+   "gameId": 126,
+   "playerId": 89,
+   "points": 6,
+   "rebounds": 10,
+   "assists": 1
+  },
+  {
+   "gameId": 126,
+   "playerId": 90,
+   "points": 30,
+   "rebounds": 10,
+   "assists": 6
+  },
+  {
+   "gameId": 127,
+   "playerId": 79,
+   "points": 14,
+   "rebounds": 3,
+   "assists": 0
+  },
+  {
+   "gameId": 127,
+   "playerId": 80,
+   "points": 5,
+   "rebounds": 4,
+   "assists": 10
+  },
+  {
+   "gameId": 127,
+   "playerId": 81,
+   "points": 13,
+   "rebounds": 7,
+   "assists": 8
+  },
+  {
+   "gameId": 127,
+   "playerId": 55,
+   "points": 12,
+   "rebounds": 3,
+   "assists": 0
+  },
+  {
+   "gameId": 127,
+   "playerId": 56,
+   "points": 33,
+   "rebounds": 4,
+   "assists": 4
+  },
+  {
+   "gameId": 127,
+   "playerId": 57,
+   "points": 5,
+   "rebounds": 13,
+   "assists": 7
+  },
+  {
+   "gameId": 128,
+   "playerId": 34,
+   "points": 16,
+   "rebounds": 5,
+   "assists": 1
+  },
+  {
+   "gameId": 128,
+   "playerId": 35,
+   "points": 15,
+   "rebounds": 3,
+   "assists": 4
+  },
+  {
+   "gameId": 128,
+   "playerId": 36,
+   "points": 22,
+   "rebounds": 8,
+   "assists": 7
+  },
+  {
+   "gameId": 128,
+   "playerId": 85,
+   "points": 4,
+   "rebounds": 6,
+   "assists": 3
+  },
+  {
+   "gameId": 128,
+   "playerId": 86,
+   "points": 11,
+   "rebounds": 7,
+   "assists": 5
+  },
+  {
+   "gameId": 128,
+   "playerId": 87,
+   "points": 16,
+   "rebounds": 3,
+   "assists": 10
+  },
+  {
+   "gameId": 129,
+   "playerId": 31,
+   "points": 28,
+   "rebounds": 12,
+   "assists": 0
+  },
+  {
+   "gameId": 129,
+   "playerId": 32,
+   "points": 5,
+   "rebounds": 2,
+   "assists": 1
+  },
+  {
+   "gameId": 129,
+   "playerId": 33,
+   "points": 4,
+   "rebounds": 9,
+   "assists": 7
+  },
+  {
+   "gameId": 129,
+   "playerId": 46,
+   "points": 14,
+   "rebounds": 4,
+   "assists": 0
+  },
+  {
+   "gameId": 129,
+   "playerId": 47,
+   "points": 19,
+   "rebounds": 1,
+   "assists": 11
+  },
+  {
+   "gameId": 129,
+   "playerId": 48,
+   "points": 29,
+   "rebounds": 1,
+   "assists": 11
+  },
+  {
+   "gameId": 130,
+   "playerId": 49,
+   "points": 24,
+   "rebounds": 2,
+   "assists": 5
+  },
+  {
+   "gameId": 130,
+   "playerId": 50,
+   "points": 26,
+   "rebounds": 4,
+   "assists": 7
+  },
+  {
+   "gameId": 130,
+   "playerId": 51,
+   "points": 23,
+   "rebounds": 2,
+   "assists": 0
+  },
+  {
+   "gameId": 130,
+   "playerId": 4,
+   "points": 7,
+   "rebounds": 8,
+   "assists": 2
+  },
+  {
+   "gameId": 130,
+   "playerId": 6,
+   "points": 32,
+   "rebounds": 8,
+   "assists": 1
+  },
+  {
+   "gameId": 131,
+   "playerId": 70,
+   "points": 28,
+   "rebounds": 8,
+   "assists": 2
+  },
+  {
+   "gameId": 131,
+   "playerId": 72,
+   "points": 8,
+   "rebounds": 5,
+   "assists": 11
+  },
+  {
+   "gameId": 131,
+   "playerId": 61,
+   "points": 14,
+   "rebounds": 10,
+   "assists": 9
+  },
+  {
+   "gameId": 131,
+   "playerId": 62,
+   "points": 13,
+   "rebounds": 10,
+   "assists": 0
+  },
+  {
+   "gameId": 131,
+   "playerId": 63,
+   "points": 12,
+   "rebounds": 6,
+   "assists": 2
+  },
+  {
+   "gameId": 132,
+   "playerId": 40,
+   "points": 22,
+   "rebounds": 12,
+   "assists": 3
+  },
+  {
+   "gameId": 132,
+   "playerId": 41,
+   "points": 24,
+   "rebounds": 2,
+   "assists": 3
+  },
+  {
+   "gameId": 132,
+   "playerId": 42,
+   "points": 6,
+   "rebounds": 4,
+   "assists": 9
+  },
+  {
+   "gameId": 132,
+   "playerId": 19,
+   "points": 4,
+   "rebounds": 1,
+   "assists": 11
+  },
+  {
+   "gameId": 132,
+   "playerId": 20,
+   "points": 24,
+   "rebounds": 12,
+   "assists": 2
+  },
+  {
+   "gameId": 132,
+   "playerId": 21,
+   "points": 17,
+   "rebounds": 5,
+   "assists": 11
+  },
+  {
+   "gameId": 133,
+   "playerId": 73,
+   "points": 12,
+   "rebounds": 1,
+   "assists": 10
+  },
+  {
+   "gameId": 133,
+   "playerId": 74,
+   "points": 21,
+   "rebounds": 2,
+   "assists": 8
+  },
+  {
+   "gameId": 133,
+   "playerId": 75,
+   "points": 17,
+   "rebounds": 10,
+   "assists": 5
+  },
+  {
+   "gameId": 133,
+   "playerId": 64,
+   "points": 24,
+   "rebounds": 4,
+   "assists": 6
+  },
+  {
+   "gameId": 133,
+   "playerId": 65,
+   "points": 5,
+   "rebounds": 7,
+   "assists": 6
+  },
+  {
+   "gameId": 133,
+   "playerId": 66,
+   "points": 28,
+   "rebounds": 2,
+   "assists": 3
+  },
+  {
+   "gameId": 134,
+   "playerId": 67,
+   "points": 9,
+   "rebounds": 5,
+   "assists": 9
+  },
+  {
+   "gameId": 134,
+   "playerId": 68,
+   "points": 27,
+   "rebounds": 13,
+   "assists": 6
+  },
+  {
+   "gameId": 134,
+   "playerId": 69,
+   "points": 24,
+   "rebounds": 6,
+   "assists": 11
+  },
+  {
+   "gameId": 134,
+   "playerId": 37,
+   "points": 30,
+   "rebounds": 7,
+   "assists": 10
+  },
+  {
+   "gameId": 134,
+   "playerId": 38,
+   "points": 25,
+   "rebounds": 12,
+   "assists": 7
+  },
+  {
+   "gameId": 134,
+   "playerId": 39,
+   "points": 22,
+   "rebounds": 10,
+   "assists": 5
+  },
+  {
+   "gameId": 135,
+   "playerId": 52,
+   "points": 24,
+   "rebounds": 2,
+   "assists": 7
+  },
+  {
+   "gameId": 135,
+   "playerId": 53,
+   "points": 22,
+   "rebounds": 5,
+   "assists": 6
+  },
+  {
+   "gameId": 135,
+   "playerId": 54,
+   "points": 13,
+   "rebounds": 4,
+   "assists": 2
+  },
+  {
+   "gameId": 135,
+   "playerId": 58,
+   "points": 7,
+   "rebounds": 12,
+   "assists": 0
+  },
+  {
+   "gameId": 135,
+   "playerId": 59,
+   "points": 19,
+   "rebounds": 8,
+   "assists": 2
+  },
+  {
+   "gameId": 135,
+   "playerId": 60,
+   "points": 26,
+   "rebounds": 6,
+   "assists": 7
+  },
+  {
+   "gameId": 136,
+   "playerId": 49,
+   "points": 14,
+   "rebounds": 13,
+   "assists": 5
+  },
+  {
+   "gameId": 136,
+   "playerId": 50,
+   "points": 25,
+   "rebounds": 1,
+   "assists": 9
+  },
+  {
+   "gameId": 136,
+   "playerId": 51,
+   "points": 5,
+   "rebounds": 1,
+   "assists": 8
+  },
+  {
+   "gameId": 136,
+   "playerId": 31,
+   "points": 11,
+   "rebounds": 1,
+   "assists": 3
+  },
+  {
+   "gameId": 136,
+   "playerId": 32,
+   "points": 13,
+   "rebounds": 6,
+   "assists": 4
+  },
+  {
+   "gameId": 136,
+   "playerId": 33,
+   "points": 22,
+   "rebounds": 4,
+   "assists": 5
+  },
+  {
+   "gameId": 137,
+   "playerId": 28,
+   "points": 8,
+   "rebounds": 10,
+   "assists": 7
+  },
+  {
+   "gameId": 137,
+   "playerId": 29,
+   "points": 14,
+   "rebounds": 1,
+   "assists": 7
+  },
+  {
+   "gameId": 137,
+   "playerId": 30,
+   "points": 18,
+   "rebounds": 8,
+   "assists": 3
+  },
+  {
+   "gameId": 137,
+   "playerId": 52,
+   "points": 34,
+   "rebounds": 10,
+   "assists": 4
+  },
+  {
+   "gameId": 137,
+   "playerId": 53,
+   "points": 12,
+   "rebounds": 13,
+   "assists": 0
+  },
+  {
+   "gameId": 137,
+   "playerId": 54,
+   "points": 15,
+   "rebounds": 2,
+   "assists": 4
+  },
+  {
+   "gameId": 138,
+   "playerId": 37,
+   "points": 27,
+   "rebounds": 4,
+   "assists": 8
+  },
+  {
+   "gameId": 138,
+   "playerId": 38,
+   "points": 7,
+   "rebounds": 6,
+   "assists": 9
+  },
+  {
+   "gameId": 138,
+   "playerId": 39,
+   "points": 16,
+   "rebounds": 5,
+   "assists": 11
+  },
+  {
+   "gameId": 138,
+   "playerId": 7,
+   "points": 27,
+   "rebounds": 2,
+   "assists": 0
+  },
+  {
+   "gameId": 138,
+   "playerId": 8,
+   "points": 10,
+   "rebounds": 12,
+   "assists": 4
+  },
+  {
+   "gameId": 138,
+   "playerId": 9,
+   "points": 27,
+   "rebounds": 1,
+   "assists": 7
+  },
+  {
+   "gameId": 139,
+   "playerId": 58,
+   "points": 14,
+   "rebounds": 2,
+   "assists": 2
+  },
+  {
+   "gameId": 139,
+   "playerId": 59,
+   "points": 8,
+   "rebounds": 9,
+   "assists": 10
+  },
+  {
+   "gameId": 139,
+   "playerId": 60,
+   "points": 4,
+   "rebounds": 9,
+   "assists": 11
+  },
+  {
+   "gameId": 139,
+   "playerId": 25,
+   "points": 14,
+   "rebounds": 7,
+   "assists": 10
+  },
+  {
+   "gameId": 139,
+   "playerId": 26,
+   "points": 27,
+   "rebounds": 10,
+   "assists": 0
+  },
+  {
+   "gameId": 139,
+   "playerId": 27,
+   "points": 11,
+   "rebounds": 7,
+   "assists": 3
+  },
+  {
+   "gameId": 140,
+   "playerId": 88,
+   "points": 13,
+   "rebounds": 6,
+   "assists": 4
+  },
+  {
+   "gameId": 140,
+   "playerId": 89,
+   "points": 17,
+   "rebounds": 3,
+   "assists": 10
+  },
+  {
+   "gameId": 140,
+   "playerId": 90,
+   "points": 17,
+   "rebounds": 9,
+   "assists": 5
+  },
+  {
+   "gameId": 140,
+   "playerId": 34,
+   "points": 27,
+   "rebounds": 11,
+   "assists": 11
+  },
+  {
+   "gameId": 140,
+   "playerId": 35,
+   "points": 18,
+   "rebounds": 3,
+   "assists": 1
+  },
+  {
+   "gameId": 140,
+   "playerId": 36,
+   "points": 10,
+   "rebounds": 1,
+   "assists": 5
+  }
+ ]
+}

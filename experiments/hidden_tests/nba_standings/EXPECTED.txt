@@ -1,0 +1,43 @@
+wrote sample_season.json: 140 games, 90 players, 822 stat lines
+
+East
+ 1 PHI 6-3 pct=0.667 gb=0.0 diff=+5 home=2-2 away=4-1 l10=6-3 stk=W1 playoff
+ 2 IND 6-4 pct=0.600 gb=0.5 diff=+43 home=4-3 away=2-1 l10=6-4 stk=W1 playoff
+ 3 ATL 6-4 pct=0.600 gb=0.5 diff=+30 home=0-3 away=6-1 l10=6-4 stk=L2 playoff
+ 4 MIL 6-4 pct=0.600 gb=0.5 diff=+8 home=2-3 away=4-1 l10=6-4 stk=W1 playoff
+ 5 BKN 5-4 pct=0.556 gb=1.0 diff=-4 home=4-2 away=1-2 l10=5-4 stk=L3 playoff
+ 6 CHA 5-5 pct=0.500 gb=1.5 diff=-4 home=3-2 away=2-3 l10=5-5 stk=L2 playoff
+ 7 TOR 4-5 pct=0.444 gb=2.0 diff=+9 home=2-4 away=2-1 l10=4-5 stk=W2 play-in
+ 8 ORL 4-5 pct=0.444 gb=2.0 diff=-2 home=2-3 away=2-2 l10=4-5 stk=W2 play-in
+ 9 NYK 4-6 pct=0.400 gb=2.5 diff=-18 home=2-3 away=2-3 l10=4-6 stk=L2 play-in
+10 BOS 3-6 pct=0.333 gb=3.0 diff=+2 home=3-3 away=0-3 l10=3-6 stk=W1 play-in
+11 CLE 3-6 pct=0.333 gb=3.0 diff=+0 home=1-2 away=2-4 l10=3-6 stk=L6 out
+12 WAS 3-6 pct=0.333 gb=3.0 diff=+0 home=1-4 away=2-2 l10=3-6 stk=L1 out
+13 DET 3-6 pct=0.333 gb=3.0 diff=-58 home=1-3 away=2-3 l10=3-6 stk=W1 out
+14 MIA 3-7 pct=0.300 gb=3.5 diff=-17 home=2-5 away=1-2 l10=3-7 stk=W2 out
+15 CHI 2-7 pct=0.222 gb=4.0 diff=-27 home=1-4 away=1-3 l10=2-7 stk=L6 out
+
+West
+ 1 POR 8-1 pct=0.889 gb=0.0 diff=+72 home=3-0 away=5-1 l10=8-1 stk=W3 playoff
+ 2 DEN 7-2 pct=0.778 gb=1.0 diff=+29 home=1-0 away=6-2 l10=7-2 stk=W1 playoff
+ 3 PHX 7-2 pct=0.778 gb=1.0 diff=+25 home=3-1 away=4-1 l10=7-2 stk=W6 playoff
+ 4 SAC 6-3 pct=0.667 gb=2.0 diff=+10 home=4-3 away=2-0 l10=6-3 stk=W1 playoff
+ 5 MIN 6-4 pct=0.600 gb=2.5 diff=+28 home=4-4 away=2-0 l10=6-4 stk=W5 playoff
+ 6 OKC 6-4 pct=0.600 gb=2.5 diff=-2 home=3-2 away=3-2 l10=6-4 stk=L3 playoff
+ 7 HOU 5-4 pct=0.556 gb=3.0 diff=+12 home=2-2 away=3-2 l10=5-4 stk=L1 play-in
+ 8 NOP 5-4 pct=0.556 gb=3.0 diff=-14 home=2-3 away=3-1 l10=5-4 stk=W5 play-in
+ 9 DAL 5-4 pct=0.556 gb=3.0 diff=-19 home=1-1 away=4-3 l10=5-4 stk=L1 play-in
+10 GSW 4-5 pct=0.444 gb=4.0 diff=+24 home=4-2 away=0-3 l10=4-5 stk=L3 play-in
+11 MEM 4-5 pct=0.444 gb=4.0 diff=-5 home=1-2 away=3-3 l10=4-5 stk=W1 out
+12 LAC 4-5 pct=0.444 gb=4.0 diff=-12 home=2-0 away=2-5 l10=4-5 stk=L1 out
+13 SAS 4-6 pct=0.400 gb=4.5 diff=-28 home=3-3 away=1-3 l10=4-6 stk=W3 out
+14 UTA 4-6 pct=0.400 gb=4.5 diff=-41 home=2-2 away=2-4 l10=4-6 stk=L1 out
+15 LAL 2-7 pct=0.222 gb=6.0 diff=-46 home=1-3 away=1-4 l10=2-7 stk=L3 out
+
+1 Andre Hayes BOS PG healthy gp 9 ppg 16.6 rpg 6.0 apg 4.3
+2 Grant Cole BOS SF healthy gp 9 ppg 17.3 rpg 5.2 apg 3.8
+5 Isaiah Gray BKN SF out gp 0 ppg 0 rpg 0 apg 0
+32 Malik Rivera ATL SF day-to-day gp 10 ppg 13.8 rpg 5.4 apg 5.8
+71 Devin Perry PHX SF out gp 0 ppg 0 rpg 0 apg 0
+90 Malik Bennett SAS C healthy gp 10 ppg 17.6 rpg 6.3 apg 6.2
+top ppg [('Nico Bishop', 25.9), ('Grant Morgan', 23.6), ('Luka Price', 23.6)]

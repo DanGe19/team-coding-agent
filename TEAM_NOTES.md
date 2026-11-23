@@ -50,6 +50,7 @@ Outputs: `.waa/logs/<role>_t<task>_r<round>.log`, `.waa/team_summary.json`, `.wa
 | tetris | HW3 | tests/m1_core (+m2, m3 in milestones/) | — (todo) |
 | kanban | new | 5 api + 3 ui | 8 api + 7 ui in experiments/hidden_tests/kanban |
 | park_waits | new | 5 api + 3 ui | 10 api + 7 ui in experiments/hidden_tests/park_waits |
+| nba_standings | new | 5 api + 3 ui | 12 api + 7 ui in experiments/hidden_tests/nba_standings |
 
 Reference solutions for new tasks live in `experiments/reference/` (never shown to the agent).
 
