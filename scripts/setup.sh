@@ -9,7 +9,6 @@ source .venv/bin/activate
 pip install -q -r requirements.txt
 pip install -q -e .
 echo "Python deps OK ($(python --version))"
-# Playwright browser used by the UI tests (downloaded once, shared by all targets)
-npx --yes playwright@1.40 install chromium >/dev/null 2>&1 && echo "Playwright chromium OK" || echo "WARNING: playwright install failed (UI tests will not run)"
+# Browsers are installed per project by the scripts that run UI tests (version must match the project's Playwright).
 echo
 echo "Next:  source .venv/bin/activate && export AWS_BEARER_TOKEN_BEDROCK=..."

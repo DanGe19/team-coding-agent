@@ -9,6 +9,8 @@ REF="experiments/reference/$TASK"; TGT="targets/$TASK"; HID="experiments/hidden_
 cd "$REF"
 [ -d node_modules ] || npm install --silent
 npm ls --depth=0 2>/dev/null | grep -q '@playwright/test' || npm install --silent --save-dev @playwright/test@^1.40.0 jest@^29.7.0 supertest@^6.3.3
+# install the browser build that matches THIS project's Playwright version (cached after the first time)
+npx playwright install chromium >/dev/null 2>&1 || echo "WARNING: playwright install failed"
 [ -d data ] || { [ -d "../../../$TGT/data" ] && cp -r "../../../$TGT/data" data; }
 rm -rf tests && mkdir -p tests/hidden
 cp "../../../$TGT/tests/"*.js tests/ 2>/dev/null
