@@ -39,19 +39,39 @@ Read **docs/EVENTS.md** before writing code for the dashboard, memory or vision.
 
 ## Dashboard (mission control)
 
-```bash
-python -m waa.dashboard                    # every folder with a recorded run under the current dir
-python -m waa.dashboard targets/kanban     # one folder; start it before or during `waa`
-python -m waa.dashboard experiments/runs   # browse experiment runs
-python -m waa.dashboard --demo             # synthetic team run, no API key needed
-```
-Then open http://127.0.0.1:8765/ (`--open` does it for you, `--port` changes the port).
+Watch a run live. The dashboard does not start by itself: it runs in its own terminal, next to `waa`.
 
-It reads only `.waa/events.jsonl`, tailing the file from its own process, so the agent needs no
-changes and a finished run replays from the same file. Event types it does not know yet
-(`screenshot`, `memory_*`) appear in the timeline as plain rows.
+```bash
+mkdir -p experiments/runs && cp -R targets/kanban experiments/runs/kanban-live   # working copy (why: below)
+python -m waa.dashboard experiments/runs/kanban-live --open    # terminal 1: opens http://127.0.0.1:8765/
+waa --working-dir experiments/runs/kanban-live --team          # terminal 2: needs AWS_BEARER_TOKEN_BEDROCK
+```
+Give the dashboard the same folder as `waa --working-dir`. The page waits for the first event, then
+updates every second. Work in a copy, not in `targets/<task>`: `waa` builds the app inside its working
+dir, and `run_experiments.py` copies everything in `targets/<task>` except logs, usage files and
+`node_modules` into each experiment run, so leftover app files would give later runs a head start.
+`experiments/runs/` is gitignored.
+
+Other ways to start it:
+
+```bash
+python -m waa.dashboard experiments/runs   # every recorded run below a folder, in the Folder dropdown
+python -m waa.dashboard                    # the same, searching the current directory
+python -m waa.dashboard --demo --open      # synthetic team run, no API key needed
+```
+`--port` changes the port and `--help` lists every option. While `run_experiments.py` is running, each
+new run appears in the Folder dropdown within a few seconds; pick it there, because the page stays on
+the folder it is showing.
+
+Replay needs no extra step. Every `waa` run records itself by appending each event to
+`.waa/events.jsonl` as it happens, and the page is drawn from that file alone: the live view reads it
+as it grows, and Play or the scrubber redraws from the same events up to a chosen point. Any folder
+that still has its `events.jsonl` can be replayed later, on any machine. Event types the page does not
+know yet (`screenshot`, `memory_*`) appear in the timeline as plain rows.
+
 Code: `waa/dashboard/` (`server.py` serves and tails, `static/model.js` turns events into numbers,
-`static/app.js` draws them, `demo.py` writes the synthetic run). No extra dependencies, no build step.
+`static/app.js` draws them, `demo.py` writes the synthetic run). No extra dependencies, no build step,
+and no changes to the agent: the server tails the file from its own process.
 
 ## Team mode (planner / coder / reviewer)
 
