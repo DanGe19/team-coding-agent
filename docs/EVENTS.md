@@ -6,7 +6,7 @@ This file is the contract between the four features. Build against it; do not pa
 | Feature | Uses the stream how |
 |---|---|
 | Team (Jingyang) | writes `plan_created`, `task_*`, `review_verdict`; every role tags its events with `role`, `task_id`, `round` |
-| Dashboard (Jung) | `EventLog(dir).subscribe(cb)` for live view; `EventLog.read(dir)` for replay |
+| Dashboard (Jung) | `python -m waa.dashboard` tails the file from its own process for the live view and replay (`subscribe(cb)` only fires inside the emitting process) |
 | Memory (Kaicheng) | reads a finished run (`review_verdict`, `test_result`, `tool_result` with `ok:false`) to extract lessons; writes `memory_retrieved` / `memory_stored` |
 | Vision (Weichao) | writes `screenshot` / `visual_check` from the new tool |
 

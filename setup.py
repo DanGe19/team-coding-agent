@@ -10,6 +10,7 @@ setup(
     version="0.1.0",
     description="Web-App Agent - An LLM-powered agent for building web applications",
     packages=find_packages(),
+    package_data={"waa.dashboard": ["static/*"]},
     python_requires=">=3.8",
     install_requires=requirements,
     entry_points={

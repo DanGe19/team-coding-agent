@@ -27,6 +27,7 @@ visible and hidden test of a new task against its reference solution (API + UI).
 | tests/test_testing_tools.py | 10 | pass (installs Playwright) |
 | tests/test_team_mock.py | 4 | pass (team mode, mock LLM) |
 | tests/test_events.py | 3 | pass (event stream) |
+| tests/test_dashboard.py | 6 | pass (dashboard server, no browser) |
 
 Run one with `python tests/<file>.py`.
 
@@ -35,6 +36,22 @@ Run one with `python tests/<file>.py`.
 All features talk through the event stream `.waa/events.jsonl`.
 Read **docs/EVENTS.md** before writing code for the dashboard, memory or vision.
 `python -m waa.events <target>` prints a readable timeline of a run.
+
+## Dashboard (mission control)
+
+```bash
+python -m waa.dashboard                    # every folder with a recorded run under the current dir
+python -m waa.dashboard targets/kanban     # one folder; start it before or during `waa`
+python -m waa.dashboard experiments/runs   # browse experiment runs
+python -m waa.dashboard --demo             # synthetic team run, no API key needed
+```
+Then open http://127.0.0.1:8765/ (`--open` does it for you, `--port` changes the port).
+
+It reads only `.waa/events.jsonl`, tailing the file from its own process, so the agent needs no
+changes and a finished run replays from the same file. Event types it does not know yet
+(`screenshot`, `memory_*`) appear in the timeline as plain rows.
+Code: `waa/dashboard/` (`server.py` serves and tails, `static/model.js` turns events into numbers,
+`static/app.js` draws them, `demo.py` writes the synthetic run). No extra dependencies, no build step.
 
 ## Team mode (planner / coder / reviewer)
 

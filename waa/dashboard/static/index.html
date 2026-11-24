@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mission control</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Mission control</h1>
+    <label>Folder <select id="source"></select></label>
+    <label>Run <select id="run"></select></label>
+    <p id="status" class="status" role="status"></p>
+  </header>
+
+  <!-- Everything below renders from events[0..cursor]. Live view keeps the cursor at the end. -->
+  <section class="replay" aria-label="Replay controls">
+    <button id="play" type="button">Play</button>
+    <input id="scrub" type="range" min="0" max="0" value="0" aria-label="Position in the run">
+    <span id="position" class="position"></span>
+    <label>Speed
+      <select id="speed">
+        <option value="1">1×</option>
+        <option value="4">4×</option>
+        <option value="16" selected>16×</option>
+        <option value="64">64×</option>
+      </select>
+    </label>
+    <button id="live" type="button">Jump to latest</button>
+  </section>
+
+  <section id="empty" class="card empty" hidden></section>
+
+  <div id="dash">
+    <section id="kpis" class="kpis" aria-label="Run totals"></section>
+
+    <main class="grid">
+      <section class="card timeline">
+        <header class="card-head">
+          <h2>Timeline <span id="event-count" class="muted"></span></h2>
+          <div id="filters" class="filters">
+            <label><input type="checkbox" data-group="llm" checked> Model</label>
+            <label><input type="checkbox" data-group="tool" checked> Tools</label>
+            <label><input type="checkbox" data-group="test" checked> Tests</label>
+            <label><input type="checkbox" data-group="team" checked> Team</label>
+            <label><input type="checkbox" data-group="run" checked> Runs</label>
+            <label><input type="checkbox" data-group="other" checked> Other</label>
+            <label class="sep"><input type="checkbox" id="only-problems"> Problems only</label>
+          </div>
+        </header>
+        <ol id="events" class="events"></ol>
+      </section>
+
+      <aside class="side">
+        <section class="card">
+          <header class="card-head"><h2>Plan</h2></header>
+          <div id="plan"></div>
+        </section>
+        <section class="card">
+          <header class="card-head"><h2>Tests</h2></header>
+          <div id="tests"></div>
+        </section>
+        <section class="card">
+          <header class="card-head">
+            <h2>Cost over time</h2>
+            <button id="cost-view" type="button" class="quiet">Table</button>
+          </header>
+          <div id="cost-chart" class="chart"></div>
+          <div id="cost-table" class="table-wrap" hidden></div>
+          <div id="roles" class="roles"></div>
+        </section>
+      </aside>
+    </main>
+  </div>
+
+  <div id="tooltip" class="tooltip" hidden></div>
+  <script type="module" src="/static/app.js"></script>
+</body>
+</html>
