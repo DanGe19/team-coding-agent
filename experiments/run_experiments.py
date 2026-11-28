@@ -132,7 +132,9 @@ def run_playwright(run_dir: Path, test_files: List[str], timeout: int, log, tag:
         return out
     report = run_dir / ".waa" / f"pw_report{tag}.json"
     env = dict(os.environ, PLAYWRIGHT_JSON_OUTPUT_NAME=str(report))
-    cmd = ["npx", "playwright", "test", *test_files, "--reporter=json"]
+    if not (run_dir / "node_modules" / "@playwright" / "test").exists():
+        log("playwright not installed in run dir; skipping UI tests"); out["failed"] = -1; return out
+    cmd = ["npx", "--no-install", "playwright", "test", *test_files, "--reporter=json"]
     try:
         subprocess.run(cmd, cwd=run_dir, capture_output=True, text=True, timeout=timeout, env=env)
         data = json.loads(report.read_text()) if report.exists() else {}
@@ -150,7 +152,9 @@ def run_jest(run_dir: Path, test_files: List[str], timeout: int, log, tag: str =
     if not test_files:
         return out
     report = run_dir / ".waa" / f"jest_report{tag}.json"
-    cmd = ["npx", "jest", *test_files, "--json", f"--outputFile={report}", "--forceExit"]
+    if not (run_dir / "node_modules" / "jest").exists():
+        log("jest not installed in run dir; skipping API tests"); out["failed"] = -1; return out
+    cmd = ["npx", "--no-install", "jest", *test_files, "--json", f"--outputFile={report}", "--forceExit"]
     try:
         subprocess.run(cmd, cwd=run_dir, capture_output=True, text=True, timeout=timeout)
         data = json.loads(report.read_text()) if report.exists() else {}
@@ -309,6 +313,15 @@ def run_one(target: str, setting: str, repeat: int, args, log) -> Dict[str, Any]
 
     row.update(collect_metrics(run_dir))
 
+    agent_failed = row["agent_exit_code"] not in (0, "") or row["llm_calls"] == 0
+    if agent_failed:
+        row["status"] = "failed"
+        row["notes"] += "agent produced no run (see .waa/runner_stdout.log); evaluation skipped; "
+        log(f"  -> FAILED: {row['notes']}")
+        return row
+    if not (run_dir / "index.js").exists():
+        row["notes"] += "no index.js produced; "
+
     if not args.dry_run and not args.no_tests:
         try:
             row.update(evaluate(run_dir, hidden if hidden.exists() else None, args.test_timeout, log))
@@ -326,7 +339,9 @@ def existing_runs(csv_path: Path) -> set:
     if not csv_path.exists():
         return set()
     with open(csv_path, newline="") as f:
-        return {r["run_name"] for r in csv.DictReader(f) if r.get("status") == "done"}
+        # rows from runs where the agent never ran (no LLM calls) do not count as done
+        return {r["run_name"] for r in csv.DictReader(f)
+                if r.get("status") == "done" and str(r.get("llm_calls", "0")) not in ("", "0")}
 
 
 def append_row(results_dir: Path, row: Dict[str, Any]):
@@ -370,7 +385,8 @@ def main(argv=None):
             f.write(line + "\n")
 
     if not args.dry_run and not os.getenv("AWS_BEARER_TOKEN_BEDROCK"):
-        log("WARNING: AWS_BEARER_TOKEN_BEDROCK is not set; real runs will fail")
+        print("ERROR: AWS_BEARER_TOKEN_BEDROCK is not set. Run:  export AWS_BEARER_TOKEN_BEDROCK=...  (or use --dry-run)")
+        sys.exit(2)
 
     plan = [(t, s, r) for t in args.targets for s in args.settings for r in range(1, args.repeats + 1)]
     log(f"{len(plan)} runs planned, {sum(f'{t}__{s}__r{r}' in done for t, s, r in plan)} already done")

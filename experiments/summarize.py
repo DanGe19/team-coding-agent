@@ -18,7 +18,8 @@ NUM = ["wall_sec", "visible_passed", "visible_failed", "hidden_passed", "hidden_
 
 def load(path: Path):
     with open(path, newline="") as f:
-        return [r for r in csv.DictReader(f) if r.get("status") == "done"]
+        return [r for r in csv.DictReader(f)
+                if r.get("status") == "done" and str(r.get("llm_calls", "0")) not in ("", "0")]
 
 
 def f(x):
