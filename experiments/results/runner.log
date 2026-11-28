@@ -12,3 +12,13 @@
 [10:35:44] === kanban__team__r3 ===
 [10:39:47]   -> visible 8/0 hidden 15/0 tokens=728693 cost~$2.353563 rejects=1 232.6s
 [10:39:47] all done
+[11:35:58] 4 runs planned, 0 already done
+[11:35:58] === pixel_board__baseline__r1 ===
+[11:38:26]   -> visible 8/0 hidden 14/1 tokens=744464 cost~$2.389824 rejects=0 136.0s
+[11:38:26] === pixel_board__baseline__r2 ===
+[11:40:41]   -> visible 8/0 hidden 14/1 tokens=734880 cost~$2.360976 rejects=0 124.6s
+[11:40:41] === pixel_board__team__r1 ===
+[11:45:27]   -> visible 8/0 hidden 15/0 tokens=780197 cost~$2.533167 rejects=0 275.2s
+[11:45:27] === pixel_board__team__r2 ===
+[11:53:42]   -> visible 8/0 hidden 15/0 tokens=866908 cost~$2.804412 rejects=0 484.9s
+[11:53:42] all done
